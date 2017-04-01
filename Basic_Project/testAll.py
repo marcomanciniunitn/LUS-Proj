@@ -4,13 +4,12 @@ import math
 import os
 from subprocess import Popen
 
-
 global order
 global smoothing_algo
 global threshold
 
 #Set of smoothing algorithms and orders usable to create the LM
-smoothing = ["absolute","katz","kneser_ney","presmoothed","unsmoothed","witten_bell"]
+
 
 LEXICON_FILE_NAME = 'lexicon.txt'
 TRAINING_SET = 'NLSPARQL.train.data'
@@ -177,7 +176,7 @@ def sentenceToFsa(string):
 def tagTestSet(testSet):
 	testFile = open(testSet, 'r')
 	resultFile = open('result.txt', 'w')
-	performanceFile = open("performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt",  "w")
+	performanceFile = open("performances" + str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + ".txt",  "w")
 
 	reconstructedString = ""
 	concepts = ""
@@ -207,12 +206,12 @@ def tagTestSet(testSet):
 	testFile.close()
 	resultFile.close()
 
-	performanceFile.write("Smoothing = " + smoothing_algo + "  Order = " + order + "  Threshold = " + threshold + " [0: No cut-off]\n")
+	performanceFile.write("Smoothing = " + str(smoothing_algo) + "  Order = " + str(order) + "  Threshold = " + str(threshold) + " [0: No cut-off]\n")
 	performanceFile.close()
-	process = Popen("./conlleval.pl < result.txt >> performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt", shell=True)
+	process = Popen("./conlleval.pl < result.txt >> performances" + str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + ".txt", shell=True)
 	process.communicate()
 	#os.system("./conlleval.pl < result.txt >> performances.txt")
-	print("Performances calculated!\nFile=performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt")
+	print("Performances calculated!\nFile=performances" + str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + ".txt")
 
 #Used to clean the directory from files used during the computation
 def cleanDirectory():
@@ -220,31 +219,60 @@ def cleanDirectory():
 
 
 
-if len(sys.argv) == 5:
-	global order 
-	global smoothing_algo
-	global threshold
+ordersA = [1,2,3,4]
+smoothingA = ["absolute","katz","kneser_ney","presmoothed","unsmoothed","witten_bell"]
+thresholdA = [0,1,2]
 
-	order = sys.argv[1]
-	smoothing_algo = sys.argv[2]
-	threshold = sys.argv[3]
-	testSet = sys.argv[4]
+def testall():
+	for algo_s in smoothingA:
+		smoothing_algo = algo_s
+		for order_O in ordersA:
+			order = order_O
+			for thresh in thresholdA:
+				threshold = thresh
+				conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
 
-	conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
+				likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(thresh), CONCEPT_FILE , True if int(thresh) > 0 else False)
 
-	likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False)
+				createLexicon(likelihood)
+				computeLikelihoodFST(likelihood)
+				computeLanguageModelFST(TRAINING_CONCEPTS, order_O, algo_s)
+				computeFinalFST()
+				tagTestSet(TEST_SET)
+				cleanDirectory()
+				#process = Popen("./main.py %s %s %s %s" %(order, algo, thresh, 'NLSPARQL.test.data'), shell=True, stdout=sys.stdout)
+				#process.communicate()
 
-	createLexicon(likelihood)
-	computeLikelihoodFST(likelihood)
-	computeLanguageModelFST(TRAINING_CONCEPTS, order, smoothing_algo)
-	computeFinalFST()
-	tagTestSet(testSet)
-	cleanDirectory()
-else:
+def best_accuracy():
+	bests = {}
+	bests['acc'] = "None 0.0"
+	bests['pre'] = "None 0.0"
+	bests['rec'] = "None 0.0"
+	bests['fb1'] = "None 0.0"
 
-	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
-	for algo in smoothing: sys.stdout.write("| " + algo + " |")
-	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff)\n-arg4=test set\n")
+	for algo_s in smoothingA:
+		smoothing_algo = algo_s
+		for order_O in ordersA:
+			order = order_O
+			for thresh in thresholdA:
+				threshold = thresh
+				performanceFile = open("performances" + str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + ".txt",  "w")
+				for i, line in enumerate(performanceFile):
+					if i == 2:
+						values = line.split( )
+						acc_f = values[1]
+						pre_f = values[3]
+						rec_f = values[5]
+						fb1_f = values[7]
+
+						if float(acc_f) > float(bests['acc'].split( )[1]):
+							bests['acc'] = smoothing_algo + "-" + order + "-" + thresh + " " + float(acc_f)
+						if float(pre_f) > float(bests['pre'].split( )[1]):
+							bests['pre'] =  smoothing_algo + "-" + order + "-" + thresh + " " + float(pre_f)
+						if float(rec_f) > float(bests['rec'].split( )[1]):
+							bests['rec'] =  smoothing_algo + "-" + order + "-" + thresh + " " + float(rec_f)
+						if float(fb1_f) > float(bests['fb1'].split( )[1]):
+							bests['fb1'] =  smoothing_algo + "-" + order + "-" + thresh + " " + float(fb1_f)
 
 
-
+best_accuracy()

@@ -1,0 +1,26 @@
+Smoothing = witten_bell  Order = 4  Threshold = 0 [0: No cut-off]
+processed 7117 tokens with 1091 phrases; found: 1283 phrases; correct: 681.
+accuracy:  87.21%; precision:  53.08%; recall:  62.42%; FB1:  57.37
+       actor.name: precision:  68.97%; recall:  75.00%; FB1:  71.86  87
+actor.nationality: precision:  50.00%; recall: 100.00%; FB1:  66.67  2
+       actor.type: precision: 100.00%; recall: 100.00%; FB1: 100.00  2
+   award.category: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+   award.ceremony: precision:  57.14%; recall:  57.14%; FB1:  57.14  7
+   character.name: precision:   5.77%; recall:  60.00%; FB1:  10.53  156
+     country.name: precision:  21.05%; recall:  45.16%; FB1:  28.72  133
+    director.name: precision:  61.33%; recall:  56.79%; FB1:  58.97  75
+director.nationality: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+      movie.genre: precision:  87.50%; recall:  77.78%; FB1:  82.35  32
+movie.gross_revenue: precision:  35.71%; recall: 100.00%; FB1:  52.63  14
+   movie.language: precision:  70.18%; recall:  57.97%; FB1:  63.49  57
+   movie.location: precision:  17.65%; recall:  42.86%; FB1:  25.00  17
+       movie.name: precision:  64.55%; recall:  62.37%; FB1:  63.44  457
+movie.release_date: precision:  50.00%; recall:  72.41%; FB1:  59.15  42
+movie.release_region: precision:   0.00%; recall:   0.00%; FB1:   0.00  8
+movie.star_rating: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+    movie.subject: precision:  64.29%; recall:  61.36%; FB1:  62.79  42
+       movie.type: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+      person.name: precision:  27.27%; recall:  17.65%; FB1:  21.43  22
+person.nationality: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+    producer.name: precision:  73.13%; recall:  67.12%; FB1:  70.00  67
+      rating.name: precision:  91.94%; recall:  93.44%; FB1:  92.68  62

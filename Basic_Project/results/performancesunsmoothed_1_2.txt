@@ -1,4 +1,4 @@
-Smoothing = absolute  Order = 1  Threshold = 2 [0: No cut-off]
+Smoothing = unsmoothed  Order = 1  Threshold = 2 [0: No cut-off]
 processed 7117 tokens with 1091 phrases; found: 1613 phrases; correct: 569.
 accuracy:  83.64%; precision:  35.28%; recall:  52.15%; FB1:  42.09
        actor.name: precision:  52.11%; recall:  46.25%; FB1:  49.01  71
