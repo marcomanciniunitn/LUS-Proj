@@ -1,9 +1,9 @@
 LUS mid-term project, Spring 2017 <br />
 Student: Marco Mancini, 187403 <br />
 
----- Description ----- <br />
+-----Description-----<br />
 1- Basic Project <br />
-   This is the basic part of the project, it performs sequence labeling. <br />
+&emsp This is the basic part of the project, it performs sequence labeling. <br />
    The main operations it does are: <br />
    1- Create the lexicon <br />
    2- Calculate the likelihoods (probabilities of words given the concept) <br />
@@ -13,7 +13,7 @@ Student: Marco Mancini, 187403 <br />
    the smoothing and to use or not the frequency cut-off on the likelihoods.
    4- Evaluate the trained model on a test set <br />
 
-#### HOW-TO USE####
+-----HOW-TO USE-----
 #1- Basic Project
    Do not touch any file in the Basic Project directory, use the following arguments to launch the project:<br />
    1- arg1 = order [1-3] <br />
