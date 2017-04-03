@@ -1,8 +1,8 @@
 LUS mid-term project, Spring 2017 <br />
 Student: Marco Mancini, 187403 <br />
 
------ Description ----- <br />
---- Basic Project --- <br />
+
+- Basic Project <br />
   This is the basic part of the project, it performs sequence labeling. <br />
    The main operations it does are: <br />
    - Create the lexicon <br />
@@ -14,8 +14,8 @@ Student: Marco Mancini, 187403 <br />
    - Evaluate the trained model on a test set <br />
 
 
------ HOW-TO USE -----
---- Basic Project ---
+----- HOW-TO USE ----- <br />
+- Basic Project <br />
    Do not touch any file in the Basic Project directory, use the following arguments to launch the project:<br />
    - arg1 = order [1-3] <br />
    - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |]  <br />
