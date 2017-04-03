@@ -244,35 +244,41 @@ def testall():
 				#process.communicate()
 
 def best_accuracy():
-	bests = {}
-	bests['acc'] = "None 0.0"
-	bests['pre'] = "None 0.0"
-	bests['rec'] = "None 0.0"
-	bests['fb1'] = "None 0.0"
-
+	bests = {
+		'acc' : "None 0.0",
+		'pre' : "None 0.0",
+		'rec' : "None 0.0",
+		'fb1' : "None 0.0"
+	}
 	for algo_s in smoothingA:
 		smoothing_algo = algo_s
 		for order_O in ordersA:
 			order = order_O
 			for thresh in thresholdA:
 				threshold = thresh
-				performanceFile = open("performances" + str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + ".txt",  "w")
-				for i, line in enumerate(performanceFile):
-					if i == 2:
+				performanceFile = open("performances" + str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + ".txt",  "r")
+				index = 0 
+				for line in performanceFile:
+					if index == 2:
 						values = line.split( )
-						acc_f = values[1]
-						pre_f = values[3]
-						rec_f = values[5]
-						fb1_f = values[7]
-
+						acc_f = values[1][0 : values[1].find("%")]
+						pre_f = values[3][0 : values[3].find("%")]
+						rec_f = values[5][0 : values[5].find("%")]
+						fb1_f = values[7][0 : values[7].find("%")]
 						if float(acc_f) > float(bests['acc'].split( )[1]):
-							bests['acc'] = smoothing_algo + "-" + order + "-" + thresh + " " + float(acc_f)
+							toAdd = str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) +  " " + str(float(acc_f))
+							bests['acc'] = toAdd
 						if float(pre_f) > float(bests['pre'].split( )[1]):
-							bests['pre'] =  smoothing_algo + "-" + order + "-" + thresh + " " + float(pre_f)
+							bests['pre'] =  str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + " " + str(float(pre_f))
 						if float(rec_f) > float(bests['rec'].split( )[1]):
-							bests['rec'] =  smoothing_algo + "-" + order + "-" + thresh + " " + float(rec_f)
+							bests['rec'] =  str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + " " + str(float(rec_f))
 						if float(fb1_f) > float(bests['fb1'].split( )[1]):
-							bests['fb1'] =  smoothing_algo + "-" + order + "-" + thresh + " " + float(fb1_f)
+							bests['fb1'] =  str(smoothing_algo) + "_" + str(order) + "_" + str(threshold) + " " + str(float(fb1_f))
+					index += 1
+
+	for item in bests.keys():
+		print(item +  " "  + bests[item])
 
 
+				
 best_accuracy()

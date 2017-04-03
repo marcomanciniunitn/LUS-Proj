@@ -1,3 +1,25 @@
+'''
+LUS mid-term project, Spring 2017
+Student: Marco Mancini, 187403
+
+This is the basic part of the project, it performs sequence labeling. 
+The main operations it does are:
+1- Create the lexicon
+2- Calculate the likelihoods (probabilities of words given the concept) 
+using the training set
+3- Train both the WFST for the likelihood and the LM (the LM is generated using opengram) 
+, taking care about unknowns and giving the possibility to change the size of the ngram,
+the smoothing and to use or not the frequency cut-off on the likelihoods.
+4- Evaluate the trained model on a test set
+
+#### HOW-TO USE####
+Do not touch any file in the Basic Project directory, use the following arguments
+to launch the project:
+1- arg1 = order [1-3]
+2- arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 
+3- arg3 = threshold for the cut-off frequency (0- No cut-off)
+4- arg4 = test set 
+'''
 from __future__ import print_function
 import sys
 import math
@@ -177,8 +199,7 @@ def sentenceToFsa(string):
 def tagTestSet(testSet):
 	testFile = open(testSet, 'r')
 	resultFile = open('result.txt', 'w')
-	performanceFile = open("performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt",  "w")
-
+	performanceFile = open("results/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt",  "w")
 	reconstructedString = ""
 	concepts = ""
 
@@ -209,10 +230,10 @@ def tagTestSet(testSet):
 
 	performanceFile.write("Smoothing = " + smoothing_algo + "  Order = " + order + "  Threshold = " + threshold + " [0: No cut-off]\n")
 	performanceFile.close()
-	process = Popen("./conlleval.pl < result.txt >> performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt", shell=True)
+	process = Popen("./conlleval.pl < result.txt >> results/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt", shell=True)
 	process.communicate()
 	#os.system("./conlleval.pl < result.txt >> performances.txt")
-	print("Performances calculated!\nFile=performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt")
+	print("Performances calculated!\nFile=result/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt")
 
 #Used to clean the directory from files used during the computation
 def cleanDirectory():
