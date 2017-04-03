@@ -8,8 +8,7 @@ Student: Marco Mancini, 187403 <br />
    - Create the lexicon <br />
    - Calculate the likelihoods (probabilities of words given the concept) <br />
    using the training set
-   - Train both the WFST for the likelihood and the LM (the LM is generated using opengram) <br />
-   , taking care about unknowns and giving the possibility to change the size of the ngram,
+   - Train both the WFST for the likelihood and the LM (the LM is generated using opengram),taking care about unknowns and giving the possibility to change the size of the ngram,
    the smoothing and to use or not the frequency cut-off on the likelihoods.
    - Evaluate the trained model on a test set <br />
 

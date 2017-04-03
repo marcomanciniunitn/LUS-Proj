@@ -129,7 +129,7 @@ def smoothLikelihoodAndComputeProbabilities(conceptCounter, likelihoodCounters, 
 			
 	return likelihood
 
-#Compute the basic counters, then the smoothing + probability function will be used
+#Compute the basic counters, then thgte smoothing + probability function will be used
 # to take care about unknowns and compute probabilities
 def computeBasicCounters(trainingFileName):
 	trainingFile = open(trainingFileName, "r")
@@ -239,6 +239,21 @@ def tagTestSet(testSet):
 def cleanDirectory():
 	os.system("rm finalFST.fst && rm likelihoodFST.fst && rm priorFST.fst && rm sentenceFST.fst")
 
+#Input validation
+def checkForInputErrors(order, smoothing_algo, threhsold):
+	if order != "1" and order != "2" and order != "3":
+		return False
+	if smoothing_algo not in smoothing:
+		return False
+	if threshold != "0" and threshold != "1" and threshold != "2" and threshold != "3" and threshold != "4":
+		return False
+	return True
+
+#Incorrect syntax function
+def printIncorrectSyntax():
+	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
+	for algo in smoothing: sys.stdout.write("| " + algo + " |")
+	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=test set\n")
 
 
 if len(sys.argv) == 5:
@@ -251,21 +266,22 @@ if len(sys.argv) == 5:
 	threshold = sys.argv[3]
 	testSet = sys.argv[4]
 
-	conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
+	if checkForInputErrors(order, smoothing_algo, threshold):
 
-	likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False)
+		conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
 
-	createLexicon(likelihood)
-	computeLikelihoodFST(likelihood)
-	computeLanguageModelFST(TRAINING_CONCEPTS, order, smoothing_algo)
-	computeFinalFST()
-	tagTestSet(testSet)
-	cleanDirectory()
+		likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False)
+
+		createLexicon(likelihood)
+		computeLikelihoodFST(likelihood)
+		computeLanguageModelFST(TRAINING_CONCEPTS, order, smoothing_algo)
+		computeFinalFST()
+		tagTestSet(testSet)
+		cleanDirectory()
+	else:
+		printIncorrectSyntax()
 else:
-
-	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
-	for algo in smoothing: sys.stdout.write("| " + algo + " |")
-	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff)\n-arg4=test set\n")
+	printIncorrectSyntax()
 
 
 
