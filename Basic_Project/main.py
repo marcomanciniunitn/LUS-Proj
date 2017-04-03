@@ -233,7 +233,7 @@ def tagTestSet(testSet):
 	process = Popen("./conlleval.pl < result.txt >> results/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt", shell=True)
 	process.communicate()
 	#os.system("./conlleval.pl < result.txt >> performances.txt")
-	print("Performances calculated!\nFile=result/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt")
+	print("-Performances calculated!\n-File=result/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt")
 
 #Used to clean the directory from files used during the computation
 def cleanDirectory():
@@ -271,11 +271,14 @@ if len(sys.argv) == 5:
 		conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
 
 		likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False)
-
+		print("-Likelihood smoothed! ")
 		createLexicon(likelihood)
+		print("-Lexicon created!")
 		computeLikelihoodFST(likelihood)
 		computeLanguageModelFST(TRAINING_CONCEPTS, order, smoothing_algo)
 		computeFinalFST()
+		print("-Likelihood FST and LM created and composed!")
+		print("-Tagging phase, it may take a while...")
 		tagTestSet(testSet)
 		cleanDirectory()
 	else:
