@@ -1,7 +1,7 @@
 LUS mid-term project, Spring 2017 <br />
 Student: Marco Mancini, 187403 <br />
 
------ DESCRIPTION -----
+----- DESCRIPTION ----- <br />
 - Basic Project <br />
   This is the basic part of the project, it performs sequence labeling. <br />
    The main operations it does are: <br />
