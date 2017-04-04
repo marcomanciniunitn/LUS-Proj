@@ -237,7 +237,7 @@ def tagTestSet(testSet):
 
 #Used to clean the directory from files used during the computation
 def cleanDirectory():
-	os.system("rm finalFST.fst && rm likelihoodFST.fst && rm priorFST.fst && rm sentenceFST.fst")
+	os.system("rm finalFST.fst && rm likelihoodFST.fst && rm priorFST.fst && rm sentenceFST.fst && rm result.fst")
 
 #Input validation
 def checkForInputErrors(order, smoothing_algo, threhsold):

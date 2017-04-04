@@ -19,7 +19,8 @@ Student: Marco Mancini, 187403 <br />
    - arg1 = order [1-3] <br />
    - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |]  <br />
    - arg3 = threshold for the cut-off frequency (0- No cut-off) <br />
-   - arg4 = test set <br />
+   - arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff]  <br />
+   - arg5 = test set file <br />
    
    Once finished, the results will be showed into the results directory, the performance file indicate in its
    name all the parameters set (i.e. performancesabsolute_1_0.txt indicates an absolute smoothing, unigrams and
