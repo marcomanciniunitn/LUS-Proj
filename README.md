@@ -13,7 +13,8 @@ Student: Marco Mancini, 187403 <br />
    - Evaluate the trained model on a test set <br />
 
 - Advanced Project 1 (PoS + Lemma) 
-   This is the first advanced part of the project, it performs sequence labeling. 
+   This is the first advanced part of the project, it performs sequence labeling. All the functions are basically the same with respect to the basic project but here we've added 
+2 more functions to adapt the train/test sets in order to work well on the advanced features.
    The main operations it does are:
    - Create the lexicon
    - Calculate the likelihoods (probabilities of words given the concept) 
@@ -40,7 +41,7 @@ Do not touch any file in any folder, the results are showed in the results folde
    name all the parameters set (i.e. performancesabsolute_1_0.txt indicates an absolute smoothing, unigrams and
    threshold for the cut-off set to 0 (no cut-off in this case) ). 
 
-- Advanced Project 1 (PoS + Lemma)
+- Advanced Project 1 (PoS + Lemma) <br />
    -Syntax- <br />
    - arg1 = order [1-3]
    - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 

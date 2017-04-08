@@ -1,0 +1,31 @@
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{ll}
+O                     & 71.74287 \% \\
+movie.name            & 14.71589 \% \\
+director.name         & 2.12091 \%  \\
+actor.name            & 2.03701 \%  \\
+producer.name         & 1.56621 \%  \\
+person.name           & 1.30517 \%  \\
+movie.subject         & 1.15135 \%  \\
+rating.name           & 1.11872 \%  \\
+country.name          & 0.98820 \%  \\
+movie.language        & 0.96490 \%  \\
+movie.release\_date   & 0.93693 \%  \\
+movie.genre           & 0.45681 \%  \\
+character.name        & 0.45215 \%  \\
+movie.gross\_revenue  & 0.15848 \%  \\
+movie.location        & 0.09788 \%  \\
+award.ceremony        & 0.06059 \%  \\
+movie.release\_region & 0.04661 \%  \\
+actor.nationality     & 0.02796 \%  \\
+actor.type            & 0.01398 \%  \\
+director.nationality  & 0.00932 \%  \\
+movie.description     & 0.00932 \%  \\
+person.nationality    & 0.00932 \%  \\
+movie.star\_rating    & 0.00466 \%  \\
+award.category        & 0.00466 \% 
+\end{tabular}
+\end{table}

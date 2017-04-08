@@ -221,7 +221,7 @@ def computeLikelihoodFST(likelihood):
 	fstFileDescr.write("0")
 	fstFileDescr.close()
 	os.system("fstcompile --isymbols=" + LEXICON_FILE_NAME + " --osymbols=" + LEXICON_FILE_NAME + " likelihoodFST.descr | fstarcsort > likelihoodFST.fst")
-	#os.system("rm likelihoodFST.descr")
+	os.system("rm likelihoodFST.descr")
 
 #Generate the Language Model FST, the order parameter is used to change the n-gram size, the smoothing algorithm is used to select which
 # smoothing algorithm to use (the initial array indicates all the possible algorithms)
@@ -283,7 +283,6 @@ def tagTestSet(testSet):
 	performanceFile.close()
 	process = Popen("./conlleval.pl < result.txt >> results/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt", shell=True)
 	process.communicate()
-	#os.system("./conlleval.pl < result.txt >> performances.txt")
 	print("-Performances calculated!\n-File=results/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt")
 #Used to clean the directory from files used during the computation
 def cleanDirectory():
