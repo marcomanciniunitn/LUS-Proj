@@ -21,8 +21,7 @@ to launch the project:
 2- arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 
 3- arg3 = threshold for the cut-off frequency (0- No cut-off)
 4- arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] 
-5- arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS\n")
- = 
+5- arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS)
 '''
 from __future__ import print_function
 import sys
@@ -291,7 +290,7 @@ def cleanDirectory():
 	os.system("rm finalFST.fst && rm likelihoodFST.fst && rm priorFST.fst && rm sentenceFST.fst")
 
 #Input validation
-def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff):
+def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff, feat):
 	if order != "1" and order != "2" and order != "3":
 		return False
 	if smoothing_algo not in smoothing:
@@ -299,6 +298,8 @@ def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff):
 	if threshold != "0" and threshold != "1" and threshold != "2" and threshold != "3" and threshold != "4":
 		return False
 	if wordCutoff != "0" and wordCutoff != "1":
+		return False
+	if feat != "0" and feat != "1":
 		return False
 	return True
 
@@ -354,7 +355,7 @@ if len(sys.argv) == 6:
 
 	addFeature = sys.argv[5]
 
-	if checkForInputErrors(order, smoothing_algo, threshold, wordCutoff):
+	if checkForInputErrors(order, smoothing_algo, threshold, wordCutoff, addFeature):
 
 		if addFeature == "0":
 			generateTrainingSets("train_tmp.txt", 0,1)
