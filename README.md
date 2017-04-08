@@ -15,14 +15,14 @@ Student: Marco Mancini, 187403 <br />
 - Advanced Project 1 (PoS + Lemma) 
    This is the first advanced part of the project, it performs sequence labeling. 
    The main operations it does are:
-   1- Create the lexicon
-   2- Calculate the likelihoods (probabilities of words given the concept) 
+   - Create the lexicon
+   - Calculate the likelihoods (probabilities of words given the concept) 
    using the training set
-   3- Train both the WFST for the likelihood and the LM (the LM is generated using opengram) 
+   - Train both the WFST for the likelihood and the LM (the LM is generated using opengram) 
    , taking care about unknowns and giving the possibility to change the size of the ngram,
    the smoothing and to use or not the frequency cut-off on the likelihoods.
-   4- Evaluate the trained model on a test set
-   5- Give the possibility to add features to the computation. It is possible to take into account
+   - Evaluate the trained model on a test set
+   - Give the possibility to add features to the computation. It is possible to take into account
    Word + PoS or Lemma + PoS, depending on the specified paramete
 
 
@@ -42,11 +42,11 @@ Do not touch any file in any folder, the results are showed in the results folde
 
 - Advanced Project 1 (PoS + Lemma)
    -Syntax- <br />
-   1- arg1 = order [1-3]
-   2- arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 
-   3- arg3 = threshold for the cut-off frequency (0- No cut-off)
-   4- arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] 
-   5- arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS)
+   - arg1 = order [1-3]
+   - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 
+   - arg3 = threshold for the cut-off frequency (0- No cut-off)
+   - arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] 
+   - arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS)
 
    The results are saved in the results directory as for the Basic Project.
 
