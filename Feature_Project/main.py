@@ -2,7 +2,7 @@
 LUS mid-term project, Spring 2017
 Student: Marco Mancini, 187403
 
-This is the basic part of the project, it performs sequence labeling. 
+This is the first advanced part of the project, it performs sequence labeling. 
 The main operations it does are:
 1- Create the lexicon
 2- Calculate the likelihoods (probabilities of words given the concept) 
@@ -11,6 +11,8 @@ using the training set
 , taking care about unknowns and giving the possibility to change the size of the ngram,
 the smoothing and to use or not the frequency cut-off on the likelihoods.
 4- Evaluate the trained model on a test set
+5- Give the possibility to add features to the computation. It is possible to take into account
+Word + PoS or Lemma + PoS, depending on the specified parameter
 
 #### HOW-TO USE####
 Do not touch any file in the Basic Project directory, use the following arguments
@@ -19,7 +21,8 @@ to launch the project:
 2- arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 
 3- arg3 = threshold for the cut-off frequency (0- No cut-off)
 4- arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] 
-5- arg5 = test set file
+5- arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS\n")
+ = 
 '''
 from __future__ import print_function
 import sys
@@ -31,13 +34,14 @@ global order
 global smoothing_algo
 global threshold
 global wordCutoff
+global feature
 
 #Set of smoothing algorithms and orders usable to create the LM
 smoothing = ["absolute","katz","kneser_ney","presmoothed","unsmoothed","witten_bell"]
 
 LEXICON_FILE_NAME = 'lexicon.txt'
-TRAINING_SET = 'NLSPARQL.train.data'
-TEST_SET = 'NLSPARQL.test.data'
+TRAINING_SET = 'train.txt'
+TEST_SET = 'test.txt'
 CONCEPT_FILE = "concepts.txt"
 TRAINING_CONCEPTS = "training_Concepts.txt"
 
@@ -86,7 +90,7 @@ def computeLikelihood(likelihoodCounters, conceptCounter):
 
 #This kind of cut-off frequency works only on the frequency of the words, this  is the standard cut-off which basically
 # subdivide the accumulated counter (accumulated looking for words with less frequency wrt a certain threshold) equally between all the <unk>-concept pairs.
-def computeCutOffOnWords(wordToConceptCounter, threshold, concepts, conceptCounter):
+def computeCutOffOnWords(wordToConceptCounter, threshold, concepts, conceptCounter, separator):
 	wordCounters = dict()
 	toCutOff = list()
 	returnConcept = dict()
@@ -94,7 +98,7 @@ def computeCutOffOnWords(wordToConceptCounter, threshold, concepts, conceptCount
 
 	#Retrieve accumulate counters for the words, from the wordToConcept counter
 	for item in wordToConceptCounter.keys():
-		word = item.split( )[0]
+		word = item.split(separator)[0]
 		if word not in wordCounters:
 			wordCounters[word] = wordToConceptCounter[item]
 		else:
@@ -108,7 +112,7 @@ def computeCutOffOnWords(wordToConceptCounter, threshold, concepts, conceptCount
 
 	#Populate the word to concept counters without the cutted off words
 	for wordToConcept in wordToConceptCounter.keys():
-		if wordToConcept.split( )[0] not in toCutOff:
+		if wordToConcept.split(separator)[0] not in toCutOff:
 			returnConcept[wordToConcept] = wordToConceptCounter[wordToConcept]
 
 	#Add unk  + concept pairs
@@ -143,7 +147,8 @@ def computeCutOffOnWordsAndConcept(wordToConceptCounter, threshold, concepts, co
 # the last parameters (cutOffFreq) permits to enable the frequency cut off, otherwise the 
 # pairs <unk>-concept will have a probability equal to 1/#concepts
 #The returned value is the final smoothed likelihood, which will be used to compute the FST 
-def smoothLikelihoodAndComputeProbabilities(conceptCounter, likelihoodCounters, threshold, conceptFileName, cutOffFreq, noiseCutOff):
+#The separator is used to separate the words from the PoS and/or lemmas, since the added features are taken jointly to the word.
+def smoothLikelihoodAndComputeProbabilities(conceptCounter, likelihoodCounters, threshold, conceptFileName, cutOffFreq, noiseCutOff, separator):
 	conceptFile = open(conceptFileName, "r")
 	concepts = list()
 	conCounter = 0
@@ -163,7 +168,7 @@ def smoothLikelihoodAndComputeProbabilities(conceptCounter, likelihoodCounters, 
 		if noiseCutOff:
 			likelihoodCounters = computeCutOffOnWordsAndConcept(likelihoodCounters,threshold, concepts, conCounter)
 		else:
-			likelihoodCounters = computeCutOffOnWords(likelihoodCounters, threshold, concepts, conCounter)
+			likelihoodCounters = computeCutOffOnWords(likelihoodCounters, threshold, concepts, conCounter, separator)
 		likelihood = computeLikelihood(likelihoodCounters, conceptCounter)
 			
 	#No frequency cut-off requested, basically add 1/#concepts to each pair <unk>-concept
@@ -217,7 +222,7 @@ def computeLikelihoodFST(likelihood):
 	fstFileDescr.write("0")
 	fstFileDescr.close()
 	os.system("fstcompile --isymbols=" + LEXICON_FILE_NAME + " --osymbols=" + LEXICON_FILE_NAME + " likelihoodFST.descr | fstarcsort > likelihoodFST.fst")
-	os.system("rm likelihoodFST.descr")
+	#os.system("rm likelihoodFST.descr")
 
 #Generate the Language Model FST, the order parameter is used to change the n-gram size, the smoothing algorithm is used to select which
 # smoothing algorithm to use (the initial array indicates all the possible algorithms)
@@ -275,7 +280,7 @@ def tagTestSet(testSet):
 	testFile.close()
 	resultFile.close()
 
-	performanceFile.write("Smoothing = " + smoothing_algo + "  Order = " + order + "  Threshold = " + threshold + " [0: No cut-off]" + " Word-cutoff: " + wordCutoff +"[1: word-cutoff, 0:noise cut-off]\n")
+	performanceFile.write("Smoothing = " + smoothing_algo + "  Order = " + order + "  Threshold = " + threshold + " [0: No cut-off]" + " Word-cutoff: " + wordCutoff +"[1: word-cutoff, 0:noise cut-off] " + " Feature: " + feature + "\n")
 	performanceFile.close()
 	process = Popen("./conlleval.pl < result.txt >> results/performances" + smoothing_algo + "_" + order + "_" + threshold + ".txt", shell=True)
 	process.communicate()
@@ -301,22 +306,68 @@ def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff):
 def printIncorrectSyntax():
 	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
 	for algo in smoothing: sys.stdout.write("| " + algo + " |")
-	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5=test set\n")
+	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS\n")
 
+#This function basically generate the training file on which the transducers will be computed, this function is parametrized
+# to work on all the features we want to take into account, depending on the columns specified (i.e. col1 = 0 (word) col2 = 1 (PoS) | col1 = 2 (lemma), col2 = 1 (PoS) ).
+def generateTrainingSets(trainingFile, col1, col2):
+	trainFile = open(trainingFile, "r")
+	trainWordPosFile = open("train.txt", "w")
+
+	for line in trainFile:
+		values = line.split("\t")
+		if len(values) == 4:
+			w1 = values[col1]
+			w2 = values[col2]
+			concept = values[3][0 : values[3].find("\n")]
+			trainWordPosFile.write(w1 + "#" + w2 + "\t" + concept + "\n")
+		else:
+			trainWordPosFile.write("\n")
+	trainFile.close()
+	trainWordPosFile.close()
+
+#This function is used to generate the test set which will be used for the performances. It is paramatrized in order to work with all the
+# features we want to take into account, depending on the columns specified (i.e. col1 = 0 (word) col2 = 1 (PoS) | col1 = 2 (lemma), col2 = 1 (PoS) ).
+def generateTestSet(testSet, col1, col2):
+	testFile = open(testSet, "r");
+	finalTesf = open("test.txt", "w")
+
+	for line in testFile:
+		values = line.split("\t")
+		if len(values) == 4:
+			w1 = values[col1]
+			w2 = values[col2]
+			concept = values[3][0 : values[3].find("\n")]
+			finalTesf.write(w1 + "#" + w2 + "\t" + concept + "\n")
+		else:
+			finalTesf.write("\n")
+
+	testFile.close()
+	finalTesf.close()
 
 if len(sys.argv) == 6:
 
 	order = sys.argv[1]
 	smoothing_algo = sys.argv[2]
 	threshold = sys.argv[3]
-	testSet = sys.argv[5]
 	wordCutoff = sys.argv[4]
+
+	addFeature = sys.argv[5]
 
 	if checkForInputErrors(order, smoothing_algo, threshold, wordCutoff):
 
+		if addFeature == "0":
+			generateTrainingSets("train_tmp.txt", 0,1)
+			generateTestSet("test_tmp.txt", 0, 1)
+			feature = "0 [WORD-PoS]"
+		else:
+			generateTrainingSets("train_tmp.txt", 2,1)
+			generateTestSet("test_tmp.txt", 2, 1)
+			feature = "1 [LEMMA-PoS]"
+
 		conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
 
-		likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False, False if int(wordCutoff) == 1 else True)
+		likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False, False if int(wordCutoff) == 1 else True, "#")
 		print("-Likelihood smoothed! ")
 		createLexicon(likelihood)
 		print("-Lexicon created!")
@@ -325,7 +376,7 @@ if len(sys.argv) == 6:
 		computeFinalFST()
 		print("-Likelihood FST and LM created and composed!")
 		print("-Tagging phase, it may take a while...")
-		tagTestSet(testSet)
+		tagTestSet(TEST_SET)
 		cleanDirectory()
 	else:
 		printIncorrectSyntax()
