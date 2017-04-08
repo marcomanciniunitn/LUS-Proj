@@ -3,6 +3,8 @@ LUS mid-term project, Spring 2017
 Student: Marco Mancini, 187403
 
 This is the first advanced part of the project, it performs sequence labeling. 
+All the functions are basically the same with respect to the basic project but here we've added 
+2 more functions to adapt the train/test sets in order to work well on the advanced features.
 The main operations it does are:
 1- Create the lexicon
 2- Calculate the likelihoods (probabilities of words given the concept) 
@@ -121,7 +123,7 @@ def computeCutOffOnWords(wordToConceptCounter, threshold, concepts, conceptCount
 
 	return returnConcept
 
-#This is another kind of cutoff, it does not works only on the word frequency but it take into account the word-concept frequency and cut-off using such guideline.
+#This is another kind of cutoff, it does not works only on the word frequency but it take into account the (word-pos/lemma-pos)-concept frequency and cut-off using such guideline.
 def computeCutOffOnWordsAndConcept(wordToConceptCounter, threshold, concepts, conceptCounter):
 	returnConcept = dict()
 	cumulativeCounter = 0
