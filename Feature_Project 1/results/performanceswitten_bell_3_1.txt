@@ -1,0 +1,27 @@
+Smoothing = witten_bell  Order = 3  Threshold = 1 [0: No cut-off] Word-cutoff: 1[1: word-cutoff, 0:noise cut-off]  Feature: 0 [WORD-PoS]
+processed 7117 tokens with 1091 phrases; found: 1226 phrases; correct: 739.
+accuracy:  88.96%; precision:  60.28%; recall:  67.74%; FB1:  63.79
+       actor.name: precision:  72.22%; recall:  65.00%; FB1:  68.42  72
+actor.nationality: precision:   5.26%; recall: 100.00%; FB1:  10.00  19
+       actor.type: precision:  66.67%; recall: 100.00%; FB1:  80.00  3
+   award.category: precision:   0.00%; recall:   0.00%; FB1:   0.00  47
+   award.ceremony: precision:  25.00%; recall:  42.86%; FB1:  31.58  12
+   character.name: precision:  25.93%; recall:  46.67%; FB1:  33.33  27
+     country.name: precision:  51.47%; recall:  56.45%; FB1:  53.85  68
+    director.name: precision:  60.66%; recall:  45.68%; FB1:  52.11  61
+director.nationality: precision:   0.00%; recall:   0.00%; FB1:   0.00  12
+movie.description: precision:   0.00%; recall:   0.00%; FB1:   0.00  6
+      movie.genre: precision:  64.10%; recall:  69.44%; FB1:  66.67  39
+movie.gross_revenue: precision:  33.33%; recall: 100.00%; FB1:  50.00  15
+   movie.language: precision:  61.54%; recall:  57.97%; FB1:  59.70  65
+   movie.location: precision:   9.68%; recall:  42.86%; FB1:  15.79  31
+       movie.name: precision:  82.60%; recall:  75.26%; FB1:  78.76  431
+movie.release_date: precision:  51.28%; recall:  68.97%; FB1:  58.82  39
+movie.release_region: precision:   5.00%; recall:  25.00%; FB1:   8.33  20
+movie.star_rating: precision:   0.00%; recall:   0.00%; FB1:   0.00  29
+    movie.subject: precision:  63.64%; recall:  63.64%; FB1:  63.64  44
+       movie.type: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+      person.name: precision:  43.18%; recall:  55.88%; FB1:  48.72  44
+person.nationality: precision:   0.00%; recall:   0.00%; FB1:   0.00  8
+    producer.name: precision:  72.31%; recall:  64.38%; FB1:  68.12  65
+      rating.name: precision:  84.06%; recall:  95.08%; FB1:  89.23  69
