@@ -6,6 +6,8 @@ PoS = dict()
 lemmas = dict()
 labels = dict()
 
+lab = dict()
+
 def changeTrainNOIOB(trainSet):
 	trainFile = open(trainSet, "r")
 	trainFileFinal = open("train_analysis.txt", "w")
@@ -43,6 +45,8 @@ def computeRatio(dictionary, file, column):
 			addToDictionary(values[column], dictionary)
 			totCounter += 1
 
+	print totCounter
+
 	for item in dictionary.keys():
 		res[item] = dictionary[item] / float(totCounter)
 
@@ -71,10 +75,40 @@ def printResults(resList, file):
 		toWrite.write(item[0] + "," + str(item[1]))
 		toWrite.write("\n")
 
+def notIOBDistrib(file):
+	train = open(file, "r")
+	tot = 0
+	perc = dict()
+
+	for line in train:
+		values = line.split("\t")
+		if len(values) >= 2:
+			conc = values[1]
+			if conc[0:1] == "B" or conc[0:1] == "O":
+		
+				addToDictionary(conc[2:len(conc) - 1], lab)
+				tot += 1
+
+
+
+
+	sorted_res = sorted(lab.items(), key=operator.itemgetter(1), reverse=True)
+
+	for item in sorted_res:
+		perc[item[0]] = item[1] / float(tot)
+
+	sorted_res2 = sorted(perc.items(), key=operator.itemgetter(1), reverse=True)
+
+	for item2 in sorted_res2:
+		print item2[0] +  "," + str(item2[1])
+	
+
+
 
 
 #changeTrainNOIOB("train_tmp.txt")
 res_w = computeRatio(words, "train_analysis.txt", 0)
+'''
 res_PoS = computeRatio(PoS, "train_analysis.txt", 1)
 res_Lemma = computeRatio(lemmas, "train_analysis.txt", 2)
 res_Labels = computeRatio(labels, "train_analysis.txt", 3)
@@ -87,3 +121,6 @@ printResults(res_Labels, "labels_distrib.txt")
 
 res_w_c = computeCounter(words, "train_analysis.txt", 0)
 printResults(res_w_c, "word_counters.txt")
+
+#notIOBDistrib("NLSPARQL.train.data")
+'''

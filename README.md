@@ -44,8 +44,6 @@ The training set has been modified assigning as concept for each word the word i
 Initially only the most discriminant words where mapped to concept (thanks to @Federico Giannoni for the script generating the concepts for the specified words), this gave me better results, then I tried to use the whole words, and this last trial worked well.
 
 
-'''
-
 ----- HOW-TO USE ----- <br />
 Do not touch any file in any folder, the results are showed in the results folder of each project. 
 - Basic Project <br />

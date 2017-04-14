@@ -15,7 +15,7 @@ INDEX:
    5.1 Idea (no good results [drop ~5%])
 6. Advanced Project 3
    6.1 Usage of discriminant words to embed Prior 
-
+p
 5. Evaluation && Comparisons
 	5.1 Measures (explain accuracy, precision, recall)
 	5.2 Peformance tool && Baseline
