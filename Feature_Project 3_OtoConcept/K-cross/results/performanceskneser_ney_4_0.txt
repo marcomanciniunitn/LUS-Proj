@@ -1,1 +1,0 @@
-Smoothing = kneser_ney  Order = 4  Threshold = 0 [0: No cut-off] Word-cutoff: 0[1: word-cutoff, 0:noise cut-off]

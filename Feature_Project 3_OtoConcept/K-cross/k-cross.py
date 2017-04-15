@@ -1,7 +1,12 @@
 from subprocess import Popen
+import random
+
+#Seed used to randomize the sentences for the folds
+SEED = 510
 
 folds = dict()
 
+#Function used to retrieve all the sentences 
 def retrieveSentences(trainFile):
 	testSet = open(trainFile, "r")
 
@@ -15,11 +20,13 @@ def retrieveSentences(trainFile):
 			sentences.append(accumulate)
 			accumulate = ""
 
+	random.seed(SEED)
+	random.shuffle(sentences)
 
 	testSet.close()
 	return sentences
 
-
+#Function used to change all the O concepts of the words into the words themselves
 def changeAllO(file, out):
 	w = open(out, "w")
 
@@ -36,6 +43,7 @@ def changeAllO(file, out):
 
 	w.close()
 
+#This function populates the folds
 def generateFolds(k, sentences):
 	tmp = list()
 
@@ -51,6 +59,7 @@ def generateFolds(k, sentences):
 		tmp = list()
 
 
+#Run the k-cross validation, at each iteration 1 fold is used as test set and the remainings k-1 as test set.
 def runValidation(k, order, smoothing):
 	print("K-Cross Validation started\n")
 	for i in range(0,k):
@@ -78,8 +87,7 @@ def runValidation(k, order, smoothing):
 		process.communicate()
 
 sen = retrieveSentences("NLSPARQL.train.data")
-
-generateFolds(6, sen)
-runValidation(6, 4, "kneser_ney")
+generateFolds(10, sen)
+runValidation(10, 4, "kneser_ney")
 
 

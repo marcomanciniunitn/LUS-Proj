@@ -40,12 +40,13 @@ def computeRatio(dictionary, file, column):
 	res = dict()
 
 	for line in dataFile:
-		values = line.split( )
-		if len(values) == 4:
+		values = line.split("\t")
+		if len(values) >= 2:
 			addToDictionary(values[column], dictionary)
+			print "ya"
 			totCounter += 1
 
-	print totCounter
+	print len(dictionary)
 
 	for item in dictionary.keys():
 		res[item] = dictionary[item] / float(totCounter)
@@ -103,11 +104,11 @@ def notIOBDistrib(file):
 		print item2[0] +  "," + str(item2[1])
 	
 
-
+computeRatio(words, "NLSPARQL.test.data", 0)
 
 
 #changeTrainNOIOB("train_tmp.txt")
-res_w = computeRatio(words, "train_analysis.txt", 0)
+#res_w = computeRatio(words, "train_analysis.txt", 0)
 '''
 res_PoS = computeRatio(PoS, "train_analysis.txt", 1)
 res_Lemma = computeRatio(lemmas, "train_analysis.txt", 2)

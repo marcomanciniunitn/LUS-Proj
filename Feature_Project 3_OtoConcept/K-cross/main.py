@@ -373,7 +373,7 @@ if len(sys.argv) == 6:
 
 		conceptCounter, wordToConceptCounter = computeBasicCounters(TRAINING_SET)
 		generateConceptFile(TRAINING_SET)
-		likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), CONCEPT_FILE , True if int(threshold) > 0 else False, False if int(wordCutoff) == 1 else True)
+		likelihood = smoothLikelihoodAndComputeProbabilities(conceptCounter, wordToConceptCounter, int(threshold), "tags.txt" , True if int(threshold) > 0 else False, False if int(wordCutoff) == 1 else True)
 		print("-Likelihood smoothed! ")
 		createLexicon(likelihood)
 		print("-Lexicon created!")
