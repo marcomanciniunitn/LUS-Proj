@@ -1,9 +1,9 @@
 0	1	how#WRB	O	4.68436766
-1	2	many#JJ	O	6.00789404
-2	3	<unk>	B-movie.star_rating	6.35718584
-3	4	films#NNS	O	5.16642141
-4	5	were#VBD	O	6.33235741
-5	6	filmed#VVN	O	7.53076124
-6	7	in#IN	O	3.81719089
-7	8	france#NN	B-country.name	6.90080833
-8	0.796538711
+1	2	many#JJ	O	6.27022839
+2	3	<unk>	O	4.05582857
+3	4	film#NNS	O	5.40908861
+4	5	be#VBD	O	4.43083858
+5	6	film#VVN	O	7.49888849
+6	7	in#IN	O	3.78531861
+7	8	france#NN	B-country.name	7.1481514
+8	0.886040211

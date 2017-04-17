@@ -3,6 +3,11 @@ import Queue
 import subprocess
 from subprocess import Popen
 
+#Program used to replace the labels before the B-concepts, it has been used to exploit the results given from the "find_insight" program
+# present in the "Data analysis" folder.
+
+#Thanks to Federico Giannoni for the script, all the work has been done by him.
+
 # Directories
 Data = "data/"
 Scrap = "scrap/"

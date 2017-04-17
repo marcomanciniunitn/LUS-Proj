@@ -32,7 +32,6 @@ def calculateOOV(trainFile, testFile):
 
 	print "%: " + str(len(oovSet)/float(len(inTest)))
 	print str(len(inTest))
-	print ya
 
 calculateOOV("NLSPARQL.train.data", "NLSPARQL.test.data")
 

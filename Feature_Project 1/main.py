@@ -308,7 +308,7 @@ def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff, feat):
 def printIncorrectSyntax():
 	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
 	for algo in smoothing: sys.stdout.write("| " + algo + " |")
-	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS\n")
+	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS)\n")
 
 #This function basically generate the training file on which the transducers will be computed, this function is parametrized
 # to work on all the features we want to take into account, depending on the columns specified (i.e. col1 = 0 (word) col2 = 1 (PoS) | col1 = 2 (lemma), col2 = 1 (PoS) ).
@@ -353,7 +353,6 @@ if len(sys.argv) == 6:
 	smoothing_algo = sys.argv[2]
 	threshold = sys.argv[3]
 	wordCutoff = sys.argv[4]
-
 	addFeature = sys.argv[5]
 
 	if checkForInputErrors(order, smoothing_algo, threshold, wordCutoff, addFeature):

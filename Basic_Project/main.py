@@ -304,12 +304,11 @@ def printIncorrectSyntax():
 	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5=test set\n")
 
 
-if len(sys.argv) == 6:
+if len(sys.argv) == :
 
 	order = sys.argv[1]
 	smoothing_algo = sys.argv[2]
 	threshold = sys.argv[3]
-	testSet = sys.argv[5]
 	wordCutoff = sys.argv[4]
 
 	if checkForInputErrors(order, smoothing_algo, threshold, wordCutoff):
@@ -325,7 +324,7 @@ if len(sys.argv) == 6:
 		computeFinalFST()
 		print("-Likelihood FST and LM created and composed!")
 		print("-Tagging phase, it may take a while...")
-		tagTestSet(testSet)
+		tagTestSet(TEST_SET)
 		cleanDirectory()
 	else:
 		printIncorrectSyntax()
