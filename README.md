@@ -48,7 +48,7 @@ Initially only the most discriminant words where mapped to concept (thanks to @F
 Do not touch any file in any folder, the results are showed in the results folder of each project. 
 - Basic Project <br />
    -Syntax- <br />
-   - arg1 = order [1-3] <br />
+   - arg1 = order <br />
    - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |]  <br />
    - arg3 = threshold for the cut-off frequency (0- No cut-off) <br />
    - arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff]  <br />
@@ -59,11 +59,11 @@ Do not touch any file in any folder, the results are showed in the results folde
 
 - Advanced Project 1 (PoS + Lemma) <br />
    -Syntax- <br />
-   - arg1 = order [1-3]
-   - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] 
-   - arg3 = threshold for the cut-off frequency (0- No cut-off)
-   - arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] 
-   - arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS)
+   - arg1 = order <br />
+   - arg2 = smoothing [| absolute || katz || kneser_ney || presmoothed || unsmoothed || witten_bell |] <br />
+   - arg3 = threshold for the cut-off frequency (0- No cut-off) <br />
+   - arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] <br />
+   - arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS) <br />
 
    The results are saved in the results directory as for the Basic Project.
 

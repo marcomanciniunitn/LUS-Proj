@@ -1,9 +1,9 @@
-star#NN O O
-of#IN O O
-thor#NN B-movie.name B-movie.name
+star#NN O B-movie.name
+of#IN O I-movie.name
+thor#NN B-movie.name I-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 in#IN O O
 the#DT O O
 movie#NN O O
@@ -20,28 +20,28 @@ the#DT B-movie.name B-movie.name
 campaign#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 in#IN O O
 twilight#NN B-movie.name B-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 in#IN O O
-vulguria#NN B-movie.name O
+vulguria#NN B-movie.name B-movie.release_region
 
 actor#NN O O
 from#IN O O
-lose#VVN B-movie.name B-movie.name
+lost#VVN B-movie.name B-movie.name
 
 who#WP O O
-play#VVD O O
+played#VVD O O
 in#IN O O
 the#DT O O
 movie#NN O O
 rocky#JJ B-movie.name B-movie.name
 
 who#WP O O
-play#VVD O O
+played#VVD O O
 in#IN O O
 the#DT O O
 movie#NN O O
@@ -53,34 +53,34 @@ and#CC O O
 crew#NN O O
 for#IN O O
 in#IN B-movie.name B-movie.name
-July#NN I-movie.name I-movie.name
+july#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 in#IN O O
 movie#NN O O
 in#IN B-movie.name B-movie.name
 july#RB I-movie.name I-movie.name
 
 who#WP O O
-be#VBZ O O
+'s#VBZ O O
 in#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 episode#NN I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 in#IN O O
 apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
-be#VBZ O O
+'s#VBZ O I-movie.name
 cast#VVN O O
 
 search#NN O O
@@ -92,8 +92,8 @@ cast#NN O O
 and#CC O O
 crew#NN O O
 of#IN O O
-appolo#NP B-movie.name B-movie.name
-thirteen#CD I-movie.name I-movie.name
+appolo#NP B-movie.name B-rating.name
+thirteen#CD I-movie.name I-rating.name
 
 i#NP O O
 would#MD O O
@@ -113,34 +113,34 @@ apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
 
 who#WP O O
-star#VVD O O
+starred#VVD O O
 in#IN O O
 the#DT B-movie.name B-movie.name
-avenger#NNS I-movie.name I-movie.name
+avengers#NNS I-movie.name I-movie.name
 
 cast#VVN O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 actor#NN O O
 from#IN O O
-lassie#NN B-movie.name O
+lassie#NN B-movie.name B-movie.release_region
 
 list#NN O O
-actor#NNS O O
+actors#NNS O O
 in#IN O O
 the#DT O O
 movie#NN O O
-midnight#NN B-movie.name O
-cowboy#NN I-movie.name O
+midnight#NN B-movie.name B-award.ceremony
+cowboy#NN I-movie.name I-award.ceremony
 
 dirty#JJ B-movie.name B-movie.name
 dancing#NN I-movie.name I-movie.name
-actor#NNS O O
+actors#NNS O O
 
 who#WP O O
-be#VBP O O
+are#VBP O O
 cast#VVN O O
 and#CC O O
 crew#NN O O
@@ -149,12 +149,12 @@ dirty#JJ B-movie.name B-movie.name
 dancing#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 in#IN O O
 hitch#NN B-movie.name B-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 in#IN O O
 the#DT O O
 cast#NN O O
@@ -163,35 +163,35 @@ hitch#NN B-movie.name B-movie.name
 
 star#NN O B-movie.name
 of#IN O I-movie.name
-fact#NNS B-movie.name I-movie.name
+facts#NNS B-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 life#NN I-movie.name I-movie.name
 
 show#VV O O
 me#PP O O
 movie#NN O O
-credit#NNS O O
+credits#NNS O O
 
 who#WP O O
-do#VVZ O O
-the#DT O O
-voice#NNS O O
+does#VVZ O O
+the#DT O B-movie.release_region
+voices#NNS O I-movie.release_region
 for#IN O O
 the#DT O O
 movie#NN O O
 
 find#VV O O
 movie#NN O O
-actor#NNS O O
+actors#NNS O O
 
 show#NN O O
-credit#NNS O O
--#: O O
-forager#NN B-movie.name B-movie.name
+credits#NNS O O
+-#: O I-movie.name
+forager#NN B-movie.name I-movie.name
 
-star#NN O O
-of#IN O O
-modern#JJ B-movie.name B-movie.name
+star#NN O B-movie.name
+of#IN O I-movie.name
+modern#JJ B-movie.name I-movie.name
 family#NN I-movie.name I-movie.name
 
 look#VV O O
@@ -215,7 +215,7 @@ of#IN O O
 go#NN B-movie.name B-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 in#IN O O
 the#DT O O
 cast#NN O O
@@ -230,28 +230,28 @@ lead#JJ O O
 actor#NN O O
 in#IN O O
 pretty#JJ B-movie.name B-movie.name
-woman#NNS I-movie.name I-movie.name
+women#NNS I-movie.name I-movie.name
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
-actor#NNS O O
-name#NNS O O
+actors#NNS O O
+names#NNS O O
 and#CC O O
-part#NNS O O
+parts#NNS O B-character.name
 in#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-search#VVG O O
+searching#VVG O O
 for#IN O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 crew#NN O O
-member#NNS O O
+members#NNS O O
 of#IN O O
-appollo#NP B-movie.name B-movie.name
-thirteen#CD I-movie.name I-movie.name
+appollo#NP B-movie.name B-rating.name
+thirteen#CD I-movie.name I-rating.name
 
 budget#NN O O
 for#IN O O
@@ -259,7 +259,7 @@ dark#JJ B-movie.name B-movie.name
 knight#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
@@ -286,7 +286,7 @@ the#DT O I-movie.name
 movie#NN O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
@@ -305,7 +305,7 @@ tell#VV O O
 me#PP O O
 how#WRB O O
 much#JJ O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
@@ -314,7 +314,7 @@ avatar#NN B-movie.name B-movie.name
 how#WRB O O
 much#JJ O O
 money#NN O O
-do#VVD O O
+did#VVD O O
 they#PP O O
 spend#VVP O O
 to#TO O O
@@ -327,7 +327,7 @@ budget#NN O O
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 avatar#NN B-movie.name B-movie.name
 take#VV O O
 in#IN O O
@@ -338,12 +338,12 @@ me#PP O O
 what#WP O O
 the#DT O O
 budget#NN O O
-be#VBD O O
+was#VBD O O
 for#IN O O
 avatar#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
@@ -370,62 +370,62 @@ movie#NN O O
 avatar#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
 batman#NN B-movie.name B-movie.name
-begin#VVZ I-movie.name I-movie.name
+begins#VVZ I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
 the#DT B-movie.name B-movie.name
-avenger#NNS I-movie.name I-movie.name
+avengers#NNS I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
-go#VVN B-movie.name B-movie.name
+gone#VVN B-movie.name B-movie.name
 with#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 wind#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
-spend#VVN O O
+was#VBD O O
+spent#VVN O B-character.name
 on#IN O O
 my#PP$ B-movie.name B-movie.name
 big#JJ I-movie.name I-movie.name
 fat#JJ I-movie.name I-movie.name
-Greek#NN I-movie.name I-movie.name
+greek#NN I-movie.name I-movie.name
 wedding#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 pretty#RB B-movie.name B-movie.name
 woman#NN I-movie.name I-movie.name
-'s#POS O O
+'s#POS O I-movie.name
 budget#NN O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
-Spaceball#NNS B-movie.name B-movie.name
+spaceballs#NNS B-movie.name B-movie.release_region
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 kevin#NN B-actor.name B-actor.name
 bacon#NN I-actor.name I-actor.name
-be#VBN O O
+been#VBN O O
 the#DT O O
 lead#JJ O O
 actor#NN O O
@@ -434,55 +434,55 @@ in#IN O O
 how#WRB O O
 many#JJ O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
-movie#NNS O O
-be#VBP O O
+wars#NNS I-movie.name I-movie.name
+movies#NNS O O
+are#VBP O O
 there#RB O O
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-be#VBP O O
-rate#VVN O O
+movies#NNS O O
+are#VBP O O
+rated#VVN O O
 g#NN B-rating.name B-rating.name
 
 spain#NN B-country.name B-country.name
-have#VHZ O O
+has#VHZ O O
 how#WRB O O
 many#JJ O O
-movie#NNS O O
+movies#NNS O O
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 kristen#NN B-actor.name B-actor.name
 stewart#NN I-actor.name I-actor.name
-star#VVN O O
+starred#VVN O O
 in#IN O O
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 robert#JJ B-director.name B-director.name
 wise#NN I-director.name I-director.name
-direct#VVD O O
+directed#VVD O O
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-do#VVD O O
+movies#NNS O O
+did#VVD O O
 alfred#NN B-director.name B-director.name
 hitchcock#NN I-director.name I-director.name
 direct#JJ O O
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 paramount#JJ B-producer.name B-producer.name
-do#VVN O O
+done#VVN O O
 
 i#NP O O
 would#MD O O
@@ -500,39 +500,39 @@ the#DT O O
 movie#NN O O
 kati#NN B-movie.name B-movie.name
 patang#NN I-movie.name I-movie.name
-come#VVZ O O
+comes#VVZ O O
 
 what#WP O O
 country#NN O O
-be#VBZ O O
-bullhead#NN B-movie.name B-movie.name
+is#VBZ O O
+bullhead#NN B-movie.name B-movie.release_region
 
 what#WP O O
 country#NN O O
-make#VVD O O
+made#VVD O O
 black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
 
 what#WP O O
 country#NN O O
-be#VBD O O
+was#VBD O O
 black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
 from#IN O O
 
 what#WP O O
 country#NN O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 movie#NN O O
-make#VVD O O
+made#VVD O O
 
 what#WP O O
 country#NN O O
-do#VVD O O
-deep#JJ B-movie.name O
-blue#JJ I-movie.name O
-sea#NN I-movie.name O
+did#VVD O O
+deep#JJ B-movie.name B-movie.gross_revenue
+blue#JJ I-movie.name I-movie.gross_revenue
+sea#NN I-movie.name I-movie.gross_revenue
 come#VVN O O
 from#IN O O
 
@@ -550,29 +550,29 @@ will#MD O O
 top#JJ B-movie.name B-movie.name
 gun#NN I-movie.name I-movie.name
 be#VB O O
-release#VVN O O
+released#VVN O O
 
 release#NN O O
 year#NN O O
 and#CC O O
 date#NN O O
 for#IN O O
-casino#NN B-movie.name B-movie.name
+casino#NN B-movie.name B-movie.release_region
 
 when#WRB O O
-do#VVD O O
+did#VVD O O
 will#MD B-actor.name B-person.name
 ferrell#RB I-actor.name I-person.name
-begin#VV O O
-act#VVG O O
+begin#VV O B-award.ceremony
+acting#VVG O I-award.ceremony
 
 show#VV O O
 me#PP O O
 when#WRB O O
-@card@#CD B-movie.name B-movie.release_date
+24#CD B-movie.name B-movie.name
 will#MD O O
 be#VB O O
-release#VVN O O
+released#VVN O O
 
 can#MD O O
 i#NP O O
@@ -592,24 +592,24 @@ me#PP O O
 when#WRB O O
 the#DT O O
 movie#NN O O
-be#VBD O O
-make#VVN O O
+was#VBD O O
+made#VVN O O
 
 when#WRB O O
 the#DT O O
 movie#NN O O
 titanic#JJ B-movie.name B-movie.name
-be#VBD O O
-release#VVN O O
+was#VBD O O
+released#VVN O O
 
 what#WP O O
 year#NN O O
-do#VVD O O
+did#VVD O O
 the#DT O O
-Italian#JJ B-country.name B-country.name
+italian#JJ B-country.name B-country.name
 movie#NN O O
-roman#NN B-movie.name O
-holiday#NN I-movie.name O
+roman#NN B-movie.name B-movie.release_region
+holiday#NN I-movie.name I-movie.release_region
 come#VVN O O
 out#RP O O
 
@@ -631,66 +631,66 @@ date#NN O O
 please#RB O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 dirty#JJ B-movie.name B-movie.name
 dancing#NN I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
-Spaceball#NNS B-movie.name B-movie.name
-release#VVN O O
+was#VBD O O
+spaceballs#NNS B-movie.name B-rating.name
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 batman#NN B-movie.name B-movie.name
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 pretty#RB B-movie.name B-movie.name
 woman#NN I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
-man#NNS B-movie.name B-movie.name
+was#VBD O O
+men#NNS B-movie.name B-movie.name
 in#IN I-movie.name I-movie.name
 black#JJ I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-do#VVD O O
-Kristen#NP B-actor.name B-actor.name
-Stewart#NP I-actor.name I-actor.name
+did#VVD O O
+kristen#NP B-actor.name B-actor.name
+stewart#NP I-actor.name I-actor.name
 start#NN O O
-acting#NN O O
+acting#NN O B-movie.release_region
 
 when#WRB O O
-be#VBZ O O
-possess#VVN B-movie.name B-movie.name
-go#VVG O O
+is#VBZ O O
+possessed#VVN B-movie.name B-movie.release_region
+going#VVG O O
 to#TO O O
 be#VB O O
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 resident#JJ B-movie.name B-movie.name
 evil#NN I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 release#NN O O
 date#NN O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 when#WRB O O
-be#VBD O O
-find#VVG B-movie.name B-movie.name
+was#VBD O O
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 release#NN O O
 date#NN O O
@@ -699,20 +699,20 @@ hum#NN B-movie.name B-movie.name
 tum#NN I-movie.name I-movie.name
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
-release#VVD O O
+writers#NNS I-movie.name I-movie.name
+released#VVD O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 avatar#NN B-movie.name B-movie.name
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-do#VVD O O
+did#VVD O O
 avatar#NN B-movie.name B-movie.name
-release#VVD O O
+released#VVD O O
 
 i#NP O O
 would#MD O O
@@ -732,36 +732,36 @@ you#PP O O
 tell#VV O O
 me#PP O O
 when#WRB O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 movie#NN O O
 avatar#NN B-movie.name B-movie.name
-release#VVD O O
+released#VVD O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 date#NN B-movie.name O
 night#NN I-movie.name I-movie.name
-release#VVD O O
+released#VVD O O
 
 when#WRB O O
-do#VVD O O
+did#VVD O O
 black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
 come#VVN O O
 out#RP O O
 
 when#WRB O O
-do#VVD O O
-avergers#NNS B-movie.name I-movie.name
+did#VVD O O
+avergers#NNS B-movie.name B-movie.release_region
 come#VV O O
 out#RP O O
 
 what#WP O O
 date#NN O O
-do#VVD O O
-the#DT B-movie.name B-movie.name
-amazing#JJ I-movie.name I-movie.name
+did#VVD O O
+the#DT B-movie.name O
+amazing#JJ I-movie.name B-movie.name
 spiderman#NN I-movie.name I-movie.name
 show#NN O O
 for#IN O O
@@ -770,7 +770,7 @@ the#DT O O
 time#NN O B-movie.subject
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 release#NN O O
 date#NN O O
@@ -782,11 +782,11 @@ the#DT O O
 movie#NN O O
 the#DT B-movie.name B-movie.name
 godfather#NN I-movie.name I-movie.name
-be#VBD O O
-release#VVN O O
+was#VBD O O
+released#VVN O O
 
 when#WRB O O
-do#VVZ O O
+does#VVZ O O
 looper#NN B-movie.name B-movie.name
 come#VV O O
 out#RP O O
@@ -805,7 +805,7 @@ barfi#NN B-movie.name B-movie.name
 
 what#WP O O
 date#NN O O
-do#VVD O O
+did#VVD O O
 the#DT O O
 movie#NN O O
 heroine#NN B-movie.name B-movie.name
@@ -813,7 +813,7 @@ come#VVN O O
 out#RP O O
 
 when#WRB O O
-do#VVD O O
+did#VVD O O
 the#DT O O
 house#NN B-movie.name B-movie.name
 at#IN I-movie.name I-movie.name
@@ -822,22 +822,22 @@ end#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
-hit#NN O O
-theater#NNS O O
+hit#NN O I-movie.name
+theaters#NNS O O
 
 what#WP O O
 day#NN O O
-be#VBZ O O
+is#VBZ O O
 fun#NN B-movie.name O
-size#NN I-movie.name O
-come#VVG O O
+size#NN I-movie.name B-movie.release_region
+coming#VVG O O
 out#RP O O
 
 what#WP O O
 day#NN O O
 will#NN O B-actor.name
 django#NN B-movie.name I-actor.name
-unchain#VVD I-movie.name O
+unchained#VVD I-movie.name O
 come#VV O O
 out#RP O O
 
@@ -845,8 +845,8 @@ when#WRB O O
 will#MD O O
 i#NP O O
 be#VB O O
-able#JJ O O
-to#TO O O
+able#JJ O B-character.name
+to#TO O I-character.name
 view#VV O O
 iron#NN B-movie.name B-movie.name
 man#NN I-movie.name I-movie.name
@@ -859,18 +859,18 @@ will#MD O O
 iron#VV B-movie.name B-movie.name
 man#NN I-movie.name I-movie.name
 3#LS I-movie.name I-movie.name
-be#VB O O
-release#VVN O O
+be#VB O I-movie.name
+released#VVN O O
 
 who#WP O O
-direct#VVD O O
-go#VVN B-movie.name B-movie.name
+directed#VVD O O
+gone#VVN B-movie.name B-movie.name
 with#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 wind#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 director#NN O O
 for#IN O O
@@ -880,27 +880,27 @@ swan#NN I-movie.name I-movie.name
 tell#VV O O
 me#PP O O
 the#DT O O
-direct#VVD O O
+directed#VVD O O
 of#IN O O
 black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 director#NN O O
 of#IN O O
 sleepless#JJ B-movie.name B-movie.name
 in#IN I-movie.name I-movie.name
-Seattle#NN I-movie.name I-movie.name
+seattle#NN I-movie.name I-movie.name
 
 find#VV O O
 who#WP O O
 the#DT O O
 director#NN O O
-be#VBD O O
+was#VBD O O
 in#IN O O
-man#NNS B-movie.name B-movie.name
+men#NNS B-movie.name B-movie.name
 in#IN I-movie.name I-movie.name
 black#JJ I-movie.name I-movie.name
 3#CD I-movie.name I-movie.name
@@ -909,10 +909,10 @@ locate#VV O O
 the#DT O O
 director#NN O O
 who#WP O O
-create#VVD O O
+created#VVD O O
 the#DT O O
 movie#NN O O
-man#NNS B-movie.name B-movie.name
+men#NNS B-movie.name B-movie.name
 in#IN I-movie.name I-movie.name
 black#JJ I-movie.name I-movie.name
 3#CD I-movie.name I-movie.name
@@ -924,39 +924,39 @@ titanic#JJ B-movie.name B-movie.name
 titanic#JJ B-movie.name B-movie.name
 director#NN O O
 
-avenger#NNS B-movie.name B-movie.name
+avengers#NNS B-movie.name B-movie.name
 movie#NN O O
 director#NN O O
 
 dirctor#NN O O
 of#IN O O
 movie#NN O O
-avenger#NNS B-movie.name B-movie.name
+avengers#NNS B-movie.name B-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 director#NN O O
 for#IN O O
-nacho#NN B-movie.name O
-libre#NN I-movie.name O
+nacho#NN B-movie.name B-award.ceremony
+libre#NN I-movie.name I-award.ceremony
 
 director#NN O O
 for#IN O O
 big#JJ B-movie.name B-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 director#NN O O
 of#IN O O
-welcome#NN B-movie.name O
+welcome#NN B-movie.name B-movie.release_region
 to#TO I-movie.name O
-the#DT I-movie.name B-movie.name
-dollhouse#NN I-movie.name I-movie.name
+the#DT I-movie.name O
+dollhouse#NN I-movie.name B-movie.release_region
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 the#DT O O
 movie#NN O O
 house#NN B-movie.name B-movie.name
@@ -970,7 +970,7 @@ the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 director#NN O O
 of#IN O O
@@ -984,44 +984,44 @@ director#NN O O
 gilda#NN B-movie.name B-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 field#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
-dream#NNS I-movie.name I-movie.name
+dreams#NNS I-movie.name I-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 second#JJ O O
 director#NN O O
 on#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 find#VV O O
 director#NN O O
 of#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
-find#VVG B-movie.name B-movie.name
+directed#VVD O O
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
-direct#VVN O O
+directed#VVN O O
 by#IN O O
 who#WP O O
 
 director#NN O O
 of#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 hitch#NN B-movie.name B-movie.name
 
 i#NNS O O
@@ -1029,7 +1029,7 @@ want#VVP O O
 to#TO O O
 know#VV O O
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 director#NN O O
 of#IN O O
@@ -1038,43 +1038,43 @@ movie#NN O O
 batman#NN B-movie.name B-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 director#NN O O
 of#IN O O
 the#DT B-movie.name B-movie.name
-word#NNS I-movie.name I-movie.name
+words#NNS I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 million#CD B-movie.name I-movie.gross_revenue
 dollar#NN I-movie.name I-movie.gross_revenue
 baby#NN I-movie.name I-movie.gross_revenue
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O B-character.name
 guy#NN O I-character.name
 that#WDT O I-character.name
-direct#VVD O O
-moneyball#NN B-movie.name O
+directed#VVD O O
+moneyball#NN B-movie.name B-movie.name
 
 who#WP O O
-do#VVD O O
+did#VVD O O
 twilight#NN B-movie.name B-movie.name
 
 twilight#NN B-movie.name B-movie.name
 director#NN O O
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 twilight#NN B-movie.name B-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 twilight#NN B-movie.name B-movie.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 director#NN O O
 of#IN O O
@@ -1095,14 +1095,14 @@ the#DT O O
 director#NN O O
 of#IN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
+writers#NNS I-movie.name I-movie.name
 
 find#VV O O
 the#DT O O
 director#NN O O
 of#IN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
+writers#NNS I-movie.name I-movie.name
 
 look#VV O O
 up#RP O O
@@ -1110,19 +1110,19 @@ the#DT O O
 director#NN O O
 of#IN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
+writers#NNS I-movie.name I-movie.name
 
 find#VV O O
 the#DT O O
 director#NN O O
 of#IN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
+writers#NNS I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
-baby#NN B-movie.name O
-mama#NN I-movie.name O
+directed#VVD O O
+baby#NN B-movie.name B-award.ceremony
+mama#NN I-movie.name I-award.ceremony
 
 godfather#NN B-movie.name B-movie.name
 director#NN O O
@@ -1130,21 +1130,21 @@ director#NN O O
 show#VV O O
 me#PP O O
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 the#DT B-movie.name B-movie.name
 sound#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 music#NN I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 the#DT B-movie.name B-movie.name
 sound#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 music#NN I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 the#DT B-movie.name B-movie.name
 sound#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
@@ -1161,7 +1161,7 @@ return#NN B-movie.name B-movie.name
 
 show#NN O O
 movie#NN O O
-avenger#NNS B-movie.name B-movie.name
+avengers#NNS B-movie.name B-movie.name
 director#NN O O
 name#NN O O
 
@@ -1171,10 +1171,10 @@ director#NN O O
 in#IN O O
 sleepless#JJ B-movie.name B-movie.name
 in#IN I-movie.name I-movie.name
-Seattle#NN I-movie.name I-movie.name
+seattle#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+'s#VBZ O O
 the#DT O O
 genre#NN O O
 for#IN O O
@@ -1182,29 +1182,29 @@ black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 black#JJ B-movie.name B-movie.name
 swan#NN B-movie.name I-movie.name
-'s#POS O O
+'s#POS O I-movie.name
 genre#NN O O
 
 what#WP O O
 genre#NN O O
-be#VBZ O O
+is#VBZ O O
 parenthood#NN B-movie.name B-movie.name
 
 what#WP O O
 kind#NN O O
 of#IN O O
 movie#NN O O
-be#VBZ O O
+is#VBZ O O
 parenthood#NN B-movie.name B-movie.name
 
 genre#NN O O
 for#IN O O
-pride#NN B-movie.name B-movie.name
-and#CC I-movie.name I-movie.name
-prejudice#NN I-movie.name I-movie.name
+pride#NN B-movie.name B-movie.subject
+and#CC I-movie.name I-movie.subject
+prejudice#NN I-movie.name I-movie.subject
 
 can#MD O O
 you#PP O O
@@ -1221,10 +1221,10 @@ show#VV O O
 me#PP O O
 what#WP O O
 genre#NN O O
-do#VVZ O O
+does#VVZ O O
 movie#NN O O
 lawless#JJ B-movie.name B-movie.name
-belong#VVZ O O
+belongs#VVZ O O
 to#TO O O
 
 genre#NN O O
@@ -1236,26 +1236,26 @@ the#DT I-movie.name I-movie.name
 huntsman#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 movie#NN O O
 type#NN O O
 
 what#WP O O
-be#VBZ O O
+'s#VBZ O O
 the#DT O O
 genre#NN O O
 of#IN O O
-rushmore#NN B-movie.name O
+rushmore#NN B-movie.name B-movie.release_region
 
 get#VV O O
 the#DT O O
 genre#NN O O
 of#IN O O
-welcome#NN B-movie.name O
+welcome#NN B-movie.name B-movie.release_region
 to#TO I-movie.name O
-the#DT I-movie.name B-movie.name
-dollhouse#NN I-movie.name I-movie.name
+the#DT I-movie.name O
+dollhouse#NN I-movie.name B-movie.release_region
 
 i#NNS O O
 want#VVP O O
@@ -1264,16 +1264,16 @@ find#VV O O
 the#DT O O
 genre#NN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
-be#VBZ O I-movie.name
+writers#NNS I-movie.name I-movie.name
+is#VBZ O I-movie.name
 in#IN O I-movie.name
 
 what#WP O O
 genre#NN O O
-be#VBZ O O
+is#VBZ O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
-in#IN O I-movie.name
+writers#NNS I-movie.name I-movie.name
+in#IN O O
 
 genre#NN O O
 for#IN O O
@@ -1302,8 +1302,8 @@ avatar#NN B-movie.name B-movie.name
 
 genre#NN O O
 for#IN O O
-bad#JJ B-movie.name I-character.name
-teacher#NN I-movie.name I-character.name
+bad#JJ B-movie.name O
+teacher#NN I-movie.name B-movie.release_region
 
 can#MD O O
 you#PP O O
@@ -1318,7 +1318,7 @@ genre#NN O O
 
 what#WP O O
 genre#NN O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 movie#NN O O
 pitch#NN B-movie.name B-movie.name
@@ -1327,19 +1327,19 @@ perfect#JJ I-movie.name I-movie.name
 in#IN O O
 what#WP O O
 language#NN O O
-be#VBZ O O
+is#VBZ O O
 this#DT O O
 movie#NN O O
 
 what#WP O O
 language#NN O O
-be#VBZ O O
+is#VBZ O O
 this#DT O O
 movie#NN O O
 
 what#WP O O
 language#NN O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 movie#NN O O
 hero#NN B-movie.name B-movie.name
@@ -1352,42 +1352,42 @@ lear#NN I-movie.name I-movie.name
 
 language#NN O O
 of#IN O O
-casa#NN B-movie.name B-movie.name
-blanca#NN I-movie.name I-movie.name
+casa#NN B-movie.name B-award.ceremony
+blanca#NN I-movie.name I-award.ceremony
 
 what#WP O O
 language#NN O O
-be#VBZ O O
-head#NN B-movie.name O
-on#IN I-movie.name O
-in#IN O O
+is#VBZ O O
+head#NN B-movie.name B-movie.subject
+on#IN I-movie.name I-movie.subject
+in#IN O I-movie.subject
 
 language#NN O O
 of#IN O O
-spanglish#NN B-movie.name B-movie.name
+spanglish#NN B-movie.name B-movie.release_region
 
 find#VV O O
 out#RP O O
 what#WP O O
 language#NN O O
-the#DT B-movie.name B-movie.name
-father#NN I-movie.name I-movie.name
+the#DT B-movie.name O
+father#NN I-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
 my#PP$ I-movie.name I-movie.name
-child#NNS I-movie.name I-movie.name
-be#VBZ O I-movie.name
+children#NNS I-movie.name I-movie.name
+is#VBZ O I-movie.name
 in#IN O I-movie.name
 
 i#NNS O O
-be#VBP O O
-intersted#VVN O O
-in#IN O O
-view#VVG O O
+am#VBP O O
+intersted#VVN O B-movie.language
+in#IN O I-movie.language
+viewing#VVG O I-movie.language
 belle#NN B-movie.name B-movie.name
 what#WP O O
 foreign#JJ O B-movie.language
 language#NN O I-movie.language
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 movie#NN O O
 available#JJ O O
@@ -1399,47 +1399,47 @@ to#TO O O
 find#VV O O
 out#RP O O
 about#IN O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 some#DT O O
-Japanese#JJ B-movie.language B-country.name
-movie#NNS O O
+japanese#JJ B-movie.language B-country.name
+movies#NNS O O
 
 can#MD O O
 you#PP O O
 tell#VV O O
 me#PP O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 some#DT O O
-Japanese#JJ B-movie.language B-country.name
-movie#NNS O O
+japanese#JJ B-movie.language B-country.name
+movies#NNS O O
 
-ron#NNS B-producer.name B-director.name
-howard#RB I-producer.name I-director.name
-name#VVP O O
+ron#NNS B-producer.name B-producer.name
+howard#RB I-producer.name I-producer.name
+name#VVP O I-producer.name
 some#DT O O
 of#IN O O
 the#DT O O
-movie#NNS O O
+movies#NNS O O
 he#PP O O
 produce#VVP O O
 
 tell#VV O O
 me#PP O O
 the#DT O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 the#DT O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
-William#NP B-producer.name B-producer.name
+william#NP B-producer.name B-producer.name
 packer#NN I-producer.name I-producer.name
 
 about#IN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 show#VV O O
@@ -1447,25 +1447,25 @@ me#PP O O
 info#NN O O
 on#IN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 find#VV O O
 old#JJ O O
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
 movie#NN O O
-rating#NNS O O
+ratings#NNS O O
 
 find#VV O O
 newly#RB O O
-release#VVN O O
-movie#NNS O O
+released#VVN O O
+movies#NNS O O
 in#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
-be#VBD O O
+was#VBD O O
 bill#NN B-actor.name B-actor.name
 paxton#NN I-actor.name I-actor.name
 in#IN O O
@@ -1474,7 +1474,7 @@ movie#NN O O
 apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
 
-be#VBD O O
+was#VBD O O
 kevin#NN B-actor.name B-actor.name
 bacon#NN I-actor.name I-actor.name
 in#IN O O
@@ -1484,128 +1484,128 @@ apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-dancing#NN B-movie.subject B-movie.subject
+dancing#NN B-movie.subject I-movie.name
 
 search#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-dancing#NN B-movie.subject B-movie.subject
+dancing#NN B-movie.subject I-movie.name
 
 show#NN O O
-will#MD B-actor.name B-person.name
-ferrell#VV I-actor.name I-person.name
-film#NNS O O
+will#MD B-actor.name B-actor.name
+ferrell#VV I-actor.name I-actor.name
+films#NNS O O
 
 will#MD B-actor.name B-person.name
-Ferrell#NP I-actor.name I-person.name
-movie#NNS O O
+ferrell#NP I-actor.name I-person.name
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
-will#NN B-actor.name B-person.name
-ferrell#NN I-actor.name I-person.name
-appear#VVD O O
+movies#NNS O O
+has#VHZ O O
+will#NN B-actor.name B-actor.name
+ferrell#NN I-actor.name I-actor.name
+appeared#VVD O O
 in#IN O O
 
 find#VV O O
-Russian#JJ B-movie.language B-country.name
-movie#NNS O O
+russian#JJ B-movie.language B-movie.language
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 the#DT O O
 movie#NN O O
 pretty#JJ B-movie.name B-movie.name
-woman#NNS B-movie.name I-movie.name
-so#IN O O
+women#NNS B-movie.name I-movie.name
+so#IN O I-movie.name
 i#NP O O
 can#MD O O
 see#VV O O
 who#WP O O
-star#VVD O O
+starred#VVD O O
 in#IN O O
 the#DT O O
 movie#NN O O
 
-feral#JJ B-movie.name O
+feral#JJ B-movie.name B-movie.subject
 
 the#DT O O
 movie#NN O O
-be#VBZ O O
-call#VVN O O
+is#VBZ O O
+called#VVN O O
 big#JJ B-movie.name B-movie.name
 
 will#MD B-actor.name B-actor.name
 smith#NN I-actor.name I-actor.name
-act#VVG O O
-carrer#NN O O
+acting#VVG O B-movie.release_date
+carrer#NN O I-movie.release_date
 
 how#WRB O O
 many#JJ O O
-movie#NNS O O
-do#VVD O O
-peter#NN B-director.name O
-jackson#NNS I-director.name O
+movies#NNS O O
+did#VVD O O
+peter#NN B-director.name B-movie.release_region
+jackson#NNS I-director.name I-movie.release_region
 do#VVP O O
 
-movie#NNS O O
+movies#NNS O O
 and#CC O O
 gross#JJ O O
-payment#NN O O
+payment#NN O B-movie.release_region
 
 search#NN O O
 for#IN O O
-tim#NN B-director.name B-director.name
-burton#NN I-director.name I-director.name
-movie#NNS O O
+tim#NN B-director.name B-movie.release_region
+burton#NN I-director.name I-movie.release_region
+movies#NNS O O
 in#IN O O
-French#NNS B-movie.language B-movie.language
+french#NNS B-movie.language B-movie.language
 
 exhibit#VV O O
 all#DT O O
-detail#NNS O O
+details#NNS O O
 of#IN O O
 original#JJ O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 movie#NN O O
 
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 movie#NN O O
 
 find#VV O O
 the#DT O O
 movie#NN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 i#NNS O O
-be#VBP O O
-look#VVG O O
+am#VBP O O
+looking#VVG O O
 for#IN O O
 information#NN O O
 on#IN O O
 the#DT O O
 movie#NN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 show#VV O O
 me#PP O O
-detail#NNS O O
+details#NNS O O
 for#IN O O
 the#DT O O
 movie#NN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 what#WP O O
-do#VVD O O
+did#VVD O O
 andrew#NN B-director.name B-person.name
 stanton#NN I-director.name I-person.name
 direct#JJ O O
@@ -1614,15 +1614,15 @@ show#VV O O
 me#PP O O
 some#DT O O
 other#JJ O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 andrew#JJ B-director.name B-person.name
 stanton#NN I-director.name I-person.name
 
 display#NN O O
-albert#NN B-actor.name B-producer.name
-brook#VVZ I-actor.name I-producer.name
+albert#NN B-actor.name B-actor.name
+brooks#VVZ I-actor.name I-actor.name
 movie#NN O O
 
 show#VV O O
@@ -1630,124 +1630,124 @@ a#DT O O
 movie#NN O O
 with#IN O O
 albert#NN B-actor.name B-actor.name
-brook#NNS I-actor.name I-actor.name
+brooks#NNS I-actor.name I-actor.name
 in#IN O O
 the#DT O O
 cast#NN O O
 
 what#WP O O
 other#JJ O O
-film#NNS O O
-have#VHZ O O
+films#NNS O O
+has#VHZ O O
 sergio#NN B-director.name B-director.name
 leone#NN I-director.name I-director.name
-direct#VVD O O
+directed#VVD O O
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 george#NN B-producer.name B-actor.name
 harrison#NN I-producer.name B-actor.name
-produce#VVD O O
+produced#VVD O O
 
 what#WP O O
-have#VHZ O O
+has#VHZ O O
 charlie#NN B-actor.name B-actor.name
 sheen#NN I-actor.name I-actor.name
-star#VVN O O
+starred#VVN O O
 in#IN O O
 
 please#UH O O
 find#VV O O
 the#DT O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
 which#WDT O O
 clive#JJ B-actor.name B-actor.name
 owen#NN I-actor.name I-actor.name
-have#VHZ O O
-appear#VVN O O
+has#VHZ O O
+appeared#VVN O B-movie.release_region
 
 in#IN O O
 which#WDT O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 clive#JJ B-actor.name B-actor.name
 owen#NNS I-actor.name I-actor.name
 appear#VVP O O
 
-spike#NN B-director.name B-producer.name
-lee#NN I-director.name I-producer.name
-direct#VVD O O
+spike#NN B-director.name B-director.name
+lee#NN I-director.name I-director.name
+directed#VVD O O
 what#WP O O
 movie#NN O O
 
 search#NN O O
 for#IN O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 spike#NN B-director.name B-producer.name
 lee#NN I-director.name I-producer.name
 
 movie#NN O O
 release#NN O O
-date#NNS O O
+dates#NNS O B-movie.release_region
 
 director#NN O O
 information#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 director#NN O O
 
 please#UH O O
 list#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 not#RB O O
-rate#VVN O O
+rated#VVN O O
 pg#NN B-rating.name B-rating.name
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
 a#DT O O
 list#NN O O
 of#IN O O
-English#JJ B-movie.language B-movie.language
+english#JJ B-movie.language B-movie.language
 speaking#NN O I-movie.language
-movie#NNS O O
+movies#NNS O O
 
 a#DT O O
 list#NN O O
 of#IN O O
-movie#NNS O O
-make#VVN O O
+movies#NNS O O
+made#VVN O O
 in#IN O B-movie.name
 america#NN B-country.name I-movie.name
 
-be#VBP O O
+are#VBP O O
 there#RB O O
 any#DT O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 in#IN O O
 the#DT B-country.name B-country.name
-unite#VVN B-country.name I-country.name
-state#NNS I-country.name I-country.name
+united#VVN B-country.name I-country.name
+states#NNS I-country.name I-country.name
 
 show#VV O O
-English#JJ B-movie.language B-movie.language
-movie#NNS O O
+english#JJ B-movie.language B-movie.language
+movies#NNS O O
 
 search#NN O O
-English#NN B-movie.language B-movie.language
-movie#NNS O O
+english#NN B-movie.language B-movie.language
+movies#NNS O O
 
 comedy#NN B-movie.genre B-movie.genre
 
@@ -1757,16 +1757,16 @@ comedy#NN B-movie.genre B-movie.genre
 
 watch#VV O O
 comedy#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 get#VV O O
 horror#NN B-movie.genre B-movie.genre
-film#NNS O O
+films#NNS O O
 
 show#VV O O
 me#PP O O
 horror#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
@@ -1776,68 +1776,68 @@ a#DT O O
 listing#NN O O
 of#IN O O
 horror#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 show#NN O O
 actor#NN O O
 bruce#NN B-actor.name B-person.name
 willis#NN I-actor.name I-person.name
-movie#NNS O O
+movies#NNS O O
 
 which#WDT O O
-movie#NNS O O
-do#VVD O O
+movies#NNS O O
+did#VVD O O
 bruce#NN B-actor.name B-actor.name
 willis#NNS I-actor.name I-actor.name
 star#JJ O O
 in#IN O O
 
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 bruce#NN B-actor.name B-actor.name
 willis#NNS I-actor.name I-actor.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
-make#VVN O O
+movies#NNS O O
+made#VVN O O
 in#IN O O
-Canada#NP B-country.name O
+canada#NP B-country.name B-movie.release_region
 
 can#MD O O
 i#NNS O O
 watch#VV O O
 a#DT O O
-Canadian#JJ B-country.name B-country.name
+canadian#JJ B-country.name B-country.name
 film#NN O O
 
 see#VV O O
-Canadian#JJ B-country.name B-country.name
-movie#NNS O O
+canadian#JJ B-country.name B-country.name
+movies#NNS O O
 
 search#NN O O
 for#IN O O
 information#NN O O
 about#IN O O
-Canadian#JJ B-country.name B-country.name
-movie#NNS O O
+canadian#JJ B-country.name B-country.name
+movies#NNS O O
 
 I#PP O O
-will#MD O O
+'d#MD O O
 like#VV O O
 to#TO O O
 see#VV O O
 some#DT O O
-Italian#JJ B-country.name B-country.name
-film#NNS O O
+italian#JJ B-country.name B-country.name
+films#NNS O O
 
 show#VV O O
 me#PP O O
 something#NN O O
-Italian#NN B-country.name B-movie.language
--#: O O
-make#VVN O O
+italian#NN B-country.name B-movie.language
+-#: O I-movie.name
+made#VVN O O
 
 i#NNS O O
 want#VVP O O
@@ -1849,41 +1849,41 @@ from#IN O O
 spain#NN B-country.name B-country.name
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 spain#NN B-country.name B-country.name
 
 spain#NN B-country.name B-country.name
 country#NN O O
-movie#NNS O O
+movies#NNS O O
 
 display#VV O O
 a#DT O O
 list#NN O O
 of#IN O O
-Spanish#JJ B-country.name B-movie.language
-film#NNS O O
+spanish#JJ B-country.name B-movie.language
+films#NNS O O
 
-Spanish#JJ B-country.name B-movie.language
+spanish#JJ B-country.name B-movie.language
 movie#NN O O
 listing#NN O O
 
-Spanish#JJ B-country.name B-movie.language
-movie#NNS O O
+spanish#JJ B-country.name B-movie.language
+movies#NNS O O
 
 find#VV O O
-actor#NNS O O
+actors#NNS O O
 in#IN O O
-movie#NNS O O
+movies#NNS O O
 
 search#NN O O
 by#IN O O
-actor#NNS O O
+actors#NNS O O
 
 find#VV O O
 some#DT O O
 romantic#JJ B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
@@ -1892,14 +1892,14 @@ see#VV O O
 a#DT O O
 movie#NN O O
 in#IN O O
-French#NNS B-movie.language B-movie.language
+french#NNS B-movie.language B-movie.language
 
-Gwyneth#NP B-actor.name O
-Paltrow#NP I-actor.name O
-movie#NNS O O
+gwyneth#NP B-actor.name B-person.name
+paltrow#NP I-actor.name I-person.name
+movies#NNS O O
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 quentin#NN B-director.name B-director.name
 tarantino#NN I-director.name I-director.name
@@ -1907,39 +1907,39 @@ as#IN O O
 director#NN O O
 
 england#NN B-country.name B-country.name
-movie#NNS O O
+movies#NNS O O
 
 england#NN B-country.name B-country.name
-movie#NNS O O
+movies#NNS O O
 please#VVP O O
 
 find#VV O O
-david#JJ B-actor.name O
-tennant#NN I-actor.name O
-movie#NNS O O
+david#JJ B-actor.name B-movie.release_region
+tennant#NN I-actor.name I-movie.release_region
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 what#WP O O
 richard#NN B-director.name B-person.name
 lester#NN I-director.name I-person.name
-direct#VVD O O
+directed#VVD O O
 
 get#VV O O
-film#NNS O O
+films#NNS O O
 in#IN O O
 hindi#NNS B-movie.language B-movie.language
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 india#NN B-country.name B-country.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 a#DT O O
-British#JJ B-country.name B-country.name
+british#JJ B-country.name B-movie.language
 horror#NN B-movie.genre B-movie.genre
 movie#NN O O
 
@@ -1949,14 +1949,14 @@ to#TO O O
 watch#VV O O
 an#DT O O
 r#NN B-rating.name B-rating.name
-rate#VVN O O
+rated#VVN O O
 comedy#NN B-movie.genre B-movie.genre
 
 list#NN O O
 of#IN O O
-French#JJ B-movie.language B-movie.language
+french#JJ B-movie.language B-movie.language
 language#NN I-movie.language I-movie.language
-comedy#NNS B-movie.genre B-movie.genre
+comedies#NNS B-movie.genre B-movie.genre
 
 look#NN O O
 for#IN O O
@@ -1991,12 +1991,12 @@ list#NN O O
 of#IN O O
 bette#NN B-actor.name B-actor.name
 midler#NN I-actor.name I-actor.name
-movie#NNS O O
+movies#NNS O O
 
 list#NN O O
 of#IN O O
-movie#NNS O O
-star#VVG O O
+movies#NNS O O
+starring#VVG O O
 bette#NN B-actor.name B-actor.name
 midler#NN I-actor.name I-actor.name
 
@@ -2007,27 +2007,27 @@ of#IN O O
 anne#NN B-actor.name B-actor.name
 hathaway#NN I-actor.name I-actor.name
 's#POS O O
-movie#NNS O O
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 sandra#NN B-producer.name B-actor.name
 bullock#NN I-producer.name I-actor.name
-produce#VVD O O
+produced#VVD O O
 
 find#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
-portugal#NN B-country.name O
+portugal#NN B-country.name B-movie.release_region
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 robert#VVN B-actor.name B-director.name
 redford#NNS I-actor.name I-director.name
-be#VBN O O
+been#VBN O O
 in#IN O O
 
 dirty#JJ B-movie.name B-movie.name
@@ -2039,7 +2039,7 @@ dancing#NN I-movie.name I-movie.name
 
 give#VV O O
 a#DT O O
-short#JJ O B-movie.genre
+short#JJ O O
 bio#NN O O
 for#IN O O
 dirty#JJ B-movie.name B-movie.name
@@ -2049,23 +2049,23 @@ about#IN O O
 dirty#JJ B-movie.name B-movie.name
 dancing#NN I-movie.name I-movie.name
 
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 japan#NN B-country.name B-country.name
 
 show#NN O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 japan#NN B-country.name B-country.name
 
 list#NN O O
-Japanese#NN B-movie.language B-movie.language
-movie#NNS O O
+japanese#NN B-movie.language B-movie.language
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-Japanese#JJ B-movie.language B-country.name
-movie#NNS O O
+japanese#JJ B-movie.language B-country.name
+movies#NNS O O
 
 give#VV O O
 me#PP O O
@@ -2073,110 +2073,110 @@ a#DT O O
 list#NN O O
 of#IN O O
 some#DT O O
-Japanese#JJ B-movie.language B-country.name
-movie#NNS O O
+japanese#JJ B-movie.language B-country.name
+movies#NNS O O
 
 give#VV O O
 me#PP O O
 a#DT O O
 list#NN O O
 of#IN O O
-Japanese#JJ B-movie.language B-country.name
-movie#NNS O O
+japanese#JJ B-movie.language B-country.name
+movies#NNS O O
 
-Japanese#JJ B-movie.language B-country.name
-movie#NNS O O
+japanese#JJ B-movie.language B-country.name
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-Japanese#JJ B-movie.language B-movie.language
+japanese#JJ B-movie.language B-movie.language
 language#NN I-movie.language I-movie.language
-movie#NNS O O
+movies#NNS O O
 
 which#WDT O O
-film#NNS O O
-be#VBP O O
-speak#VVN O O
+films#NNS O O
+are#VBP O O
+spoken#VVN O O
 in#IN O O
-Japanese#NN B-movie.language B-movie.language
+japanese#NN B-movie.language B-movie.language
 
 miramax#NN B-producer.name B-producer.name
-film#NNS I-producer.name I-producer.name
+films#NNS I-producer.name I-producer.name
 only#RB O O
 
 show#NN O O
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 miramax#NN B-producer.name B-producer.name
 
 search#NN O O
 sandra#NN B-actor.name B-actor.name
 bullock#NN I-actor.name I-actor.name
-movie#NNS O O
+movies#NNS O O
 
 watch#NN O O
 sandra#NN B-actor.name B-actor.name
 bullock#NN I-actor.name I-actor.name
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-vampire#NNS B-movie.subject B-movie.subject
+vampires#NNS B-movie.subject B-movie.subject
 
 find#VV O O
-movie#NNS O O
-have#VHG O O
-vampire#NNS B-movie.subject B-movie.subject
+movies#NNS O O
+having#VHG O O
+vampires#NNS B-movie.subject B-movie.subject
 
-will#MD B-actor.name B-actor.name
-smith#NN I-actor.name I-actor.name
-movie#NNS O O
+will#MD B-actor.name B-person.name
+smith#NN I-actor.name I-person.name
+movies#NNS O O
 
-car#NNS B-movie.name O
+cars#NNS B-movie.name B-movie.subject
 movie#NN O O
 
 what#WP O O
-movie#NNS O O
-do#VVD O O
+movies#NNS O O
+did#VVD O O
 darla#NN B-producer.name B-producer.name
 anderson#NN I-producer.name I-producer.name
 produce#NN O O
 
 what#WP O O
-film#NNS O O
-be#VBP O O
-make#VVN O O
+films#NNS O O
+are#VBP O O
+made#VVN O O
 by#IN O O
 paramount#NN B-producer.name B-producer.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 paramount#NN B-producer.name B-producer.name
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 paramount#JJ B-producer.name B-producer.name
-release#VVN O O
+released#VVN O O
 
 show#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 turkey#NN B-country.name B-country.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 bruce#NN B-producer.name B-producer.name
 lee#NN I-producer.name I-producer.name
 
-be#VBZ O O
+is#VBZ O O
 parenthood#NN B-movie.name B-movie.name
 a#DT O O
 drama#NN B-movie.genre B-movie.genre
@@ -2187,53 +2187,53 @@ to#TO O O
 see#VV O O
 an#DT O O
 kevin#NN B-actor.name B-actor.name
-james#VVZ I-actor.name I-actor.name
-film#NN O O
-tonight#NN O O
+james#VVZ I-actor.name I-producer.name
+film#NN O I-producer.name
+tonight#NN O I-producer.name
 
 find#VV O O
-film#NNS O O
+films#NNS O O
 from#IN O O
 china#NN B-country.name B-country.name
 
 get#VV O O
-film#NNS O O
+films#NNS O O
 from#IN O O
 china#NN B-country.name B-country.name
 
 i#NP O O
-will#MD O O
+'d#MD O O
 like#VV O O
 to#TO O O
 watch#VV O O
 a#DT O O
 movie#NN O O
-make#VVN O O
+made#VVN O O
 in#IN O O
 china#NN B-country.name B-country.name
 
 list#VV O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 china#NN B-country.name B-country.name
 
-Chinese#JJ B-movie.language B-country.name
-film#NNS O O
+chinese#JJ B-movie.language B-country.name
+films#NNS O O
 
 show#VV O O
 me#PP O O
 other#JJ O O
-Chinese#JJ B-movie.language B-country.name
-movie#NNS O O
+chinese#JJ B-movie.language B-movie.language
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-Chinese#JJ B-movie.language B-country.name
-movie#NNS O O
+chinese#JJ B-movie.language B-movie.language
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 have#VHP O O
 a#DT O O
 pg-13#JJ B-rating.name B-rating.name
@@ -2241,10 +2241,10 @@ rating#NN O O
 
 please#VV O O
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBP O O
-rate#VVN O O
+are#VBP O O
+rated#VVN O O
 pg-13#NN B-rating.name B-rating.name
 
 i#NNS O O
@@ -2252,70 +2252,70 @@ need#VVP O O
 a#DT O O
 g#NN B-rating.name B-rating.name
 rating#NN O O
-so#IN O O
+so#IN O B-rating.name
 i#NP O O
 can#MD O O
 take#VV O O
 the#DT O O
-kid#NNS O B-rating.name
+kids#NNS O B-rating.name
 
 find#VV O O
 a#DT O O
 g#NN B-rating.name B-rating.name
-rate#VVN O O
+rated#VVN O O
 movie#NN O O
 
 find#VV O O
 g#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
 g#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
-rate#VVN O O
+rated#VVN O O
 g#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 look#VV O O
 up#RP O O
 g#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 i#NNS O O
-be#VBP O O
-search#VVG O O
+am#VBP O O
+searching#VVG O O
 for#IN O O
 any#DT O O
 g#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 for#IN O O
 my#PP$ O B-movie.name
-child#NNS O I-movie.name
-to#TO O O
+children#NNS O I-movie.name
+to#TO O I-movie.name
 view#VV O O
 
-rate#VVN O O
+rated#VVN O O
 g#NN B-rating.name B-rating.name
-movie#NNS O O
-for#IN O O
-family#NN O O
-watching#NN O O
+movies#NNS O O
+for#IN O B-rating.name
+family#NN O I-rating.name
+watching#NN O I-rating.name
 
 find#VV O O
 g#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
-be#VBP O O
+are#VBP O O
 there#RB O O
 any#DT O O
-movie#NNS O O
-rate#VVD O O
+movies#NNS O O
+rated#VVD O O
 g#NN B-rating.name B-rating.name
 playing#NN O O
 
@@ -2323,66 +2323,66 @@ i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-movie#NNS O O
-rate#VVN O O
+movies#NNS O O
+rated#VVN O O
 g#NN B-rating.name B-rating.name
 
 find#VV O O
-movie#NNS O O
-rate#VVN O O
+movies#NNS O O
+rated#VVN O O
 g#NN B-rating.name B-rating.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 g#NN B-rating.name B-rating.name
 rating#NN O O
 
-do#VVD O O
+did#VVD O O
 robert#JJ B-director.name B-director.name
 wise#NN I-director.name I-director.name
 direct#VV O O
 any#DT O O
 other#JJ O O
-musical#NNS O B-movie.genre
+musicals#NNS O B-movie.release_region
 
-bruce#NN B-producer.name B-producer.name
-lee#NN I-producer.name I-producer.name
-produce#VVD O O
+bruce#NN B-producer.name B-person.name
+lee#NN I-producer.name I-person.name
+produced#VVD O O
 movie#NN O O
 listing#NN O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 last#JJ O O
 movie#NN O O
-make#VVN O O
+made#VVN O O
 by#IN O O
 robert#NN B-director.name B-director.name
 wise#NN I-director.name I-director.name
 
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 mgm#NN B-producer.name B-producer.name
 
 show#VV O O
 me#PP O O
-british#RB B-country.name O
-make#VVD O O
-movie#NNS O O
+british#RB B-country.name B-movie.release_region
+made#VVD O O
+movies#NNS O O
 
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 the#DT B-country.name B-movie.location
 uk#NN I-country.name I-movie.location
 
 find#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 the#DT B-country.name B-movie.location
 uk#NN I-country.name I-movie.location
@@ -2400,70 +2400,70 @@ need#VVP O O
 to#TO O O
 know#VV O O
 the#DT O O
-movie#NNS O O
+movies#NNS O O
 produce#VVP O O
 by#IN O O
 ron#NN B-producer.name B-director.name
 howard#NN I-producer.name I-director.name
 
-do#VVD O O
+did#VVD O O
 clint#NN B-director.name B-director.name
 eastwood#NN I-director.name I-director.name
 direct#VV O O
 any#DT O O
 other#JJ O O
-movie#NNS O O
+movies#NNS O O
 besides#IN O B-movie.gross_revenue
 million#CD B-movie.name I-movie.gross_revenue
 dollar#NN I-movie.name I-movie.gross_revenue
 baby#NN I-movie.name I-movie.gross_revenue
 
 find#VV O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 clint#NN B-director.name B-producer.name
 eastwood#NN I-director.name I-producer.name
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 have#VHP O O
-be#VBN O O
-direct#VVN O O
+been#VBN O O
+directed#VVN O O
 by#IN O O
 clint#NN B-director.name B-producer.name
 eastwood#NN I-director.name I-producer.name
 
 list#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBD O O
-direct#VVN O O
+were#VBD O O
+directed#VVN O O
 by#IN O O
 clint#NN B-director.name B-producer.name
 eastwood#NN I-director.name I-producer.name
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 clint#JJ B-director.name B-director.name
 eastwood#NN I-director.name I-director.name
-direct#VVD O O
+directed#VVD O O
 
 show#NN O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 clint#NN B-director.name B-producer.name
 eastwood#NN I-director.name I-producer.name
 
 find#VV O O
 all#DT O O
-film#NNS O O
+films#NNS O O
 by#IN O O
-stanley#NN B-director.name O
-kubrick#NN I-director.name O
+stanley#NN B-director.name B-award.ceremony
+kubrick#NN I-director.name I-award.ceremony
 
 i#NNS O O
 want#VVP O O
@@ -2474,8 +2474,8 @@ option#NN O O
 to#TO O O
 search#VV O O
 for#IN O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 stephen#NN B-producer.name B-director.name
 spielberg#NN I-producer.name I-director.name
@@ -2486,41 +2486,41 @@ like#VV O O
 to#TO O O
 search#VV O O
 for#IN O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 stephen#NN B-producer.name B-director.name
 speilberg#NN I-producer.name I-director.name
 
 show#VV O O
 me#PP O O
-Japanese#JJ B-movie.language B-country.name
+japanese#JJ B-movie.language B-movie.language
 horror#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 i#NP O O
 would#MD O O
 like#VV O O
 to#TO O O
 see#VV O O
-movie#NNS O O
-ron#NNS B-director.name B-director.name
-howard#RB I-director.name I-director.name
-direct#VVN O O
+movies#NNS O O
+ron#NNS B-director.name I-producer.name
+howard#RB I-director.name I-producer.name
+directed#VVN O O
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 stephen#NN B-producer.name B-director.name
 spielberg#NN I-director.name I-director.name
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 stephen#NN B-producer.name B-director.name
 spielberg#NN I-director.name I-director.name
 
 what#WP O O
-movie#NNS O O
-do#VVD O O
+movies#NNS O O
+did#VVD O O
 stephen#NN B-producer.name B-person.name
 spielberg#NNS I-director.name I-person.name
 direct#JJ O O
@@ -2528,33 +2528,33 @@ direct#JJ O O
 list#NN O O
 steven#JJ B-director.name B-director.name
 spielberg#NN I-director.name I-director.name
-movie#NNS O O
+movies#NNS O O
 
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
 movie#NN O O
 
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
-movie#NNS O O
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
+movies#NNS O O
 please#VVP O O
 
-direct#VVN O O
+directed#VVN O O
 by#IN O O
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
 
 find#VV O O
 the#DT O O
 steven#JJ B-director.name B-director.name
 spielberg#NN I-director.name I-director.name
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
 
 i#NP O O
 would#MD O O
@@ -2563,13 +2563,13 @@ to#TO O O
 watch#VV O O
 a#DT O O
 movie#NN O O
-direct#VVN O O
+directed#VVN O O
 by#IN O O
 eddie#NN B-director.name B-actor.name
 murphy#NN I-director.name I-actor.name
 
-the#DT B-movie.name B-movie.name
-camp#NN I-movie.name I-movie.name
+the#DT B-movie.name B-movie.subject
+camp#NN I-movie.name I-movie.subject
 
 watch#NN O O
 sandra#NN B-actor.name B-actor.name
@@ -2582,20 +2582,20 @@ i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
-hugh#NN B-actor.name B-actor.name
-jackman#NN I-actor.name I-actor.name
+hugh#NN B-actor.name B-award.ceremony
+jackman#NN I-actor.name I-award.ceremony
 
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
-Kevin#NP B-actor.name O
-spacey#NP I-actor.name O
+kevin#NP B-actor.name B-award.ceremony
+spacey#NP I-actor.name I-award.ceremony
 
 look#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 france#NN B-country.name B-country.name
 
@@ -2603,95 +2603,95 @@ can#MD O O
 you#PP O O
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBD O O
-make#VVN O O
+were#VBD O O
+made#VVN O O
 in#IN O O
 france#NN B-country.name B-country.name
 
 find#VV O O
 me#PP O O
 any#DT O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBD O O
-make#VVN O O
+were#VBD O O
+made#VVN O O
 in#IN O O
 france#NN B-country.name B-country.name
 
-French#NN B-movie.language B-country.name
-movie#NNS O O
+french#NN B-movie.language B-country.name
+movies#NNS O O
 please#VVP O O
 
-French#NN B-movie.language B-country.name
-movie#NNS O O
+french#NN B-movie.language B-country.name
+movies#NNS O O
 
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
-producer#NNS O O
+producers#NNS O O
 
 display#NN O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 mosfilm#NN B-producer.name B-producer.name
 
 what#WP O O
-be#VBD O O
-Kristen#NP B-actor.name B-actor.name
-Stewart#NP I-actor.name I-actor.name
+was#VBD O O
+kristen#NP B-actor.name B-actor.name
+stewart#NP I-actor.name I-actor.name
 's#POS O O
 first#JJ O O
 movie#NN O O
 
 get#VV O O
 me#PP O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 miranda#NN B-director.name B-movie.name
 july#RB I-director.name I-movie.name
 
-tom#NN B-actor.name B-actor.name
-hank#NNS I-actor.name I-actor.name
-movie#NNS O O
+tom#NN B-actor.name B-person.name
+hanks#NNS I-actor.name I-person.name
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 tom#NN B-actor.name B-actor.name
-hank#NNS I-actor.name I-actor.name
+hanks#NNS I-actor.name I-actor.name
 
 i#NNS O O
-be#VBP O O
-try#VVG O O
+am#VBP O O
+trying#VVG O B-movie.release_region
 to#TO O O
 find#VV O O
 a#DT O O
 list#NN O O
 of#IN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 tom#NN B-actor.name B-actor.name
-hank#NNS I-actor.name I-actor.name
+hanks#NNS I-actor.name I-actor.name
 
 provide#VV O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
-olive#JJR B-director.name B-director.name
+oliver#JJR B-director.name B-director.name
 stone#NN I-director.name I-director.name
 please#VV O O
 
@@ -2700,50 +2700,50 @@ want#VVP O O
 to#TO O O
 look#VV O O
 for#IN O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 albert#NN B-producer.name B-producer.name
 ruddy#JJ I-producer.name I-producer.name
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 all#RB O O
 of#IN O O
 the#DT O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 albert#NN B-producer.name B-producer.name
 ruddy#JJ I-producer.name I-producer.name
 
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 yash#NN B-producer.name B-producer.name
 chopra#NN I-producer.name I-producer.name
 
 what#WP O O
-do#VVD O O
-brad#NN B-producer.name B-actor.name
-pitt#NN I-producer.name I-actor.name
-porduce#NN O O
+did#VVD O O
+brad#NN B-producer.name B-producer.name
+pitt#NN I-producer.name I-producer.name
+porduce#NN O I-producer.name
 
 bring#VV O O
 up#RP O O
 all#DT O O
 brad#NN B-producer.name B-actor.name
 pitt#NN I-producer.name I-actor.name
-produce#VVD O O
-movie#NNS O O
+produced#VVD O O
+movies#NNS O O
 
 show#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 that#IN/that O O
-penny#NN B-director.name O
-marshall#NN I-director.name O
-direct#VVD O O
+penny#NN B-director.name B-movie.release_region
+marshall#NN I-director.name I-movie.release_region
+directed#VVD O O
 
 i#NNS O O
 need#VVP O O
@@ -2752,8 +2752,8 @@ list#NN O O
 of#IN O O
 all#PDT O O
 the#DT O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 james#NNS B-director.name B-director.name
 cameron#NN I-director.name I-director.name
@@ -2765,51 +2765,51 @@ list#NN O O
 of#IN O O
 all#PDT O O
 the#DT O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 james#NNS B-director.name B-director.name
 cameron#NN I-director.name I-director.name
 
 james#NNS B-producer.name B-director.name
 cameron#NN I-producer.name I-director.name
-movie#NNS O O
-produce#VVD O O
+movies#NNS O O
+produced#VVD O O
 
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 james#NNS B-producer.name B-director.name
 cameron#NN I-producer.name I-director.name
 
 what#WP O O
-film#NNS O O
+films#NNS O O
 have#VHP O O
-be#VBN O O
-produce#VVN O O
+been#VBN O O
+produced#VVN O O
 by#IN O O
 warner#NN B-producer.name B-producer.name
 bros.#NN I-producer.name I-producer.name
 
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 warner#NN B-producer.name B-producer.name
 bros.#NN I-producer.name I-producer.name
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 have#VHP O O
-be#VBN O O
-produce#VVN O O
+been#VBN O O
+produced#VVN O O
 by#IN O O
 warner#NN B-producer.name B-producer.name
 bros.#NN I-producer.name I-producer.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 by#IN B-producer.name O
 wb#NN O B-producer.name
 
@@ -2817,24 +2817,24 @@ give#VV O O
 me#PP O O
 information#NN O O
 about#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 i#NNS O O
 want#VVP O O
 information#NN O O
 about#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 show#VV O O
 me#PP O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
-bing#NNS O O
+bing#NNS O I-movie.name
 
 search#NN O O
 finding#NN B-movie.name B-movie.name
@@ -2844,7 +2844,7 @@ show#NN O O
 information#NN O O
 page#NN O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 the#DT B-movie.name B-movie.name
@@ -2854,19 +2854,19 @@ information#NN O O
 more#JJR O O
 information#NN O O
 on#IN O O
-apallo#NP B-movie.name B-movie.name
-thirteen#CD I-movie.name I-movie.name
+apallo#NP B-movie.name B-rating.name
+thirteen#CD I-movie.name I-rating.name
 
 research#NN O O
 apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
 
-have#VHZ O O
+has#VHZ O O
 kristen#NN B-actor.name B-actor.name
 stewart#NN I-actor.name I-actor.name
-star#VVN O O
+starred#VVN O O
 in#IN O O
-movie#NNS O O
+movies#NNS O O
 other#JJ O O
 than#IN O O
 twilight#NN B-movie.name B-movie.name
@@ -2875,26 +2875,26 @@ show#VV O O
 me#PP O O
 kristen#NN B-actor.name B-actor.name
 stewart#NN I-actor.name I-actor.name
-movie#NNS O O
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 kristen#NN B-actor.name B-actor.name
 stewarted#NN I-actor.name I-actor.name
-star#VVN O O
+starred#VVN O O
 in#IN O O
 
 lionsgate#NN B-producer.name B-producer.name
-movie#NNS O O
+movies#NNS O O
 
 show#NN O O
 lionsgate#NN B-producer.name B-producer.name
-movie#NNS O O
+movies#NNS O O
 
 show#NN O O
-movie#NNS O O
-make#VVN O O
+movies#NNS O O
+made#VVN O O
 by#IN O O
 production#NN O O
 lionsgate#NNS B-producer.name B-producer.name
@@ -2913,49 +2913,49 @@ movie#NN O O
 
 what#WP O O
 film#NN O O
-do#VVD O O
+did#VVD O O
 charles#NNS B-director.name B-director.name
 vidor#NN I-director.name I-director.name
 direct#JJ O O
 
 which#WDT O O
-movie#NNS O O
+movies#NNS O O
 have#VHP O O
-be#VBN O O
-make#VVN O O
+been#VBN O O
+made#VVN O O
 outside#IN O B-country.name
 the#DT B-country.name I-country.name
-unite#VVN I-country.name I-country.name
-state#NNS I-country.name I-country.name
+united#VVN I-country.name I-country.name
+states#NNS I-country.name I-country.name
 
 find#VV O O
 me#PP O O
-nigeria#NN B-country.name O
-movie#NNS O O
+nigeria#NN B-country.name B-rating.name
+movies#NNS O O
 
 display#NN O O
 7#CD B-producer.name B-producer.name
-art#NNS I-producer.name I-producer.name
-movie#NNS O O
+arts#NNS I-producer.name I-producer.name
+movies#NNS O O
 
-Korean#JJ B-movie.language B-country.name
+korean#JJ B-movie.language B-country.name
 movie#NN O O
 
 what#WP O O
 other#JJ O O
-movie#NNS O O
-do#VVD O O
-roberto#NN B-actor.name O
-benigni#NNS I-actor.name O
-star#JJ O B-movie.name
-in#IN O I-movie.name
+movies#NNS O O
+did#VVD O O
+roberto#NN B-actor.name B-movie.release_region
+benigni#NNS I-actor.name I-movie.release_region
+star#JJ O O
+in#IN O O
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-movie#NNS O O
-star#VVG O O
+movies#NNS O O
+starring#VVG O O
 denzel#NN B-actor.name B-actor.name
 washington#NNS I-actor.name I-actor.name
 please#VVP O O
@@ -2972,24 +2972,24 @@ to#TO O O
 watch#VV O O
 a#DT O O
 drama#NN B-movie.genre B-movie.genre
-make#VVN O O
+made#VVN O O
 in#IN O O
 turkey#NN B-country.name B-country.name
 
-Jennifer#NP B-actor.name B-actor.name
-Lopez#NP I-actor.name I-actor.name
-play#VVD O O
+jennifer#NP B-actor.name B-actor.name
+lopez#NP I-actor.name I-actor.name
+played#VVD O O
 in#IN O O
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 all#RB O O
 of#IN O O
 the#DT O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 woody#JJ B-director.name B-director.name
 allen#NN I-director.name I-director.name
@@ -2997,28 +2997,28 @@ allen#NN I-director.name I-director.name
 show#NN O O
 robert#NN B-director.name B-director.name
 wise#JJ I-director.name I-director.name
-movie#NNS O O
+movies#NNS O O
 
 want#VVP O O
 to#TO O O
 see#VV O O
 robert#JJ B-director.name B-director.name
 wise#JJ I-director.name I-director.name
-movie#NNS O O
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 robert#JJ B-director.name B-director.name
 wise#NN I-director.name I-director.name
-direct#VVD O O
+directed#VVD O O
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 have#VHP O O
 robert#JJ B-director.name B-director.name
 wise#NN I-director.name I-director.name
-direct#VVD O O
+directed#VVD O O
 
 where#WRB O O
 can#MD O O
@@ -3027,34 +3027,34 @@ find#VV O O
 a#DT O O
 list#NN O O
 of#IN O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 chris#NN B-producer.name B-producer.name
 nolan#NN I-producer.name I-producer.name
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 brad#NN B-actor.name B-actor.name
 pitt#NN I-actor.name I-actor.name
-be#VBN O O
+been#VBN O O
 in#IN O O
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
-movie#NNS O O
+movies#NNS O O
 brad#NN B-actor.name B-actor.name
 pitt#NN I-actor.name I-actor.name
-have#VHD O O
-be#VBN O O
+had#VHD O O
+been#VBN O O
 in#IN O O
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 brad#NN B-actor.name B-actor.name
 pitt#NN I-actor.name I-actor.name
@@ -3062,14 +3062,14 @@ pitt#NN I-actor.name I-actor.name
 find#VV O O
 an#DT O O
 r#NN B-rating.name B-rating.name
-rate#VVN O O
+rated#VVN O O
 movie#NN O O
 
 show#VV O O
 me#PP O O
 r#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 give#VV O O
 me#PP O O
@@ -3077,21 +3077,21 @@ a#DT O O
 list#NN O O
 of#IN O O
 r#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 look#VV O O
 up#RB O O
 r#SYM B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
 only#RB O O
 r#SYM B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
@@ -3100,14 +3100,14 @@ see#VV O O
 a#DT O O
 list#NN O O
 of#IN O O
-rate#VVN O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 only#JJ O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 a#DT O O
 rating#NN O O
@@ -3117,7 +3117,7 @@ r#NN B-rating.name B-rating.name
 please#UH O O
 look#VV O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 an#DT O O
 r#NN B-rating.name B-rating.name
@@ -3125,13 +3125,13 @@ rating#NN O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
-rate#VVN O O
+movies#NNS O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
 
 look#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 an#DT O O
 r#NN B-rating.name B-rating.name
@@ -3143,17 +3143,17 @@ a#DT O O
 list#NN O O
 of#IN O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBP O O
-rate#VVN O O
+are#VBP O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 watch#VV O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 norway#NN B-country.name B-country.name
 
@@ -3163,14 +3163,14 @@ have#VHP O O
 a#DT O O
 list#NN O O
 of#IN O O
-Spanish#JJ B-movie.language B-movie.language
+spanish#JJ B-movie.language B-movie.language
 speaking#NN O I-movie.language
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
-make#VVN O O
+movies#NNS O O
+made#VVN O O
 in#IN O O
 mexico#NN B-country.name B-movie.release_region
 
@@ -3178,71 +3178,71 @@ show#VV O O
 me#PP O O
 the#DT O O
 movie#NN O O
-pot#NN B-movie.name O
-zombie#NNS I-movie.name B-movie.subject
+pot#NN B-movie.name B-movie.subject
+zombies#NNS I-movie.name I-movie.subject
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 have#VHP O O
-zombie#NNS B-movie.subject B-movie.subject
-in#IN O O
+zombies#NNS B-movie.subject B-movie.subject
+in#IN O I-movie.subject
 them#PP O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-zombie#NNS B-movie.subject B-movie.subject
+zombies#NNS B-movie.subject B-movie.subject
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-zombie#NNS B-movie.subject B-movie.subject
+zombies#NNS B-movie.subject B-movie.subject
 
 show#VV O O
 me#PP O O
-one#NNS O O
+ones#NNS O B-movie.location
 by#IN O O
-david#JJ B-director.name O
-fincher#NN I-director.name O
+david#JJ B-director.name B-award.ceremony
+fincher#NN I-director.name I-award.ceremony
 
 show#VV O O
-Ridley#NP B-director.name B-director.name
-Scott#NP I-director.name I-director.name
+ridley#NP B-director.name B-director.name
+scott#NP I-director.name I-director.name
 's#POS O O
-filmography#NN O O
+filmography#NN O B-movie.release_region
 
 find#VV O O
-Ridley#NP B-director.name B-director.name
-Scott#NP I-director.name I-director.name
-movie#NNS O O
+ridley#NP B-director.name B-director.name
+scott#NP I-director.name I-director.name
+movies#NNS O O
 
 can#MD O O
 you#PP O O
 show#VV O O
 me#PP O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
-Ridley#NP B-director.name B-director.name
-Scott#NP I-director.name I-director.name
+ridley#NP B-director.name B-director.name
+scott#NP I-director.name I-director.name
 
 list#NN O O
 german#NN B-movie.language B-movie.language
-movie#NNS O O
+movies#NNS O O
 
 german#JJ B-movie.language B-country.name
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
 action#NN B-movie.genre B-movie.genre
-film#NNS O O
+films#NNS O O
 
 find#VV O O
 some#DT O O
 action#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 list#NN O O
 dredd#NN B-movie.name B-movie.name
@@ -3250,24 +3250,24 @@ movie#NN O O
 
 show#VV O O
 me#PP O O
-george#VV B-director.name B-producer.name
+george#VV B-director.name I-producer.name
 lucas#NNS I-director.name I-producer.name
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 george#NN B-director.name B-producer.name
 lucas#NNS I-director.name I-producer.name
 
-produce#VVN O O
+produced#VVN O O
 by#IN O O
 
 please#UH O O
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 morgan#NN B-producer.name B-producer.name
 freeman#NN I-producer.name I-producer.name
@@ -3275,48 +3275,48 @@ freeman#NN I-producer.name I-producer.name
 please#UH O O
 look#VV O O
 up#RP O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 morgan#NN B-producer.name B-producer.name
 freeman#NN I-producer.name I-producer.name
 
 search#NN O O
 for#IN O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 morgan#NN B-producer.name B-producer.name
 freeman#NN I-producer.name I-producer.name
 
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 morgan#NN B-producer.name B-producer.name
 freeman#NN I-producer.name I-producer.name
 
 look#VV O O
 up#RP O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 morgan#NN B-producer.name B-producer.name
 freeman#NN I-producer.name I-producer.name
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
-meryl#NN B-actor.name B-person.name
-streep#NNS I-actor.name I-person.name
-star#VVN O O
+movies#NNS O O
+has#VHZ O O
+meryl#NN B-actor.name B-actor.name
+streep#NNS I-actor.name I-actor.name
+starred#VVN O O
 in#IN O O
 
 show#VV O O
 me#PP O O
 the#DT O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 the#DT O O
 director#NN O O
@@ -3328,24 +3328,24 @@ i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-movie#NNS O O
-make#VVN O O
+movies#NNS O O
+made#VVN O O
 in#IN O O
 russia#NN B-country.name B-country.name
 
 look#VVP O O
 up#RB O O
 star#VV B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 movie#NN O O
 
 display#VV O O
 all#DT O O
-detail#NNS O O
+details#NNS O O
 about#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 -#: I-movie.name I-movie.name
 a#DT I-movie.name I-movie.name
 new#JJ I-movie.name I-movie.name
@@ -3354,10 +3354,10 @@ movie#NN O O
 
 get#VV O O
 all#DT O O
-detail#NNS O O
+details#NNS O O
 about#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 -#: I-movie.name I-movie.name
 a#DT I-movie.name I-movie.name
 new#JJ I-movie.name I-movie.name
@@ -3365,50 +3365,50 @@ hope#NN I-movie.name I-movie.name
 movie#NN O O
 
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 episode#NN I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
 i#NNS O O
 want#VVP O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 main#JJ O O
 page#NN O O
 
 search#NN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
 find#VV O O
 me#PP O O
-ton#NNS O O
+tons#NNS O B-movie.release_region
 of#IN O O
 info#NN O O
-relate#VVN O O
+related#VVN O O
 to#TO O O
 star#VV B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
 get#VV O O
-detail#NNS O O
+details#NNS O O
 of#IN O O
 in#IN B-movie.name B-movie.name
 july#JJ I-movie.name I-movie.name
 movie#NN O O
 
 find#VV O O
-detail#NNS O O
+details#NNS O O
 of#IN O O
 in#IN B-movie.name B-movie.name
 july#JJ I-movie.name I-movie.name
 movie#NN O O
 
 show#NN O O
-detail#NNS O O
+details#NNS O O
 of#IN O O
 in#IN B-movie.name B-movie.name
 july#JJ I-movie.name I-movie.name
@@ -3440,7 +3440,7 @@ july#RB I-movie.name I-movie.name
 movie#NN O O
 in#IN B-movie.name B-movie.name
 july#JJ I-movie.name I-movie.name
-datum#NNS O O
+data#NNS O I-movie.name
 
 where#WRB O O
 can#MD O O
@@ -3450,16 +3450,16 @@ the#DT O O
 movie#NN O O
 aankhen#NN B-movie.name B-movie.name
 in#IN O O
-Hindi#NN B-movie.language B-movie.language
+hindi#NN B-movie.language B-movie.language
 
 display#NN O O
-julia#NN B-actor.name B-person.name
-roberts#NNS I-actor.name I-person.name
-film#NNS O O
+julia#NN B-actor.name B-producer.name
+roberts#NNS I-actor.name I-producer.name
+films#NNS O I-producer.name
 
 list#VV O O
 the#DT O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
 have#VHP O O
 the#DT O O
@@ -3467,15 +3467,15 @@ actress#NN O O
 angelina#NN B-actor.name B-actor.name
 jolie#NN I-actor.name I-actor.name
 
-dustin#NN B-actor.name O
-hoffman#NN I-actor.name O
-movie#NNS O O
+dustin#NN B-actor.name B-person.name
+hoffman#NN I-actor.name I-person.name
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
-do#VVD O O
-david#JJ B-director.name O
-ayer#NN I-director.name O
+movies#NNS O O
+did#VVD O O
+david#JJ B-director.name B-movie.release_region
+ayer#NN I-director.name I-movie.release_region
 direct#JJ O O
 
 i#NP O O
@@ -3483,23 +3483,23 @@ would#MD O O
 like#VV O O
 to#TO O O
 view#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 clint#NN B-producer.name B-producer.name
 eastwood#NN I-producer.name I-producer.name
 
 list#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-horse#NNS B-movie.subject B-movie.subject
+horses#NNS B-movie.subject B-movie.subject
 
 find#VV O O
 all#DT O O
-johnny#NN B-actor.name B-actor.name
-depp#NN I-actor.name I-actor.name
-movie#NNS O O
+johnny#NN B-actor.name B-movie.release_region
+depp#NN I-actor.name I-movie.release_region
+movies#NNS O O
 
 search#NN O O
 by#IN O O
@@ -3509,28 +3509,28 @@ search#NN O O
 by#IN O O
 director#NN O O
 
-be#VBZ O O
+is#VBZ O O
 there#RB O O
 any#DT O O
 upcoming#JJ O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 warner#NN B-producer.name B-producer.name
-brother#NNS I-producer.name I-producer.name
+brothers#NNS I-producer.name I-producer.name
 
 bring#VV O O
 up#RP O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 ice#NN B-movie.subject B-movie.subject
-skate#VVG I-movie.subject B-movie.subject
-in#IN O O
+skating#VVG I-movie.subject B-movie.subject
+in#IN O I-movie.subject
 it#PP O O
 
 find#VV O O
 newly#RB O O
-release#VVN O O
-comedy#NNS B-movie.genre B-movie.genre
+released#VVN O O
+comedies#NNS B-movie.genre B-movie.genre
 from#IN O O
 england#NN B-country.name B-country.name
 
@@ -3547,11 +3547,11 @@ the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
-house#NNS B-movie.name O
-at#IN I-movie.name O
-the#DT I-movie.name B-movie.name
+houses#NNS B-movie.name B-movie.name
+at#IN I-movie.name I-movie.name
+the#DT I-movie.name I-movie.name
 end#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
@@ -3561,7 +3561,7 @@ about#RB O O
 give#VV O O
 me#PP O O
 more#JJR O O
-fact#NNS O O
+facts#NNS O O
 about#IN O O
 the#DT O O
 movie#NN O O
@@ -3572,7 +3572,7 @@ end#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
-in#IN O O
+in#IN O I-movie.name
 detail#NN O O
 
 i#NP O O
@@ -3607,9 +3607,9 @@ of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
 
-film#NNS O O
+films#NNS O O
 with#IN O O
-Chinese#NN B-movie.language B-movie.language
+chinese#NN B-movie.language B-movie.language
 
 i#NNS O O
 want#VVP O O
@@ -3618,37 +3618,37 @@ watch#VV O O
 a#DT O O
 movie#NN O O
 in#IN O O
-Chinese#NN B-movie.language B-movie.language
+chinese#NN B-movie.language B-movie.language
 
 find#VV O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 and#CC O O
-direct#VVN O O
+directed#VVN O O
 by#IN O O
 tyler#NN B-producer.name B-director.name
 perry#NN I-producer.name I-director.name
 
-tom#NN B-actor.name B-actor.name
-cruise#NN I-actor.name I-actor.name
-movie#NNS O O
+tom#NN B-actor.name B-person.name
+cruise#NN I-actor.name I-person.name
+movies#NNS O O
 please#VVP O O
 
 i#NNS O O
 want#VVP O O
 tom#NN B-actor.name B-actor.name
 cruise#NN I-actor.name I-actor.name
-movie#NNS O O
+movies#NNS O O
 please#VVP O O
 
 which#WDT O O
-movie#NNS O O
+movies#NNS O O
 star#VVP O O
-tom#NN B-actor.name B-person.name
-cruise#NN I-actor.name I-person.name
+tom#NN B-actor.name B-actor.name
+cruise#NN I-actor.name I-actor.name
 
 which#WDT O O
-movie#NNS O O
+movies#NNS O O
 do#VVP O O
 tom#NN B-actor.name B-actor.name
 cruise#NN I-actor.name I-actor.name
@@ -3664,9 +3664,9 @@ search#NN O O
 by#IN O O
 genre#NN O O
 
-look#VVG O O
+looking#VVG O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 of#IN O O
 yash#NN B-director.name B-producer.name
 chopra#NN I-director.name I-producer.name
@@ -3701,7 +3701,7 @@ to#TO O O
 see#VV O O
 all#PDT O O
 the#DT O O
-detail#NNS O O
+details#NNS O O
 about#IN O O
 the#DT O O
 movie#NN O O
@@ -3711,18 +3711,18 @@ campaign#NN I-movie.name I-movie.name
 sort#VV O O
 all#DT O O
 pg#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 pg#NN B-rating.name B-rating.name
-rate#VVD O O
-movie#NNS O O
+rated#VVD O O
+movies#NNS O O
 
 access#VV O O
 a#DT O O
 list#NN O O
 of#IN O O
 pg#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 please#VVP O O
 
 give#VV O O
@@ -3731,7 +3731,7 @@ a#DT O O
 list#NN O O
 of#IN O O
 pg#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 can#MD O O
 you#PP O O
@@ -3741,8 +3741,8 @@ a#DT O O
 list#NN O O
 of#IN O O
 pg#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 to#TO O O
 watch#VV O O
 
@@ -3752,36 +3752,36 @@ a#DT O O
 list#NN O O
 of#IN O O
 pg#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 a#DT O O
 pg#NN B-rating.name B-rating.name
 rating#NN O O
 
 what#WP O O
-movie#NNS O O
-be#VBP O O
+movies#NNS O O
+are#VBP O O
 pg#JJ B-rating.name B-rating.name
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 alfred#NN B-director.name B-director.name
 hitchcock#NN I-director.name I-director.name
 
 what#WP O O
-movie#NNS O O
-do#VVD O O
+movies#NNS O O
+did#VVD O O
 alfred#NN B-director.name B-director.name
 hitchcock#NN I-director.name I-director.name
 make#VV O O
 
 watch#VV O O
-hitchcook#NN B-director.name O
-movie#NNS O O
+hitchcook#NN B-director.name B-movie.genre
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
@@ -3789,10 +3789,10 @@ to#TO O O
 see#VV O O
 any#DT O O
 current#JJ O O
-movie#NNS O O
-star#VVG O O
+movies#NNS O O
+starring#VVG O O
 tom#NN B-actor.name B-actor.name
-hank#NNS I-actor.name I-actor.name
+hanks#NNS I-actor.name I-actor.name
 
 i#NNS O O
 want#VVP O O
@@ -3800,8 +3800,8 @@ a#DT O O
 list#NN O O
 of#IN O O
 recent#JJ O O
-movie#NNS O O
-rate#VVN O O
+movies#NNS O O
+rated#VVN O O
 pg#NN B-rating.name B-rating.name
 
 give#VV O O
@@ -3810,65 +3810,65 @@ a#DT O O
 list#NN O O
 of#IN O O
 recent#JJ O O
-movie#NNS O O
-rate#VVN O O
+movies#NNS O O
+rated#VVN O O
 pg#NN B-rating.name B-rating.name
 
 ray#NN B-producer.name B-director.name
 stark#RB I-producer.name I-director.name
-produce#VVD O O
+produced#VVD O O
 what#WP O O
 other#JJ O O
-movie#NNS O O
+movies#NNS O O
 
 what#WP O O
-be#VBZ O O
-Spielberg#NP B-producer.name B-person.name
+is#VBZ O O
+spielberg#NP B-producer.name B-person.name
 's#POS O O
-late#JJS O O
+latest#JJS O O
 movie#NN O O
 
 please#UH O O
 find#VV O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 tom#NN B-director.name B-actor.name
-hank#NNS I-director.name I-actor.name
+hanks#NNS I-director.name I-actor.name
 
-be#VBP O O
+are#VBP O O
 there#RB O O
 any#DT O O
 recent#JJ O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBP O O
+are#VBP O O
 polish#NN B-movie.language B-movie.language
 speaking#NN O I-movie.language
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 tom#NN B-actor.name B-actor.name
 cruise#NN I-actor.name I-actor.name
-be#VBN O O
+been#VBN O O
 in#IN O O
-recently#RB O O
+recently#RB O B-movie.release_region
 
 search#NN O O
 for#IN O O
 new#JJ O O
-movie#NNS O O
+movies#NNS O O
 
 search#NN O O
 for#IN O O
 in#IN B-movie.name B-movie.name
-July#NN I-movie.name I-movie.name
+july#NN I-movie.name I-movie.name
 
 watch#VV O O
 in#IN B-movie.name B-movie.name
 july#RB I-movie.name I-movie.name
-online#JJ O O
+online#JJ O I-movie.name
 
 search#NN O O
 for#IN O O
@@ -3883,10 +3883,10 @@ find#VV O O
 information#NN O O
 about#IN O O
 paramount#JJ B-producer.name B-producer.name
-studio#NNS I-producer.name I-producer.name
+studios#NNS I-producer.name I-producer.name
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 ray#NN B-person.name B-person.name
 stark#JJ I-person.name I-person.name
 
@@ -3903,25 +3903,25 @@ look#VV O O
 up#RP O O
 information#NN O O
 about#IN O O
-tom#NN B-person.name B-person.name
-cruise#NN I-person.name I-person.name
+tom#NN B-person.name B-actor.name
+cruise#NN I-person.name I-actor.name
 
 can#MD O O
 you#PP O O
 please#VV O O
 search#NN O O
-detail#NNS O O
+details#NNS O O
 about#RB O O
 will#MD B-person.name B-person.name
 ferrell#VV I-person.name I-person.name
 
 will#MD B-person.name B-person.name
-Ferrell#NP I-person.name I-person.name
+ferrell#NP I-person.name I-person.name
 biography#NN O O
 
 show#NN O O
-will#MD B-person.name B-person.name
-ferrell#VV I-person.name I-person.name
+will#MD B-person.name B-actor.name
+ferrell#VV I-person.name I-actor.name
 biography#NN O O
 
 show#VV O O
@@ -3942,23 +3942,23 @@ ferrell#NN I-person.name I-person.name
 
 show#VV O O
 me#PP O O
-will#MD B-person.name B-person.name
-ferrell#NN I-person.name I-person.name
+will#MD B-person.name B-actor.name
+ferrell#NN I-person.name I-actor.name
 's#POS O O
 bio#NN O O
 
 get#VV O O
 info#NN O O
 on#IN O O
-Kristen#NP B-person.name B-person.name
-stewart#NN I-person.name I-person.name
+kristen#NP B-person.name B-actor.name
+stewart#NN I-person.name I-actor.name
 
-do#VVZ O O
-Kristen#NP B-person.name B-actor.name
-Stewart#NP I-person.name I-actor.name
+does#VVZ O O
+kristen#NP B-person.name B-actor.name
+stewart#NP I-person.name I-actor.name
 have#VHP O O
 a#DT O O
-personal#JJ O O
+personal#JJ O B-rating.name
 page#NN O O
 
 where#WRB O O
@@ -3967,8 +3967,8 @@ i#NNS O O
 find#VV O O
 information#NN O O
 about#IN O O
-Kristen#NP B-person.name B-person.name
-stewart#NN I-person.name I-person.name
+kristen#NP B-person.name B-actor.name
+stewart#NN I-person.name I-actor.name
 
 jennifer#NN B-person.name B-actor.name
 aniston#NN I-person.name I-actor.name
@@ -3978,14 +3978,14 @@ i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-Spielberg#NP B-person.name B-person.name
+spielberg#NP B-person.name B-person.name
 's#POS O O
 main#JJ O O
 page#NN O O
 
-steven#JJ B-person.name B-director.name
-spielberg#NN I-person.name I-director.name
-summary#NN O O
+steven#JJ B-person.name B-producer.name
+spielberg#NN I-person.name I-producer.name
+summary#NN O I-producer.name
 
 about#IN O O
 steven#JJ B-person.name B-director.name
@@ -3994,15 +3994,15 @@ spielberg#NN I-person.name I-director.name
 find#VV O O
 me#PP O O
 bio#NN O O
-detail#NNS O O
+details#NNS O O
 for#IN O O
-steven#JJ B-person.name B-director.name
-spielberg#NN I-person.name I-director.name
+steven#JJ B-person.name B-person.name
+spielberg#NN I-person.name I-person.name
 
 bio#NN O O
 for#IN O O
-steven#JJ B-person.name B-director.name
-spielberg#NN I-person.name I-director.name
+steven#JJ B-person.name B-person.name
+spielberg#NN I-person.name I-person.name
 
 show#VV O O
 me#PP O O
@@ -4014,14 +4014,14 @@ want#VVP O O
 more#JJR O O
 information#NN O O
 about#IN O O
-Alfred#NP B-person.name B-director.name
+alfred#NP B-person.name B-director.name
 hitchock#NP I-person.name I-director.name
 's#POS O O
 biography#NN O O
 
 all#DT O O
 info#NN O O
-hitchcock#NN B-person.name B-director.name
+hitchcock#NN B-person.name I-director.name
 
 find#VV O O
 the#DT O O
@@ -4036,21 +4036,21 @@ producer#NN O O
 hitch#NN B-movie.name B-movie.name
 
 who#WP O O
-produce#VVZ O O
+produces#VVZ O O
 hitch#NN B-movie.name B-movie.name
 
 production#NN O O
 company#NN O O
 for#IN O O
-transformer#NNS B-movie.name B-movie.name
+transformers#NNS B-movie.name B-movie.name
 
 what#WP O O
 company#NN O O
-make#VVD O O
+made#VVD O O
 et#FW B-movie.name B-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 production#NN O O
 company#NN O O
@@ -4058,15 +4058,15 @@ for#IN O O
 et#FW B-movie.name B-movie.name
 
 who#WP O O
-produce#VVZ O O
-car#NNS B-movie.name B-movie.subject
+produces#VVZ O O
+cars#NNS B-movie.name B-movie.subject
 
 can#MD O O
 you#PP O O
 find#VV O O
 who#WP O O
-produce#VVD O O
-car#NNS B-movie.name B-movie.subject
+produced#VVD O O
+cars#NNS B-movie.name B-movie.subject
 
 production#NN O O
 company#NN O O
@@ -4074,14 +4074,14 @@ for#IN O O
 devil#NN B-movie.name I-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
 steel#NN B-movie.name B-movie.name
-magnolia#NNS I-movie.name I-movie.name
+magnolias#NNS I-movie.name I-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 avatar#NN B-movie.name B-movie.name
 
 i#NNS O O
@@ -4094,11 +4094,11 @@ of#IN O O
 avatar#NN B-movie.name B-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 avatar#NN B-movie.name B-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 avatar#NN B-movie.name B-movie.name
 
 avatar#NN B-movie.name B-movie.name
@@ -4110,48 +4110,48 @@ like#VV O O
 to#TO O O
 know#VV O O
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
 avatar#NN B-movie.name B-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
 avatar#NN B-movie.name B-movie.name
 
 who#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
-producer#NNS O O
+producers#NNS O O
 for#IN O O
 the#DT O O
 movie#NN O O
 avatar#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 grease#NN B-movie.name B-movie.name
 's#POS O I-movie.name
 producer#NN O O
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 grease#NN B-movie.name B-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
 my#PP$ B-movie.name B-movie.name
 big#JJ I-movie.name I-movie.name
 fat#JJ I-movie.name I-movie.name
-Greek#NN I-movie.name I-movie.name
+greek#NN I-movie.name I-movie.name
 wedding#NN I-movie.name I-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 pretty#JJ B-movie.name B-movie.name
 woman#NN I-movie.name I-movie.name
 
@@ -4165,45 +4165,45 @@ godfather#NN I-movie.name I-movie.name
 
 the#DT B-movie.name B-movie.name
 godfather#NN I-movie.name I-movie.name
-be#VBD O O
-produce#VVN O O
+was#VBD O O
+produced#VVN O O
 by#IN O O
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
-clue#NN B-movie.name O
+clue#NN B-movie.name B-movie.release_region
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 hotel#NN B-movie.name B-movie.name
 rwanda#NN I-movie.name I-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 marley#NN B-movie.name B-movie.name
 and#CC I-movie.name I-movie.name
 me#PP I-movie.name O
 
 who#WP O O
-produce#VVD O O
-despicable#JJ B-movie.name B-movie.name
-me#PP I-movie.name I-movie.name
+produced#VVD O O
+despicable#JJ B-movie.name B-rating.name
+me#PP I-movie.name O
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 company#NN O O
 that#WDT O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
 inception#NN B-movie.name B-movie.name
 
 what#WP O O
 company#NN O O
-develop#VVD O O
+developed#VVD O B-movie.release_region
 the#DT O O
 movie#NN O O
 inception#NN B-movie.name B-movie.name
@@ -4213,10 +4213,10 @@ producer#NN O O
 of#IN O O
 the#DT B-movie.name B-movie.name
 great#JJ I-movie.name I-movie.name
-debater#NNS I-movie.name I-movie.name
+debaters#NNS I-movie.name I-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 inception#NN B-movie.name B-movie.name
 
 provide#VV O O
@@ -4226,7 +4226,7 @@ of#IN O O
 the#DT O O
 company#NN O O
 that#WDT O O
-produce#VVD O O
+produced#VVD O O
 sparkle#NN B-movie.name B-movie.name
 
 i#NNS O O
@@ -4236,7 +4236,7 @@ know#VV O O
 the#DT O O
 company#NN O O
 that#WDT O O
-produce#VVD O O
+produced#VVD O O
 sparkle#NN B-movie.name B-movie.name
 
 find#VV O O
@@ -4245,13 +4245,13 @@ producer#NN O O
 of#IN O O
 look#NN B-movie.name O
 who#WP I-movie.name O
-be#VBZ I-movie.name O
-talk#VVG I-movie.name O
+'s#VBZ I-movie.name O
+talking#VVG I-movie.name B-movie.release_region
 
 who#WP O O
-produce#VVD O O
-harlem#NN B-movie.name O
-night#NNS I-movie.name O
+produced#VVD O O
+harlem#NN B-movie.name B-award.ceremony
+nights#NNS I-movie.name I-award.ceremony
 
 find#VV O O
 the#DT O O
@@ -4266,7 +4266,7 @@ the#DT O O
 producer#NN O O
 of#IN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
+writers#NNS I-movie.name I-movie.name
 
 look#VV O O
 for#IN O O
@@ -4274,7 +4274,7 @@ the#DT O O
 producer#NN O O
 of#IN O O
 freedom#NN B-movie.name B-movie.name
-writer#NNS I-movie.name I-movie.name
+writers#NNS I-movie.name I-movie.name
 
 show#VV O O
 me#PP O O
@@ -4284,18 +4284,18 @@ rating#NN O O
 how#WRB O O
 much#JJ O O
 revenue#NN O O
-do#VVD O O
+did#VVD O O
 pretty#RB B-movie.name B-movie.name
 woman#NN I-movie.name I-movie.name
 make#VV O O
 
-earning#NNS O O
+earnings#NNS O O
 for#IN O O
 pretty#JJ B-movie.name B-movie.name
 woman#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 revenue#NN O O
 of#IN O O
@@ -4304,47 +4304,47 @@ woman#NN I-movie.name I-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 pretty#RB B-movie.name B-movie.name
 woman#NN I-movie.name I-movie.name
 make#VV O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 gross#JJ O O
 revenue#NN O O
 for#IN O O
 the#DT B-movie.name B-movie.name
-avenger#NNS I-movie.name I-movie.name
+avengers#NNS I-movie.name I-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 the#DT B-movie.name B-movie.name
-avenger#NNS I-movie.name I-movie.name
+avengers#NNS I-movie.name I-movie.name
 make#VVP O O
 
 revenue#NN O O
 for#IN O O
 the#DT B-movie.name B-movie.name
-avenger#NNS I-movie.name I-movie.name
+avengers#NNS I-movie.name I-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 the#DT B-movie.name B-movie.name
 dark#JJ I-movie.name I-movie.name
 night#NN I-movie.name I-movie.name
 generate#VV O O
 in#IN O O
-revenue#NNS O O
+revenues#NNS O O
 
 find#VV O O
 revenue#NN O O
-total#NNS O O
+totals#NNS O B-character.name
 for#IN O O
-Jurassic#JJ B-movie.name B-movie.name
+jurassic#JJ B-movie.name B-movie.name
 park#NN I-movie.name I-movie.name
 
 revenue#NN O O
@@ -4353,34 +4353,34 @@ independence#NN B-movie.name B-movie.name
 day#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 new#JJ O O
-will#NN B-actor.name B-person.name
-ferrell#NN I-actor.name I-person.name
+will#NN B-actor.name B-actor.name
+ferrell#NN I-actor.name I-actor.name
 movie#NN O O
 about#RB O O
 
 who#WP O O
-play#VVD O O
+played#VVD O O
 the#DT O O
 voice#NN O O
 of#IN O O
 nemo#NN B-character.name B-character.name
 in#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 who#WP O O
-play#VVD O O
-richie#NN B-character.name O
-cunningham#NN I-character.name O
+played#VVD O O
+richie#NN B-character.name B-movie.release_region
+cunningham#NN I-character.name I-movie.release_region
 in#IN O O
 happy#JJ B-movie.name B-movie.name
-day#NNS I-movie.name I-movie.name
+days#NNS I-movie.name I-movie.name
 
 who#WP O O
-star#VVZ O O
+stars#VVZ O O
 in#IN O O
 house#NN B-movie.name B-movie.name
 at#IN I-movie.name I-movie.name
@@ -4416,7 +4416,7 @@ of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
 
-ethel#NN B-character.name B-character.name
+ethel#NN B-character.name O
 actress#NN O O
 from#IN O O
 i#NP B-movie.name B-movie.name
@@ -4425,7 +4425,7 @@ lucy#NN I-movie.name I-movie.name
 
 actress#NN O O
 who#WP O O
-play#VVD O O
+played#VVD O O
 ethel#NN B-character.name B-character.name
 on#IN O O
 i#NP B-movie.name B-movie.name
@@ -4433,27 +4433,27 @@ love#NN I-movie.name I-movie.name
 lucy#NN I-movie.name I-movie.name
 
 who#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
 cast#NN O O
-member#NNS O O
+members#NNS O O
 in#IN O O
 lord#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
-the#DT I-movie.name I-movie.name
-ring#VVZ I-movie.name I-movie.name
-the#DT I-movie.name I-movie.name
-two#CD I-movie.name I-movie.name
-tower#NNS I-movie.name I-movie.name
+the#DT I-movie.name O
+rings#VVZ I-movie.name B-movie.genre
+the#DT I-movie.name O
+two#CD I-movie.name B-movie.release_date
+towers#NNS I-movie.name I-movie.release_date
 
 who#WP O O
-play#VVD O O
-hawkeye#NN B-character.name O
-in#IN O O
-mash#NN B-movie.name O
+played#VVD O O
+hawkeye#NN B-character.name B-movie.language
+in#IN O I-movie.language
+mash#NN B-movie.name I-movie.language
 
 who#WP O O
-play#VVD O O
+played#VVD O O
 mother#NN B-character.name B-character.name
 in#IN O O
 tarkovsky#NP B-director.name B-director.name
@@ -4467,39 +4467,39 @@ actor#NN O O
 of#IN O O
 the#DT O O
 movie#NN O O
-muthyala#NN B-movie.name O
-muggu#NN I-movie.name O
+muthyala#NN B-movie.name B-award.ceremony
+muggu#NN I-movie.name I-award.ceremony
 
 who#WP O O
-be#VBP O O
-the#DT O O
-droids#NNS B-character.name O
+are#VBP O O
+the#DT O B-movie.release_region
+droids#NNS B-character.name I-movie.release_region
 in#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 episode#NN I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
 who#WP O O
-be#VBD O O
+was#VBD O O
 that#DT O O
 guy#NN O O
-again#RB O O
+again#RB O B-movie.release_region
 who#WP O O
-be#VBD O O
+was#VBD O O
 in#IN O O
 the#DT B-movie.name B-movie.name
-avenger#NNS I-movie.name I-movie.name
+avengers#NNS I-movie.name I-movie.name
 
 which#WDT O O
 actor#NN O O
-play#VVD O O
-frodo#NN B-character.name O
+played#VVD O O
+frodo#NN B-character.name B-character.name
 in#IN O O
 lord#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
-ring#NNS I-movie.name I-movie.name
+rings#NNS I-movie.name I-movie.name
 
 find#VV O O
 the#DT O O
@@ -4508,23 +4508,23 @@ of#IN O O
 the#DT O O
 actress#NN O O
 who#WP O O
-play#VVD O O
+played#VVD O O
 mother#NN B-character.name B-character.name
 in#IN O O
 mirror#NN B-movie.name B-movie.name
 by#IN O O
-andrey#NN B-director.name O
-tarkovsky#NN I-director.name O
+andrey#NN B-director.name B-movie.language
+tarkovsky#NN I-director.name I-movie.language
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 name#NN O O
 of#IN O O
 the#DT O O
 actress#NN O O
 who#WP O O
-play#VVD O O
+played#VVD O O
 mother#NN B-character.name B-character.name
 in#IN O O
 tarkovsky#NP B-director.name B-director.name
@@ -4532,14 +4532,14 @@ tarkovsky#NP B-director.name B-director.name
 mirror#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 name#NN O O
 of#IN O O
 the#DT O O
 actor#NN O O
 who#WP O O
-play#VVD O O
+played#VVD O O
 todd#NNS B-character.name B-character.name
 in#IN O O
 the#DT O O
@@ -4562,7 +4562,7 @@ in#IN O O
 platoon#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBZ O O
+'s#VBZ O O
 the#DT O O
 name#NN O O
 of#IN O O
@@ -4572,26 +4572,26 @@ on#IN O O
 seinfeld#NP B-movie.name B-movie.name
 
 name#VV O O
-the#DT O O
-co-star#NN O O
+the#DT O B-movie.release_region
+co-star#NN O I-movie.release_region
 in#IN O O
 shoot#NN B-movie.name B-movie.name
 to#TO I-movie.name I-movie.name
 kill#VV I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 name#NN O O
 of#IN O O
 the#DT O O
 actor#NN O O
 who#WP O O
-play#VVD O O
-atticus#NN B-character.name O
-finch#NN I-character.name O
-in#IN O B-movie.name
-to#TO B-movie.name I-movie.name
+played#VVD O O
+atticus#NN B-character.name B-movie.release_region
+finch#NN I-character.name I-movie.release_region
+in#IN O O
+to#TO B-movie.name O
 kill#VV I-movie.name I-movie.name
 a#DT I-movie.name I-movie.name
 mockingbird#NN I-movie.name I-movie.name
@@ -4604,9 +4604,9 @@ of#IN O O
 the#DT O O
 guy#NN O O
 who#WP O O
-be#VBD O O
-the#DT O B-movie.name
-father#NN B-character.name I-movie.name
+was#VBD O O
+the#DT O O
+father#NN B-character.name B-movie.name
 and#CC I-character.name I-movie.name
 a#DT I-character.name I-movie.name
 lawyer#NN I-character.name I-movie.name
@@ -4621,13 +4621,13 @@ provide#VV O O
 the#DT O O
 cost#NN O O
 for#IN O O
-produce#VVG O O
+producing#VVG O O
 the#DT O B-movie.name
 deer#NN B-movie.name I-movie.name
 hunter#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 budget#NN O O
 for#IN O O
@@ -4641,23 +4641,23 @@ movie#NN O O
 epic#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
-fire#NN B-movie.name O
-proof#NN I-movie.name O
+fire#NN B-movie.name B-award.ceremony
+proof#NN I-movie.name I-award.ceremony
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
-fly#NN B-movie.name O
-whele#NN I-movie.name O
+fly#NN B-movie.name B-award.ceremony
+whele#NN I-movie.name I-award.ceremony
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
@@ -4668,11 +4668,11 @@ movie#NN O O
 
 how#WRB O O
 much#RB O O
-be#VBD O O
-spend#VVN O O
-on#IN O O
-shoot#VVG O O
-the#DT O O
+was#VBD O O
+spent#VVN O B-character.name
+on#IN O I-character.name
+shooting#VVG O I-character.name
+the#DT O I-character.name
 last#JJ O O
 harry#VV B-movie.name B-movie.name
 potter#NN I-movie.name I-movie.name
@@ -4680,7 +4680,7 @@ film#NN O O
 
 how#WRB O O
 much#RB O O
-do#VVZ O O
+does#VVZ O O
 it#PP O O
 cost#VVD O O
 to#TO O O
@@ -4689,7 +4689,7 @@ looper#NN B-movie.name B-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 it#PP O O
 cost#VVD O O
 to#TO O O
@@ -4699,16 +4699,16 @@ looper#NN B-movie.name B-movie.name
 how#WRB O O
 much#JJ O O
 money#NN O O
-be#VBD O O
-spend#VVN O O
-to#TO O O
+was#VBD O O
+spent#VVN O B-character.name
+to#TO O I-character.name
 produce#VV O O
 looper#NN B-movie.name B-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
-man#NNS B-movie.name B-movie.name
+did#VVD O O
+men#NNS B-movie.name B-movie.name
 in#IN I-movie.name I-movie.name
 black#JJ I-movie.name I-movie.name
 3#CD I-movie.name I-movie.name
@@ -4716,7 +4716,7 @@ cost#NN O O
 
 how#WRB O O
 much#RB O O
-be#VBD O O
+was#VBD O O
 it#PP O O
 to#TO O O
 make#VV O O
@@ -4727,7 +4727,7 @@ me#PP O O
 the#DT O O
 budget#NN O O
 to#TO O O
-rebel#JJ B-movie.name O
+rebel#JJ B-movie.name B-rating.name
 movie#NN O O
 
 show#VV O O
@@ -4736,82 +4736,82 @@ the#DT O O
 budget#NN O O
 for#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 2#CD I-movie.name I-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 it#PP O O
 cost#VVD O O
 to#TO O O
-create#VV O O
+create#VV O B-movie.location
 the#DT B-movie.name O
-boardwalk#NN I-movie.name O
-empire#NN I-movie.name O
+boardwalk#NN I-movie.name B-award.ceremony
+empire#NN I-movie.name I-award.ceremony
 
 show#VV O O
 me#PP O O
 the#DT O O
 budget#NN O O
 for#IN O O
-expendable#NNS B-movie.name B-movie.name
+expendables#NNS B-movie.name B-movie.name
 1#CD I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 budget#NN O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 in#IN O I-movie.name
 3d#JJ O I-movie.name
 
-liongate#NNS B-producer.name B-producer.name
+liongate#NNS B-producer.name B-movie.subject
 
 which#WDT O O
 country#NN O O
-make#VVD O O
-inchochine#NN B-movie.name O
+made#VVD O O
+inchochine#NN B-movie.name B-movie.release_region
 
 what#WP O O
 country#NN O O
-file#VVD O O
+filed#VVD O B-director.nationality
 les#FW B-movie.name B-movie.name
 mes#FW I-movie.name I-movie.name
 
 what#WP O O
 country#NN O O
-be#VBZ O O
+is#VBZ O O
 les#FW B-movie.name B-movie.name
 mes#FW I-movie.name I-movie.name
 from#IN O O
 
 where#WRB O O
-be#VBD O O
-the#DT O O
-milk#NN B-movie.name O
-of#IN I-movie.name O
-sorrow#NN I-movie.name O
-make#VVD O O
+was#VBD O O
+the#DT O B-movie.subject
+milk#NN B-movie.name I-movie.subject
+of#IN I-movie.name I-movie.subject
+sorrow#NN I-movie.name I-movie.subject
+made#VVD O O
 
 what#WP O O
 country#NN O O
-be#VBZ O O
-shawshank#NN B-movie.name O
-redemption#NN I-movie.name O
+is#VBZ O O
+shawshank#NN B-movie.name B-award.ceremony
+redemption#NN I-movie.name I-award.ceremony
 
 what#WP O O
 country#NN O O
-do#VVZ O O
+does#VVZ O O
 the#DT O O
 movie#NN O O
 thoda#NN B-movie.name B-movie.name
 pyaar#NN I-movie.name I-movie.name
 thoda#NN I-movie.name I-movie.name
 magic#NN I-movie.name I-movie.name
-come#VVZ O O
+comes#VVZ O O
 from#IN O O
 
 tell#VV O O
@@ -4819,22 +4819,22 @@ me#PP O O
 where#WRB O O
 the#DT O O
 white#JJ B-movie.name O
-ribbon#NN I-movie.name O
-come#VVD O O
+ribbon#NN I-movie.name B-movie.release_region
+came#VVD O O
 from#IN O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 movie#NN O O
 barfi#NN B-movie.name B-movie.name
 !#SENT I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 what#WP O O
-be#VBP O O
-the#DT O O
-date#NNS O O
+are#VBP O O
+the#DT O B-movie.release_region
+dates#NNS O I-movie.release_region
 for#IN O O
 the#DT O O
 movie#NN O O
@@ -4846,50 +4846,50 @@ date#NN O O
 of#IN O O
 the#DT O O
 new#JJ O O
-bug#NNS B-movie.name O
-bunny#NN I-movie.name O
-film#NN O O
+bugs#NNS B-movie.name I-producer.name
+bunny#NN I-movie.name I-producer.name
+film#NN O I-producer.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 release#NN O O
 date#NN O O
 of#IN O O
 evil#NN B-movie.name B-movie.name
-go#VVZ I-movie.name I-movie.name
+goes#VVZ I-movie.name I-movie.name
 global#JJ I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 release#NN O O
 date#NN O O
 for#IN O O
-jaw#NNS B-movie.name B-movie.name
-@card@#CD I-movie.name I-movie.name
-in#IN O O
-the#DT O O
-theater#NNS O O
+jaws#NNS B-movie.name B-movie.name
+17#CD I-movie.name I-movie.name
+in#IN O I-movie.name
+the#DT O I-movie.name
+theaters#NNS O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 release#NN O O
 date#NN O O
 for#IN O O
-Jurassic#JJ B-movie.name B-movie.name
+jurassic#JJ B-movie.name B-movie.name
 park#NN I-movie.name I-movie.name
-4#CD I-movie.name O
+4#CD I-movie.name I-movie.name
 
 list#NN O O
 release#NN O O
-date#NNS O O
+dates#NNS O B-movie.release_region
 for#IN O O
 the#DT O O
-Jurassic#JJ B-movie.name B-movie.name
+jurassic#JJ B-movie.name B-movie.name
 park#NN I-movie.name I-movie.name
-movie#NNS O O
+movies#NNS O O
 
 when#WRB O O
 will#MD O O
@@ -4899,58 +4899,58 @@ omg#JJ B-movie.name B-movie.name
 oh#UH I-movie.name I-movie.name
 my#PP$ I-movie.name I-movie.name
 god#NN I-movie.name I-movie.name
-be#VB O O
-release#VVN O O
+be#VB O I-movie.name
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 lord#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
-ring#NNS I-movie.name I-movie.name
+rings#NNS I-movie.name I-movie.name
 movie#NN O O
-release#VVD O O
+released#VVD O O
 
-whats#NNS O O
-paranormal#JJ B-movie.name B-movie.name
-activity#NNS I-movie.name I-movie.name
+whats#NNS O B-movie.subject
+paranormal#JJ B-movie.name I-movie.subject
+activities#NNS I-movie.name I-movie.subject
 release#NN O O
 date#NN O O
 
 when#WRB O O
-will#MD O O
-robocop#RB B-movie.name O
+will#MD O B-actor.name
+robocop#RB B-movie.name I-actor.name
 come#VV O O
 out#RP O O
 
 when#WRB O O
-be#VBD O O
-suckerpunch#NN B-movie.name O
+was#VBD O O
+suckerpunch#NN B-movie.name B-movie.release_region
 be#VB O O
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
-be#VBD O O
+was#VBD O O
 the#DT B-movie.name B-movie.name
 sound#NN I-movie.name I-movie.name
 of#IN I-movie.name I-movie.name
 music#NN I-movie.name I-movie.name
-release#VVN O O
+released#VVN O O
 
 when#WRB O O
 will#MD O O
 twilight#NN B-movie.name B-movie.name
-break#VVG I-movie.name I-movie.name
+breaking#VVG I-movie.name I-movie.name
 dawn#NN I-movie.name I-movie.name
-part#NN I-movie.name O
-2#CD I-movie.name O
-be#VB O O
-release#VVN O O
+part#NN I-movie.name I-movie.name
+2#CD I-movie.name I-movie.name
+be#VB O I-movie.name
+released#VVN O O
 
 who#WP O O
-direct#VVD O O
-ai#VVP B-movie.name O
+directed#VVD O O
+ai#VVP B-movie.name B-movie.release_region
 
 find#VV O O
 the#DT O O
@@ -4960,31 +4960,31 @@ downton#NN B-movie.name B-movie.name
 abbey#NN I-movie.name I-movie.name
 
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 good#JJ B-movie.name B-movie.name
 bad#JJ I-movie.name I-movie.name
-and#CC I-movie.name I-movie.name
-ugly#JJ I-movie.name I-movie.name
+and#CC I-movie.name B-movie.release_date
+ugly#JJ I-movie.name I-movie.release_date
 
 i#NP O O
 can#MD O O
 't#NP O O
 remember#VV O O
 who#WP O O
-direct#VVD O O
+directed#VVD O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 
 find#VV O O
 the#DT O O
 director#NN O O
 of#IN O O
-to#TO B-movie.name B-movie.name
+to#TO B-movie.name O
 kill#VV I-movie.name I-movie.name
 a#DT I-movie.name I-movie.name
 mockingbird#NN I-movie.name I-movie.name
 
-be#VBZ O O
+is#VBZ O O
 amelie#NN B-movie.name B-movie.name
 in#IN O O
 a#DT O O
@@ -4993,21 +4993,21 @@ language#NN O O
 
 what#WP O O
 language#NN O O
-be#VBD O O
+was#VBD O O
 amelie#NN B-movie.name B-movie.name
-film#VVN O O
+filmed#VVN O O
 in#IN O O
 
 what#WP O O
 language#NN O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 full#JJ B-movie.name B-movie.name
 monty#NN I-movie.name I-movie.name
-in#IN O I-movie.name
+in#IN O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 ju#NN B-movie.name B-movie.name
 on#RB I-movie.name O
 's#POS O O
@@ -5016,19 +5016,19 @@ language#NN O O
 
 what#WP O O
 language#NN O O
-be#VBZ O O
-secret#NNS B-movie.name B-movie.name
-and#CC I-movie.name I-movie.name
-lie#VVZ I-movie.name I-movie.name
-in#IN O I-movie.name
+is#VBZ O O
+secrets#NNS B-movie.name B-movie.subject
+and#CC I-movie.name I-movie.subject
+lies#VVZ I-movie.name I-movie.subject
+in#IN O I-movie.subject
 
 give#VV O O
 me#PP O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 some#DT O O
 action#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 a#DT O O
 pg#NN B-rating.name B-rating.name
@@ -5038,89 +5038,89 @@ rating#NN O O
 show#VV O O
 all#DT O O
 comedy#NN B-movie.genre B-movie.genre
-musical#NNS B-movie.genre B-movie.genre
+musicals#NNS B-movie.genre I-movie.genre
 for#IN O O
 twenty#CD B-movie.release_date B-movie.release_date
 twelve#NN I-movie.release_date I-movie.release_date
 
-be#VBP O O
+are#VBP O O
 there#RB O O
 any#DT O O
-documentary#NNS B-movie.genre B-movie.genre
+documentaries#NNS B-movie.genre B-movie.genre
 on#IN O O
 classic#JJ B-movie.subject B-movie.subject
-car#NNS I-movie.subject I-movie.subject
+cars#NNS I-movie.subject I-movie.subject
 
 show#VV O O
 all#DT O O
 dramas#NN B-movie.genre B-movie.genre
-produce#VVN O O
+produced#VVN O O
 in#IN O O
-@card@#CD B-movie.release_date B-movie.release_date
+2010#CD B-movie.release_date B-movie.release_region
 
 find#VV O O
 some#DT O O
-mystery#NNS B-movie.genre O
+mysteries#NNS B-movie.genre B-movie.release_region
 
 search#NN O O
 romantic#JJ B-movie.genre B-movie.genre
-commedies#NNS I-movie.genre O
+commedies#NNS I-movie.genre I-movie.genre
 
-sci-fi#NN B-movie.genre O
+sci-fi#NN B-movie.genre B-movie.subject
 
 show#VV O O
 me#PP O O
-western#NNS B-movie.genre B-movie.genre
+westerns#NNS B-movie.genre B-movie.release_region
 
 show#NN O O
 car#NN B-movie.subject B-movie.subject
-documentary#NNS B-movie.genre B-movie.genre
+documentaries#NNS B-movie.genre B-movie.genre
 
 show#VV O O
 me#PP O O
 a#DT O O
-Katie#NP B-actor.name B-actor.name
-Holmes#NP I-actor.name I-actor.name
+katie#NP B-actor.name B-actor.name
+holmes#NP I-actor.name I-actor.name
 flick#NN B-movie.type O
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-video#NNS B-movie.type O
+videos#NNS B-movie.type O
 of#IN O O
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
 
-video#NNS B-movie.type O
-relate#VVN O O
+videos#NNS B-movie.type O
+related#VVN O O
 to#TO O O
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
 
 new#JJ O O
-release#VVN O O
-video#NNS B-movie.type O
+released#VVN O O
+videos#NNS B-movie.type O
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-Brazilian#NN B-country.name O
-movie#NNS O O
+brazilian#NN B-country.name B-rating.name
+movies#NNS O O
 
 show#VV O O
 all#DT O O
-canandian#JJ B-country.name O
-movie#NNS O O
+canandian#JJ B-country.name B-movie.release_region
+movies#NNS O O
 for#IN O O
 nineteen#CD B-movie.release_date B-movie.release_date
 eighty#CD I-movie.release_date I-movie.release_date
 
 what#WP O O
-movie#NNS O O
-be#VBD O O
-make#VVN O O
+movies#NNS O O
+were#VBD O O
+made#VVN O O
 in#IN O O
 ireland#NN B-country.name B-country.name
 this#DT B-movie.release_date B-movie.release_date
@@ -5128,27 +5128,27 @@ year#NN I-movie.release_date I-movie.release_date
 
 find#VV O O
 philipino#NN B-country.name O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-English#NN B-movie.language B-movie.language
+english#NN B-movie.language B-movie.language
 
 show#VV O O
 me#PP O O
-the#DT O O
-highest-grossing#JJ O O
-movie#NNS O O
+the#DT O B-movie.release_region
+highest-grossing#JJ O I-movie.release_region
+movies#NNS O O
 from#IN O O
-portugal#NN B-country.name O
+portugal#NN B-country.name B-movie.release_region
 
 find#VV O O
-movie#NNS O O
-in#IN O O
-america#NN B-country.name B-country.name
-about#IN O O
-obama#NN B-movie.subject O
+movies#NNS O O
+in#IN O I-movie.subject
+america#NN B-country.name I-movie.subject
+about#IN O I-movie.subject
+obama#NN B-movie.subject I-movie.subject
 
 i#NP O O
-will#MD O O
+'d#MD O O
 love#VV O O
 to#TO O O
 watch#VV O O
@@ -5159,47 +5159,47 @@ movie#NN O O
 
 what#WP O O
 other#JJ O O
-film#NNS O O
-have#VHZ O O
-arthur#NN B-director.name B-producer.name
+films#NNS O O
+has#VHZ O O
+arthur#NN B-director.name I-producer.name
 ruddy#JJ I-director.name I-producer.name
-do#VVN O O
+done#VVN O O
 
 bring#VV O O
 up#RP O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 brad#NN B-director.name B-actor.name
 pitt#NN I-director.name I-actor.name
-direct#VVD O O
+directed#VVD O O
 
 what#WP O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 brad#NN B-director.name B-actor.name
 pitt#NN I-director.name I-actor.name
-direct#VVD O O
+directed#VVD O O
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
-david#JJ B-director.name O
-selsnic#NN I-director.name O
+david#JJ B-director.name B-award.ceremony
+selsnic#NN I-director.name I-award.ceremony
 
-do#VVD O O
+did#VVD O O
 holly#NN B-director.name B-movie.name
 hunter#NN I-director.name I-movie.name
 direct#VV O O
 any#DT O O
-movie#NNS O O
+movies#NNS O O
 
 what#WP O O
-movie#NNS O O
-do#VVD O O
-joe#NN B-director.name O
-coen#NNS I-director.name O
+movies#NNS O O
+did#VVD O O
+joe#NN B-director.name B-movie.release_region
+coen#NNS I-director.name I-movie.release_region
 do#VVP O O
 
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 john#NN B-director.name B-director.name
 paul#NNS I-director.name I-director.name
@@ -5209,86 +5209,86 @@ director#NN O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 john#NN B-director.name B-director.name
 paul#NNS I-director.name I-director.name
 
-tom#NN B-director.name B-actor.name
-cruise#NN I-director.name I-actor.name
-have#VHZ O O
-direct#VVN O O
+tom#NN B-director.name B-person.name
+cruise#NN I-director.name I-person.name
+has#VHZ O O
+directed#VVN O O
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 
 please#UH O O
 list#VV O O
 all#DT O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
-tom#NN B-director.name B-person.name
-cruise#NN I-director.name I-person.name
+tom#NN B-director.name B-actor.name
+cruise#NN I-director.name I-actor.name
 
-wesley#NN B-director.name O
-snipe#NNS I-director.name O
-direct#VVD O O
+wesley#NN B-director.name B-movie.release_region
+snipes#NNS I-director.name I-movie.release_region
+directed#VVD O O
 what#WP O O
 movie#NN O O
 
 find#VV O O
 action#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 john#NN B-actor.name B-actor.name
 travolta#NN I-actor.name I-actor.name
 
 show#VV O O
 all#DT O O
-animation#NN B-movie.genre O
-film#NNS O O
+animation#NN B-movie.genre B-movie.release_region
+films#NNS O O
 for#IN O O
 twenty#CD B-movie.release_date B-movie.release_date
 twelve#NN I-movie.release_date I-movie.release_date
 
-animated#JJ B-movie.genre O
+animated#JJ B-movie.genre B-movie.genre
 pg#NN B-rating.name B-rating.name
 thirteen#CD I-rating.name I-rating.name
-movie#NNS O O
+movies#NNS O O
 
-physfi#NN B-movie.genre O
-movie#NNS O O
+physfi#NN B-movie.genre B-movie.subject
+movies#NNS O O
 
 i#NP O O
 like#IN O O
-sci-fi#NN B-movie.genre O
-movie#NNS O O
+sci-fi#NN B-movie.genre B-rating.name
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-film#NNS O O
-release#VVN O O
+films#NNS O O
+released#VVN O O
 in#IN O O
-September#NN B-movie.release_date B-movie.release_date
+september#NN B-movie.release_date B-movie.release_date
 
 show#VV O O
 all#DT O O
-movie#NNS O O
-release#VVN O O
+movies#NNS O O
+released#VVN O O
 in#IN O O
-September#NN B-movie.release_date B-movie.release_date
+september#NN B-movie.release_date B-movie.release_date
 
 look#VV O O
 up#RP O O
 all#DT O O
-movie#NNS O O
-come#VVG O O
+movies#NNS O O
+coming#VVG O O
 in#IN O O
-September#NN B-movie.release_date B-movie.release_date
+september#NN B-movie.release_date B-movie.release_date
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 for#IN O O
 twenty#CD B-movie.release_date B-movie.release_date
 ten#CD I-movie.release_date I-movie.release_date
@@ -5296,21 +5296,21 @@ ten#CD I-movie.release_date I-movie.release_date
 most#RBS O O
 recent#JJ O O
 zombie#NN B-movie.subject B-movie.subject
-movie#NNS O O
+movies#NNS O O
 
 search#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-Chinese#NN B-movie.language B-movie.language
+chinese#NN B-movie.language B-movie.language
 
 find#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBP O O
+are#VBP O O
 in#IN O O
-Chinese#NN B-movie.language B-movie.language
+chinese#NN B-movie.language B-movie.language
 
 i#NNS O O
 want#VVP O O
@@ -5320,28 +5320,28 @@ a#DT O O
 list#NN O O
 of#IN O O
 all#DT O O
-movie#NNS O O
-show#VVN O O
+movies#NNS O O
+shown#VVN O O
 in#IN O O
-English#NN B-movie.language B-movie.language
+english#NN B-movie.language B-movie.language
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-farsi#NNS B-movie.language O
+farsi#NNS B-movie.language B-movie.release_region
 
 send#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBP O O
+are#VBP O O
 in#IN O O
-French#NN B-movie.language B-country.name
+french#NN B-movie.language B-movie.language
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-French#NNS B-movie.language B-movie.language
+french#NNS B-movie.language B-movie.language
 
 i#NP O O
 would#MD O O
@@ -5349,77 +5349,77 @@ like#VV O O
 a#DT O O
 list#NN O O
 of#IN O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-French#NNS B-movie.language B-movie.language
+french#NNS B-movie.language B-movie.language
 
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-French#NNS B-movie.language B-movie.language
+french#NNS B-movie.language B-movie.language
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 find#VV O O
-movie#NNS O O
-use#VVG O O
+movies#NNS O O
+using#VVG O B-movie.release_region
 the#DT O O
-French#JJ B-movie.language B-movie.language
+french#JJ B-movie.language B-movie.language
 langauage#NN O I-movie.language
 
 i#NNS O O
 want#VVP O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-French#NNS B-movie.language B-movie.language
+french#NNS B-movie.language B-movie.language
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-german#NN B-movie.language B-movie.language
-before#IN O O
-@card@#CD B-movie.release_date B-movie.release_date
+german#NN B-movie.language B-country.name
+before#IN O B-movie.release_date
+2000#CD B-movie.release_date I-movie.release_date
 
 give#VV O O
 me#PP O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 which#WDT O O
-be#VBD O O
-film#VVN O O
+were#VBD O O
+filmed#VVN O O
 in#IN O O
 polish#NN B-movie.language B-movie.language
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-portugese#NN B-movie.language O
+portugese#NN B-movie.language B-movie.release_region
 
 show#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
 list#NN O O
 of#IN O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
 the#DT O O
-Spanish#JJ B-movie.language B-movie.language
+spanish#JJ B-movie.language B-movie.language
 language#NN O I-movie.language
 
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
 i#NNS O O
-be#VBP O O
-search#VVG O O
+am#VBP O O
+searching#VVG O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
 i#NP O O
 would#MD O O
@@ -5427,14 +5427,14 @@ like#VV O O
 to#TO O O
 look#VV O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
-swahili#NNS B-movie.language O
+swahili#NNS B-movie.language B-movie.release_region
 
 show#VV O O
 me#PP O O
@@ -5442,46 +5442,46 @@ a#DT O O
 list#NN O O
 of#IN O O
 all#DT O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
 alfred#NNS B-producer.name B-producer.name
 ruddy#JJ I-producer.name I-producer.name
 
 what#WP O O
 other#JJ O O
-movie#NNS O O
+movies#NNS O O
 charles#NNS B-producer.name B-director.name
 vidor#NN I-producer.name I-director.name
 produce#NN O O
 
-have#VHZ O O
+has#VHZ O O
 jennifer#NN B-producer.name B-actor.name
 anniston#NN I-producer.name I-actor.name
-produce#VVD O O
-movie#NNS O O
+produced#VVD O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 the#DT O O
-movie#NNS O O
-produce#VVN O O
+movies#NNS O O
+produced#VVN O O
 by#IN O O
-m#NN B-producer.name O
-S#NN I-producer.name O
-raju#NN I-producer.name O
+m#NN B-producer.name B-movie.gross_revenue
+s#NN I-producer.name I-movie.gross_revenue
+raju#NN I-producer.name I-movie.gross_revenue
 
 list#VV O O
 the#DT O O
-movie#NNS O O
-create#VVN O O
+movies#NNS O O
+created#VVN O O
 by#IN O O
 7#CD B-producer.name B-producer.name
-art#NNS I-producer.name I-producer.name
+arts#NNS I-producer.name I-producer.name
 
 lionsgate#NN B-producer.name B-producer.name
 =#SYM O I-producer.name
-i#FW O O
+i#FW O I-producer.name
 would#MD O O
 like#VV O O
 to#TO O O
@@ -5490,7 +5490,7 @@ a#DT O O
 list#NN O O
 of#IN O O
 your#PP$ O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 two#CD B-movie.release_date B-movie.release_date
 thousand#CD I-movie.release_date I-movie.release_date
@@ -5505,23 +5505,23 @@ twelve#NN I-movie.release_date I-movie.release_date
 twentieth#JJ B-producer.name B-producer.name
 century#NN I-producer.name I-producer.name
 fox#NN I-producer.name I-producer.name
-movie#NNS O O
-@card@#CD B-movie.release_date B-movie.release_date
+movies#NNS O O
+2012#CD B-movie.release_date B-movie.release_date
 
 show#VV O O
 me#PP O O
 nc#NN B-rating.name B-rating.name
-minus#CC I-rating.name I-rating.name
+minus#CC I-rating.name B-rating.name
 seventeen#CD I-rating.name I-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 not#RB B-rating.name O
-rate#VVN I-rating.name O
+rated#VVN I-rating.name O
 rating#NN O O
 
 give#VV O O
@@ -5530,17 +5530,17 @@ a#DT O O
 list#NN O O
 of#IN O O
 nr#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 a#DT O O
 list#NN O O
 of#IN O O
 pg#NN B-rating.name B-rating.name
 thirteen#CD I-rating.name I-rating.name
 action#NN B-movie.genre B-movie.genre
-movie#NNS O O
+movies#NNS O O
 
 i#NNS O O
 want#VVP O O
@@ -5549,7 +5549,7 @@ see#VV O O
 a#DT O O
 pg#NN B-rating.name B-rating.name
 thirteen#CD I-rating.name I-rating.name
-movie#NN O I-rating.name
+movie#NN O O
 
 show#VV O O
 me#PP O O
@@ -5558,71 +5558,71 @@ complete#JJ O O
 list#NN O O
 of#IN O O
 r#NN B-rating.name B-rating.name
-rate#VVN O O
-movie#NNS O O
+rated#VVN O O
+movies#NNS O O
 that#WDT O O
-come#VVD O O
+came#VVD O O
 out#RP O O
 in#IN O O
 the#DT B-movie.release_date O
-last#JJ I-movie.release_date O
-@card@#CD I-movie.release_date B-movie.name
-day#NNS I-movie.release_date I-movie.name
+last#JJ I-movie.release_date B-movie.release_date
+30#CD I-movie.release_date I-movie.release_date
+days#NNS I-movie.release_date B-movie.name
 
 show#VV O O
 me#PP O O
 all#DT O O
-rate#VVN O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 by#IN O O
 paramount#NN B-producer.name B-producer.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-be#VBP O O
-unrated#JJ B-rating.name O
+are#VBP O O
+unrated#JJ B-rating.name B-movie.release_region
 
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
-@card@#CD B-movie.release_date B-movie.release_date
+1995#CD B-movie.release_date B-movie.location
 with#IN O O
-adam#NN B-actor.name B-actor.name
-sandler#NN I-actor.name I-actor.name
+adam#NN B-actor.name B-award.ceremony
+sandler#NN I-actor.name I-award.ceremony
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 alan#JJ B-actor.name B-actor.name
 rickmman#NN I-actor.name I-actor.name
 
 which#WDT O O
-movie#NNS O O
-have#VHZ O O
+movies#NNS O O
+has#VHZ O O
 angelina#NN B-actor.name B-actor.name
 jolie#NN I-actor.name I-actor.name
-star#VVD O O
-this#DT B-movie.release_date B-movie.release_date
-season#NN I-movie.release_date I-movie.release_date
+starred#VVD O O
+this#DT B-movie.release_date O
+season#NN I-movie.release_date B-movie.release_region
 
 what#WP O O
 movie#NN O O
-be#VBD O O
-angelina#VVG B-actor.name O
+was#VBD O O
+angelina#VVG B-actor.name B-movie.release_region
 a#DT O O
 main#JJ B-character.name O
 actress#NN I-character.name O
 
 look#VV O O
 up#RP O O
-movie#NNS O O
-star#VVG O O
+movies#NNS O O
+starring#VVG O O
 the#DT O O
 singer#NN B-actor.type B-actor.type
 mario#NN B-actor.name B-actor.name
@@ -5631,23 +5631,23 @@ i#NNS O O
 want#VVP O O
 to#TO O O
 find#VV O O
-movie#NNS O O
-star#VVG O O
+movies#NNS O O
+starring#VVG O O
 the#DT O O
 singer#NN B-actor.type B-actor.type
 mario#NN B-actor.name B-actor.name
 
 look#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
-Max#NP B-actor.name O
+max#NP B-actor.name B-actor.type
 von#NP I-actor.name B-actor.name
 sudow#NN I-actor.name I-actor.name
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
 have#VHP O O
 patrick#JJ B-actor.name B-actor.name
@@ -5660,12 +5660,12 @@ them#PP O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#IN/that O O
 star#JJ O O
 patrick#NN B-actor.name B-actor.name
 swayze#NNS I-actor.name I-actor.name
-star#VVN O O
+starred#VVN O O
 in#IN O O
 from#IN O O
 nineteen#CD B-movie.release_date B-movie.release_date
@@ -5673,61 +5673,61 @@ eighty#CD I-movie.release_date I-movie.release_date
 seven#CD I-movie.release_date I-movie.release_date
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 that#DT O O
-dance#VVG B-movie.subject O
+dancing#VVG B-movie.subject B-movie.release_region
 movie#NN O O
 with#IN O O
 patrick#NN B-actor.name B-actor.name
 swayze#NNS I-actor.name I-actor.name
 
-movie#NNS O O
+movies#NNS O O
 of#IN O O
-sharukh#NN B-actor.name O
-khan#NN I-actor.name O
+sharukh#NN B-actor.name B-award.ceremony
+khan#NN I-actor.name I-award.ceremony
 
 movie#NN O O
 that#IN/that O O
 tom#NN B-actor.name B-actor.name
-hank#NNS I-actor.name I-actor.name
+hanks#NNS I-actor.name I-actor.name
 and#CC O O
 kevin#NN B-actor.name B-actor.name
 becon#NN I-actor.name I-actor.name
-play#VVN O O
+played#VVN O O
 in#IN O O
-together#RB O O
+together#RB O B-movie.release_region
 
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-animal#NNS B-movie.subject O
+animals#NNS B-movie.subject B-movie.release_region
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-bollywood#NN B-movie.subject O
+bollywood#NN B-movie.subject B-movie.release_region
 
 chess#NN B-movie.subject B-movie.subject
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 on#IN O O
 chess#NN B-movie.subject B-movie.subject
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-disco#NN B-movie.subject O
+disco#NN B-movie.subject B-movie.release_region
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 can#MD O O
-offer#VV O O
-tip#NNS O B-movie.subject
+offer#VV O B-movie.release_region
+tips#NNS O I-movie.release_region
 on#IN O O
 gardening#NN B-movie.subject B-movie.subject
 
@@ -5736,58 +5736,58 @@ want#VVP O O
 to#TO O O
 look#VV O O
 up#RP O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-hair#NN B-movie.subject B-movie.subject
+hair#NN B-movie.subject B-movie.release_region
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-library#NNS B-movie.subject B-movie.subject
+libraries#NNS B-movie.subject B-movie.subject
 
 find#VV O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
-musician#NNS B-movie.subject O
+musicians#NNS B-movie.subject B-movie.release_region
 
 can#MD O O
 you#PP O O
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 preschool#JJ B-movie.subject B-movie.subject
-boy#NNS I-movie.subject I-movie.subject
+boys#NNS I-movie.subject I-movie.subject
 
 look#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 preschool#JJ B-movie.subject B-movie.subject
-boy#NNS I-movie.subject I-movie.subject
+boys#NNS I-movie.subject I-movie.subject
 
 what#WP O O
-film#NNS O O
-focus#VVP O O
-on#IN O O
-rape#NN B-movie.subject O
-and#CC I-movie.subject O
-victim#NN I-movie.subject O
+films#NNS O O
+focus#VVP O B-movie.subject
+on#IN O I-movie.subject
+rape#NN B-movie.subject I-movie.subject
+and#CC I-movie.subject I-movie.subject
+victim#NN I-movie.subject I-movie.subject
 's#POS I-movie.subject O
-right#NNS I-movie.subject O
+rights#NNS I-movie.subject B-movie.release_region
 
 i#NP O O
 would#MD O O
 like#VV O O
 to#TO O O
 know#VV O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 on#IN O O
 religious#JJ B-movie.subject B-movie.subject
-issue#NNS I-movie.subject I-movie.subject
+issues#NNS I-movie.subject I-movie.subject
 
 give#VV O O
 me#PP O O
@@ -5795,72 +5795,72 @@ a#DT O O
 list#NN O O
 of#IN O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 on#IN O O
 religious#JJ B-movie.subject B-movie.subject
-issue#NNS I-movie.subject I-movie.subject
+issues#NNS I-movie.subject I-movie.subject
 
 look#NN O O
 for#IN O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 school#NN B-movie.subject O
 
 tell#VV O O
 me#PP O O
 the#DT O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 some#DT O O
-soccer#NN B-movie.subject O
-movie#NNS O O
+soccer#NN B-movie.subject B-rating.name
+movies#NNS O O
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 some#DT O O
 time#NN B-movie.subject B-movie.subject
 travel#NN I-movie.subject I-movie.subject
-movie#NNS O O
+movies#NNS O O
 i#NP O O
 can#MD O O
 watch#VV O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
-involve#VVG O O
+movies#NNS O O
+involving#VVG O O
 time#NN B-movie.subject B-movie.subject
 travel#NN I-movie.subject I-movie.subject
 
 vampire#NN B-movie.subject O
-movie#NNS O O
+movies#NNS O O
 please#VVP O O
 
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
 a#DT O O
-theme#NN O O
-of#IN O O
-war#NN B-movie.subject B-movie.subject
-in#IN O O
+theme#NN O B-movie.subject
+of#IN O I-movie.subject
+war#NN B-movie.subject I-movie.subject
+in#IN O I-movie.subject
 them#PP O O
 
 show#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 with#IN O O
-the#DT O O
-theme#NN O O
-of#IN O O
-war#NN B-movie.subject B-movie.subject
+the#DT O B-movie.subject
+theme#NN O I-movie.subject
+of#IN O I-movie.subject
+war#NN B-movie.subject I-movie.subject
 
 can#MD O O
 you#PP O O
 find#VV O O
 me#PP O O
 some#DT O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 war#NN B-movie.subject B-movie.subject
 
@@ -5869,51 +5869,51 @@ want#VVP O O
 a#DT O O
 list#NN O O
 of#IN O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 war#NN B-movie.subject B-movie.subject
 
 i#NNS O O
 want#VVP O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 war#NN B-movie.subject B-movie.subject
 
 find#VV O O
-movie#NNS O O
+movies#NNS O O
 about#IN O O
 world#NN B-movie.subject B-movie.subject
 war#NN I-movie.subject I-movie.subject
 two#CD I-movie.subject O
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 some#DT O O
 zombie#NN B-movie.subject B-movie.subject
-apocalypse#NN I-movie.subject O
-movie#NNS O O
+apocalypse#NN I-movie.subject I-movie.subject
+movies#NNS O O
 
 search#NN O O
 for#IN O O
 zombie#NN B-movie.subject B-movie.subject
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 belle#NN B-movie.name B-movie.name
 in#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
-be#VBZ O O
+is#VBZ O O
 dredd#RB B-movie.name B-movie.name
-rate#VVN O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
 
 take#VV O O
 me#PP O O
 to#TO O O
 the#DT O O
-French#JJ B-movie.language B-movie.language
+french#JJ B-movie.language B-movie.language
 version#NN O O
 of#IN O O
 et#FW B-movie.name B-movie.name
@@ -5921,14 +5921,14 @@ et#FW B-movie.name B-movie.name
 find#VV O O
 et#NP B-movie.name B-movie.name
 in#IN O O
-French#NN B-movie.language B-country.name
+french#NN B-movie.language B-movie.language
 
 find#VV O O
-fast#JJ B-movie.name B-movie.name
-and#CC I-movie.name I-movie.name
-furious#JJ I-movie.name I-movie.name
+fast#JJ B-movie.name B-movie.release_date
+and#CC I-movie.name I-movie.release_date
+furious#JJ I-movie.name I-movie.release_date
 in#IN O O
-Japanese#NN B-movie.language B-movie.language
+japanese#NN B-movie.language B-movie.language
 
 hard#JJ B-movie.name B-movie.name
 day#NN I-movie.name I-movie.name
@@ -5941,14 +5941,14 @@ information#NN O O
 about#IN O O
 movie#NN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 movie#NN O O
 information#NN O O
 for#IN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 will#MD O O
@@ -5961,7 +5961,7 @@ on#IN O O
 the#DT O O
 movie#NN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 can#MD O O
@@ -5974,17 +5974,17 @@ on#IN O O
 the#DT O O
 movie#NN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 show#VV O O
 me#PP O O
-detail#NNS O O
+details#NNS O O
 to#TO O O
 the#DT O O
 movie#NN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 show#VV O O
@@ -5994,7 +5994,7 @@ on#IN O O
 the#DT O O
 movie#NN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 please#RB O O
 
@@ -6005,41 +6005,41 @@ about#IN O O
 the#DT O O
 movie#NN O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
-be#VBZ O O
+is#VBZ O O
 nine#CD B-movie.release_date B-movie.release_date
 fourteen#NN I-movie.release_date I-movie.release_date
 the#DT O O
-premiere#JJ O O
+premiere#JJ O B-movie.release_region
 date#NN O O
 for#IN O O
 resident#JJ B-movie.name B-movie.name
 evil#NN I-movie.name I-movie.name
 
 select#JJ O O
-Rio#NN B-movie.name O
+rio#NN B-movie.name O
 in#IN O O
-Chinese#NN B-movie.language B-movie.language
+chinese#NN B-movie.language B-movie.language
 
 find#VV O O
 me#PP O O
 the#DT O O
 first#JJ O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 movie#NN O O
 info#NN O O
 
 i#NNS O O
 need#VVP O O
-detail#NNS O O
+details#NNS O O
 about#IN O O
 the#DT O O
 movie#NN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 :#: I-movie.name I-movie.name
 episode#NN I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
@@ -6048,23 +6048,23 @@ a#DT I-movie.name I-movie.name
 new#JJ I-movie.name I-movie.name
 hope#NN I-movie.name I-movie.name
 
-do#VVD O O
+did#VVD O O
 ray#NN B-director.name B-director.name
 stark#JJ I-director.name I-director.name
 produce#NN O O
 steel#NN B-movie.name B-movie.name
-magnolia#NNS I-movie.name I-movie.name
+magnolias#NNS I-movie.name I-movie.name
 
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 movie#NN O O
 toy#NN B-movie.name B-movie.name
 story#NN I-movie.name I-movie.name
-4#CD I-movie.name O
-be#VBG O O
-release#VVN O O
-next#JJ B-movie.release_date O
-summer#NN I-movie.release_date O
+4#CD I-movie.name B-movie.release_date
+being#VBG O I-movie.release_date
+released#VVN O O
+next#JJ B-movie.release_date B-movie.release_region
+summer#NN I-movie.release_date I-movie.release_region
 
 i#NNS O O
 want#VVP O O
@@ -6073,25 +6073,25 @@ look#VV O O
 up#RP O O
 information#NN O O
 about#IN O O
-American#JJ B-country.name B-country.name
-movie#NNS O O
+american#JJ B-country.name B-country.name
+movies#NNS O O
 
-Chinese#JJ B-movie.language B-movie.language
+chinese#JJ B-movie.language B-movie.language
 foreign#JJ O I-movie.language
 film#NN O O
 with#IN O O
-kungfu#NN B-movie.subject O
+kungfu#NN B-movie.subject B-movie.release_region
 
-French#NN B-movie.language B-country.name
-movie#NNS O O
+french#NN B-movie.language B-country.name
+movies#NNS O O
 for#IN O O
 twenty#CD B-movie.release_date B-movie.release_date
 twelve#NN I-movie.release_date I-movie.release_date
 
 look#NN O O
 for#IN O O
-Russian#JJ B-movie.language B-country.name
-movie#NNS O O
+russian#JJ B-movie.language B-country.name
+movies#NNS O O
 by#IN O O
 mosfilm#NN B-producer.name B-producer.name
 
@@ -6102,7 +6102,7 @@ lionsgate#NNS B-producer.name B-producer.name
 
 paramount#JJ B-producer.name B-producer.name
 film#NN I-producer.name I-producer.name
-studio#NNS I-producer.name I-producer.name
+studios#NNS I-producer.name I-producer.name
 
 i#NP O O
 would#MD O O
@@ -6119,19 +6119,19 @@ stark#JJ I-person.name I-person.name
 
 show#VV O O
 me#PP O O
-detail#NNS O O
+details#NNS O O
 for#IN O O
 the#DT O O
 director#NN O O
-steven#JJ B-director.name B-director.name
-spielberg#NN I-director.name I-director.name
+steven#JJ B-director.name B-person.name
+spielberg#NN I-director.name I-person.name
 
 show#VV O O
 me#PP O O
 that#IN/that O O
 actor#NN O O
-tom#NN B-actor.name B-person.name
-cruise#NN I-actor.name I-person.name
+tom#NN B-actor.name B-actor.name
+cruise#NN I-actor.name I-actor.name
 
 i#NP O O
 would#MD O O
@@ -6144,45 +6144,45 @@ will#MD B-actor.name B-person.name
 ferrell#VV I-actor.name I-person.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 the#DT O O
 movie#NN O O
 great#JJ B-movie.name B-movie.name
-debater#NNS I-movie.name I-movie.name
+debaters#NNS I-movie.name I-movie.name
 
 king#NN B-movie.name I-movie.name
-'s#POS I-movie.name O
-speech#NN I-movie.name O
+'s#POS I-movie.name I-movie.name
+speech#NN I-movie.name I-movie.name
 production#NN O O
 company#NN O O
 
 i#NP O O
 wonder#NN O O
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 
 i#NP O O
 can#MD O O
 't#NP O O
 remember#VV O O
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 
 movie#NN O O
-producer#NNS O O
+producers#NNS O O
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 end#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
 watch#NN I-movie.name I-movie.name
@@ -6190,20 +6190,20 @@ gross#JJ O O
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 movie#NN O O
 earn#VV O O
 
 show#VV O O
 me#PP O O
 the#DT O O
-earning#NNS O O
+earnings#NNS O O
 for#IN O O
 hotel#NN B-movie.name B-movie.name
 transylvania#NN I-movie.name I-movie.name
 
 what#WP O O
-do#VVD O O
+did#VVD O O
 the#DT O O
 movie#NN O O
 the#DT O O
@@ -6211,9 +6211,9 @@ house#NN B-movie.name B-movie.name
 at#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 end#NN I-movie.name I-movie.name
-of#IN I-movie.name O
-the#DT I-movie.name O
-steet#NN I-movie.name O
+of#IN I-movie.name I-movie.name
+the#DT I-movie.name I-movie.name
+steet#NN I-movie.name I-movie.name
 gross#JJ O O
 
 revenue#NN O O
@@ -6226,13 +6226,13 @@ what#WP O O
 amount#NN O O
 of#IN O O
 revenue#NN O O
-do#VVD O O
+did#VVD O O
 iron#NN B-movie.name B-movie.name
 man#NN I-movie.name I-movie.name
 make#VV O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 gross#JJ O O
 revenue#NN O O
@@ -6240,8 +6240,8 @@ of#IN O O
 iron#NN B-movie.name B-movie.name
 man#NN I-movie.name I-movie.name
 
-kahani#NP B-movie.name O
-'s#POS O O
+kahani#NP B-movie.name B-movie.name
+'s#POS O I-movie.name
 revenue#NN O O
 
 get#VV O O
@@ -6255,67 +6255,67 @@ looper#NN B-movie.name B-movie.name
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 looper#NN B-movie.name B-movie.name
 gross#JJ O O
 in#IN O O
-sale#NNS O O
+sales#NNS O O
 
 how#WRB O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 looper#NN B-movie.name B-movie.name
 gross#JJ O O
 
-Ho#NP O O
+ho#NP O O
 much#RB O O
-do#VVD O O
+did#VVD O O
 looper#NN B-movie.name B-movie.name
 make#VV O O
 
 how#WRB O O
 much#JJ O O
 money#NN O O
-do#VVD O O
-Mr#NN B-movie.name B-movie.name
+did#VVD O O
+mr#NN B-movie.name B-movie.name
 and#CC I-movie.name I-movie.name
-Mrs#NN I-movie.name I-movie.name
+mrs#NN I-movie.name I-movie.name
 smith#NN I-movie.name I-movie.name
 make#VV O O
 
 how#WRB O O
 much#JJ O O
 money#NN O O
-do#VVD O O
+did#VVD O O
 the#DT O O
 movie#NN O O
-Mr#NN B-movie.name B-movie.name
+mr#NN B-movie.name B-movie.name
 and#CC I-movie.name I-movie.name
-Mrs#NN I-movie.name I-movie.name
+mrs#NN I-movie.name I-movie.name
 smith#NN I-movie.name I-movie.name
 make#VV O O
 
 in#IN O O
 the#DT O O
 movie#NN O O
-Mr#NN B-movie.name B-movie.name
+mr#NN B-movie.name B-movie.name
 and#CC I-movie.name I-movie.name
-Mrs#NN I-movie.name I-movie.name
+mrs#NN I-movie.name I-movie.name
 smith#NN I-movie.name I-movie.name
 how#WRB O O
 much#JJ O O
 money#NN O O
-do#VVD O O
+did#VVD O O
 the#DT O O
 box#NN O O
-offfice#NN O O
-report#NN O O
+offfice#NN O B-award.ceremony
+report#NN O I-award.ceremony
 
 how#WRB O O
 much#JJ O O
 money#NN O O
-do#VVD O O
-philadelphia#NN B-movie.name O
+did#VVD O O
+philadelphia#NN B-movie.name B-rating.name
 make#VV O O
 
 i#NNS O O
@@ -6326,37 +6326,37 @@ what#WP O O
 the#DT O O
 revenue#NN O O
 for#IN O O
-pirate#NNS B-movie.name B-movie.name
-be#VBD O I-movie.name
+pirates#NNS B-movie.name B-rating.name
+was#VBD O O
 
 how#WRB O O
 much#RB O O
-be#VBD O O
-make#VVN O O
+was#VBD O O
+made#VVN O O
 from#IN O O
 platoon#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 gross#JJ O O
 revenue#NN O O
-earn#VVD O O
+earned#VVD O B-character.name
 by#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 in#IN O O
-its#PP$ O O
+its#PP$ O B-movie.genre
 original#JJ O O
 release#NN O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 total#JJ O O
 gross#JJ O O
-receipt#NNS O O
-at#IN O O
+receipts#NNS O B-movie.name
+at#IN O I-movie.name
 the#DT O O
 box#NN O O
 office#NN O O
@@ -6364,30 +6364,30 @@ for#IN O O
 the#DT O O
 movie#NN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+were#VBD O O
 the#DT O O
 gross#JJ O O
-receipt#NNS O O
+receipts#NNS O B-character.name
 for#IN O O
 hunger#NN B-movie.name B-movie.name
-game#NNS I-movie.name I-movie.name
+games#NNS I-movie.name I-movie.name
 
 tell#VV O O
 me#PP O O
 how#WRB O O
 much#JJ O O
 money#NN O O
-tommy#NN B-movie.name B-character.name
-boy#NN I-movie.name I-character.name
-make#VVD O O
+tommy#NN B-movie.name B-movie.release_region
+boy#NN I-movie.name I-movie.release_region
+made#VVD O O
 
 how#WRB O O
 much#JJ O O
 revenue#NN O O
-do#VVD O O
+did#VVD O O
 top#JJ B-movie.name B-movie.name
 gun#NN I-movie.name I-movie.name
 make#VV O O
@@ -6401,9 +6401,9 @@ training#NN B-movie.name B-movie.name
 day#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 about#RB O O
 
@@ -6413,64 +6413,64 @@ a#DT O O
 list#NN O O
 of#IN O O
 production#NN O O
-company#NNS O O
+companies#NNS O O
 
 show#VV O O
 me#PP O O
 the#DT O O
 viewer#NN O O
-rating#NNS O O
+ratings#NNS O O
 in#IN B-movie.name B-movie.name
 orange#NN I-movie.name I-movie.name
 
-be#VBZ O O
+is#VBZ O O
 in#RB B-movie.name O
-july#RB I-movie.name O
-on#IN O O
+july#RB I-movie.name I-movie.name
+on#IN O I-movie.name
 netflix#NN O O
 
 rate#NN O O
-movie#NNS O O
+movies#NNS O O
 
 find#VV O O
 the#DT O O
 actor#NN O O
 that#WDT O O
-sing#VVZ O O
+sings#VVZ O O
 let#VV O O
 me#PP O O
 love#VV O O
 you#PP O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 steven#JJ B-person.name B-director.name
 spielberg#NN I-person.name I-director.name
-up#RB O O
+up#RB O I-movie.name
 to#TO O O
 
-Israel#NP B-country.name O
-be#VBP O O
+israel#NP B-country.name O
+are#VBP O O
 all#PDT O O
 your#PP$ O O
-movie#NNS O O
+movies#NNS O O
 in#IN O O
 your#PP$ O O
-native#JJ O O
-language#NN O O
+native#JJ O B-movie.language
+language#NN O I-movie.language
 or#CC O O
 in#IN O O
-English#NN B-movie.language B-movie.language
+english#NN B-movie.language B-movie.language
 
 what#WP O O
-be#VBZ O O
-play#VVG O O
-tonight#RB O O
+'s#VBZ O O
+playing#VVG O O
+tonight#RB O B-movie.release_region
 
 where#WRB O O
 can#MD O O
 i#NNS O O
-buy#VV O O
+buy#VV O B-movie.release_region
 this#DT O O
 movie#NN O O
 
@@ -6481,9 +6481,9 @@ to#TO O O
 know#VV O O
 if#IN O O
 this#DT O O
-be#VBZ O O
-a#DT O O
-real#RB O O
+is#VBZ O O
+a#DT O B-movie.language
+real#RB O I-movie.language
 scary#JJ B-movie.genre B-movie.genre
 
 how#WRB O O
@@ -6495,15 +6495,15 @@ dancing#NN I-movie.name I-movie.name
 can#MD O O
 i#NP O O
 rent#NN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
-on#IN O O
+on#IN O I-movie.name
 netflix#NN O O
 
 hotel#NN B-movie.name B-movie.name
 rwanda#NN I-movie.name I-movie.name
-be#VBZ O O
-base#VVN O O
+is#VBZ O O
+based#VVN O O
 on#IN O O
 what#WP O O
 
@@ -6513,21 +6513,21 @@ to#TO O O
 know#VV O O
 where#WRB O O
 you#PP O O
-keep#VVP O O
+keep#VVP O B-director.nationality
 resident#JJ B-movie.name B-movie.name
 evil#NN I-movie.name I-movie.name
 
 in#IN O O
-September#NN O B-movie.release_date
+september#NN O B-movie.release_date
 
 dvd#NNS O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 find#VV O O
 movie#NN O O
 from#IN O O
-criterion#NNS O O
+criteria#NNS O O
 
 find#VV O O
 a#DT O O
@@ -6539,7 +6539,7 @@ tell#VV O O
 me#PP O O
 which#WDT O O
 movie#NN O O
-make#VVD O O
+made#VVD O O
 the#DT O O
 most#JJS O O
 at#IN O O
@@ -6548,32 +6548,32 @@ box#NN O O
 office#NN O O
 in#IN O O
 the#DT O O
-weekend#NN O O
-of#IN O O
-September#NN O B-movie.release_date
+weekend#NN O B-movie.name
+of#IN O I-movie.name
+september#NN O B-movie.release_date
 twenty#CD O I-movie.release_date
 eighth#NN O I-movie.release_date
 
 find#VV O O
-movie#NNS O O
-select#VVN O O
+movies#NNS O O
+selected#VVN O B-movie.release_region
 on#IN O O
 all#DT O O
-criterion#NNS O O
+criteria#NNS O O
 
-option#NNS O O
+options#NNS O O
 available#JJ O O
 for#IN O O
-movie#NNS O O
-today#NN O O
+movies#NNS O O
+today#NN O B-movie.release_region
 
 find#VV O O
 all#DT O O
 selected#JJ O O
-criterion#NNS O O
+criteria#NNS O O
 
 search#NN O O
-highlight#VVD O O
+highlighted#VVD O B-movie.genre
 information#NN O O
 
 bring#VV O O
@@ -6587,7 +6587,7 @@ information#NN O O
 
 find#VV O O
 selected#JJ O O
-criterion#NNS O O
+criteria#NNS O O
 
 where#WRB O O
 can#MD O O
@@ -6597,10 +6597,10 @@ movie#NN O O
 
 search#VV O O
 all#DT O O
-database#NNS O O
+databases#NNS O B-movie.release_region
 
 search#NN O O
-database#NNS O O
+databases#NNS O B-movie.release_region
 
 where#WRB O O
 can#MD O O
@@ -6609,10 +6609,10 @@ see#VV O O
 movie#NN O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 age#NN O O
-limit#NN O O
+limit#NN O B-movie.release_region
 for#IN O O
 the#DT O O
 pg#NN B-rating.name B-rating.name
@@ -6624,29 +6624,29 @@ hotel#NN B-movie.name B-movie.name
 transylvania#NN B-movie.name I-movie.name
 
 what#WP O O
-do#VVZ O O
+does#VVZ O O
 the#DT O O
 rating#NN O O
 r#SYM B-rating.name B-rating.name
-mean#JJ O O
+mean#JJ O I-rating.name
 for#IN O O
 the#DT O O
 movie#NN O O
-dred#VVD O O
+dred#VVD O B-movie.release_region
 
 show#VV O O
 me#PP O O
 the#DT O O
-sequel#NNS O O
-or#CC O O
-prequels#NNS O O
+sequels#NNS O B-movie.gross_revenue
+or#CC O I-movie.gross_revenue
+prequels#NNS O I-movie.gross_revenue
 to#TO O O
 this#DT O O
 movie#NN O O
 
 how#WRB O O
 long#RB O O
-do#VVD O O
+did#VVD O O
 it#PP O O
 take#VV O O
 james#NNS B-producer.name B-director.name
@@ -6655,33 +6655,33 @@ to#TO O O
 produce#VV O O
 avatar#NN B-movie.name B-movie.name
 
-be#VBZ O O
+is#VBZ O O
 this#DT O O
 film#NN O O
-dub#VVN O O
-in#IN O O
-English#NN B-movie.language B-movie.language
+dubbed#VVN O B-movie.language
+in#IN O I-movie.language
+english#NN B-movie.language I-movie.language
 
 apollo#NN B-movie.name B-movie.name
 thirteen#CD I-movie.name I-movie.name
 cast#NN O O
-be#VBD O O
-choose#VVN O O
+was#VBD O O
+chosen#VVN O B-rating.name
 how#WRB O O
 
 what#WP O O
 other#JJ O O
-format#NNS O O
-be#VBZ O O
-find#VVG B-movie.name B-movie.name
+formats#NNS O B-character.name
+is#VBZ O O
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
-in#IN O I-movie.name
+in#IN O O
 
 in#IN O O
 how#WRB O O
 many#JJ O O
-day#NNS O B-movie.name
-do#VVD O O
+days#NNS O B-movie.name
+did#VVD O O
 it#PP O O
 take#VVP O O
 to#TO O O
@@ -6696,17 +6696,17 @@ looper#NN B-movie.name B-movie.name
 what#WP O O
 age#NN O O
 group#NN O O
-be#VBZ O O
+is#VBZ O O
 for#IN O O
-rate#VVN O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
 the#DT O O
 behind#IN O O
-scene#NNS O O
+scenes#NNS O B-movie.release_region
 of#IN O O
 the#DT O O
 movie#NN O O
@@ -6717,27 +6717,27 @@ how#WRB O O
 long#RB O O
 do#VVP O O
 you#PP O O
-predict#VVP O O
+predict#VVP O B-movie.release_region
 that#IN/that O O
 wb#NN B-producer.name B-producer.name
 will#MD O O
-continue#VV O O
-to#TO O O
-strive#VV O O
+continue#VV O B-character.name
+to#TO O I-character.name
+strive#VV O I-character.name
 in#IN O O
-today#NN O O
-'s#POS O O
-market#NN O O
+today#NN O B-character.name
+'s#POS O I-character.name
+market#NN O I-character.name
 
-the#DT O O
-crap#NN O O
+the#DT O B-movie.subject
+crap#NN O I-movie.subject
 
 who#WP O O
-determine#VVZ O O
+determines#VVZ O O
 the#DT O O
-rating#NNS O O
+ratings#NNS O O
 on#IN O O
-movie#NNS O O
+movies#NNS O O
 
 house#NN B-movie.name B-movie.name
 at#IN I-movie.name I-movie.name
@@ -6748,7 +6748,7 @@ the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
 should#MD O O
 of#IN O O
-make#VVD O O
+made#VVD O O
 more#JJR O O
 money#NN O O
 
@@ -6759,44 +6759,44 @@ dancing#NN I-movie.name I-movie.name
 news#NN O O
 
 who#WP O O
-else#RB O O
-could#MD O O
+else#RB O B-movie.release_region
+could#MD O I-movie.release_region
 have#VH O O
-preformed#VVN O O
+preformed#VVN O B-movie.genre
 your#PP$ O O
-job#NN O O
+job#NN O B-movie.description
 
 twenty#CD B-movie.gross_revenue B-movie.gross_revenue
 one#CD I-movie.gross_revenue I-movie.gross_revenue
 point#NN I-movie.gross_revenue I-movie.gross_revenue
 two#CD I-movie.gross_revenue I-movie.gross_revenue
-be#VBD O O
-pay#VVN O O
+was#VBD O O
+paid#VVN O B-rating.name
 out#RP O O
 
 find#VV O O
 some#DT O O
-note#NNS O O
+notes#NNS O B-movie.release_region
 on#IN O O
 parental#JJ O O
 guidance#NN O O
 please#VV O O
 
 who#WP O O
-come#VVD O O
+came#VVD O O
 up#RP O O
 for#IN O O
 the#DT O O
 main#JJ O O
-plot#NN O O
+plot#NN O B-movie.release_region
 
 what#WP O O
-be#VBZ O O
-the#DT O O
-standard#NN O O
+is#VBZ O O
+the#DT O B-movie.release_region
+standard#NN O I-movie.release_region
 to#TO O O
 be#VB O O
-rate#VVN O O
+rated#VVN O O
 g#NN B-rating.name B-rating.name
 
 i#NP O O
@@ -6808,13 +6808,13 @@ show#VV O O
 me#PP O O
 the#DT O O
 movie#NN O O
-review#VVZ O O
+reviews#VVZ O O
 in#IN O B-movie.name
 orange#NN O I-movie.name
 
 show#VV O O
 me#PP O O
-celebrity#NNS O O
+celebrities#NNS O B-movie.release_region
 
 how#WRB O O
 old#JJ O O
@@ -6826,19 +6826,19 @@ be#VB O O
 to#TO O O
 see#VV O O
 an#DT O O
-R-rated#JJ B-rating.name B-rating.name
+r-rated#JJ B-rating.name B-rating.name
 movie#NN O O
 
-do#VVZ O O
-Ireland#NP B-country.name B-country.name
+does#VVZ O O
+ireland#NP B-country.name B-country.name
 have#VHP O O
 an#DT O O
-equivalent#NN O O
+equivalent#NN O B-movie.release_region
 to#TO O O
 th#NN O I-producer.name
 us#PP B-country.name B-country.name
 oscar#NN B-award.ceremony B-award.ceremony
-award#NNS O I-award.ceremony
+awards#NNS O I-award.ceremony
 
 click#NN O O
 on#IN O O
@@ -6851,21 +6851,21 @@ orange#NN O I-movie.name
 
 brazil#NN B-movie.location B-country.name
 movie#NN O O
-location#NNS O O
+locations#NNS O B-movie.release_region
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 history#NN O O
 behind#IN O O
 lionsgate#NNS B-producer.name B-producer.name
 
 what#WP O O
-do#VVZ O O
+does#VVZ O O
 an#DT O O
 r#NN B-rating.name B-rating.name
 rating#NN O O
-mean#VVP O O
+mean#VVP O B-rating.name
 on#IN O O
 a#DT O O
 movie#NN O O
@@ -6877,17 +6877,17 @@ me#PP O O
 more#JJR O O
 information#NN O O
 about#IN O O
-the#DT O O
-text#NN O O
-highlight#VVN O O
+the#DT O B-movie.release_region
+text#NN O I-movie.release_region
+highlighted#VVN O O
 in#IN O B-movie.name
 orange#NN O I-movie.name
 
 what#WP O O
-be#VBP O O
-the#DT O O
-recommended#JJ O O
-age#NNS O O
+are#VBP O O
+the#DT O B-movie.release_region
+recommended#JJ O I-movie.release_region
+ages#NNS O O
 for#IN O O
 a#DT O O
 pg#NN B-rating.name B-rating.name
@@ -6897,16 +6897,16 @@ send#VV O O
 dredd#NN B-movie.name B-movie.name
 movie#NN O O
 
-Jenn#NP B-person.name B-person.name
-Ann#NP I-person.name I-person.name
+jenn#NP B-person.name B-person.name
+ann#NP I-person.name I-person.name
 lover#NN O O
 
-do#VVD O O
-Kristen#NP B-person.name B-actor.name
-Stewart#NP I-person.name I-actor.name
+did#VVD O O
+kristen#NP B-person.name B-actor.name
+stewart#NP I-person.name I-actor.name
 have#VHP O O
 an#DT O O
-affair#NN O O
+affair#NN O B-movie.release_region
 with#IN O O
 the#DT O O
 director#NN O O
@@ -6920,8 +6920,8 @@ huntsman#NN I-movie.name I-movie.name
 show#VV O O
 me#PP O O
 movie#NN O O
-highlight#NNS O O
-in#IN O B-movie.name
+highlights#NNS O B-movie.name
+in#IN O I-movie.name
 orange#NN O I-movie.name
 
 need#NN O O
@@ -6939,12 +6939,12 @@ be#VB O O
 to#TO O O
 see#VV O O
 a#DT O O
-rate#VVN O O
+rated#VVN O O
 r#NN B-rating.name B-rating.name
 movie#NN O O
 
 what#WP O O
-do#VVZ O O
+does#VVZ O O
 a#DT O O
 pg#NN B-rating.name B-rating.name
 thirteen#CD I-rating.name I-rating.name
@@ -6955,30 +6955,30 @@ twenty#CD B-movie.gross_revenue B-movie.gross_revenue
 one#CD I-movie.gross_revenue I-movie.gross_revenue
 point#NN I-movie.gross_revenue I-movie.gross_revenue
 two#CD I-movie.gross_revenue I-movie.gross_revenue
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 first#JJ O O
-week#NN O O
+week#NN O B-rating.name
 gross#JJ O O
 
 r#SYM B-rating.name B-rating.name
 rating#NN O O
 what#WP O O
-do#VVZ O O
-that#RB O O
-include#VV O O
+does#VVZ O O
+that#RB O B-award.ceremony
+include#VV O I-award.ceremony
 
-in#IN B-movie.name B-movie.name
-julie#NN I-movie.name I-movie.name
+in#IN B-movie.name O
+julie#NN I-movie.name B-movie.release_region
 
 wb#NN B-producer.name B-producer.name
 -#: O O
 what#WP O O
-do#VVZ O O
+does#VVZ O O
 it#PP O O
 take#VV O O
 to#TO O O
-become#VV O O
+become#VV O B-movie.release_region
 a#DT O O
 movie#NN O O
 producer#NN O O
@@ -6986,10 +6986,10 @@ producer#NN O O
 show#VV O O
 me#PP O O
 hollywood#NN O O
-influence#NNS O O
+influences#NNS O B-movie.release_region
 
 how#WRB O O
-do#VVZ O O
+does#VVZ O O
 a#DT O O
 movie#NN O O
 receive#VV O O
@@ -6997,7 +6997,7 @@ an#DT O O
 r#NN B-rating.name B-rating.name
 rating#NN O O
 
-do#VVD O O
+did#VVD O O
 you#PP O O
 have#VHP O O
 fun#NN O O
@@ -7006,12 +7006,12 @@ the#DT O O
 set#NN O O
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
 rating#NN O O
-symbol#NNS O O
-for#IN O O
-movie#NNS O O
+symbols#NNS O B-rating.name
+for#IN O I-rating.name
+movies#NNS O O
 
 sb#NN O O
 news#NN O O
@@ -7020,31 +7020,31 @@ life#NN O B-movie.name
 
 i#NNS O O
 have#VHP O O
-a#DT O B-rating.name
-thirteen#CD O I-rating.name
-year#NN O O
-old#JJ O O
+a#DT O O
+thirteen#CD O I-movie.release_date
+year#NN O I-movie.release_date
+old#JJ O B-movie.name
 
 end#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
 watch#NN I-movie.name I-movie.name
-shoulde#NN O O
-of#IN O O
-make#VVD O O
-less#JJR O O
+shoulde#NN O B-movie.release_date
+of#IN O I-movie.release_date
+made#VVD O O
+less#JJR O B-rating.name
 money#NN O O
 
 when#WRB O O
 the#DT O O
 movie#NN O O
-come#VVZ O O
+comes#VVZ O O
 out#RB O O
 do#VV O O
 you#PP O O
 think#VVP O O
 it#PP O O
-will#MD O O
-raise#VV O O
+will#MD O B-actor.name
+raise#VV O I-actor.name
 in#IN O O
 the#DT O O
 box#NN O O
@@ -7060,50 +7060,50 @@ orange#NN O I-movie.name
 
 show#VV O O
 me#PP O O
-the#DT O B-movie.name
-story#NN O I-movie.name
+the#DT O O
+story#NN O O
 of#IN O O
 the#DT O O
-armstrong#NN B-person.name B-movie.subject
-siddeley#NN I-person.name I-movie.subject
+armstrong#NN B-person.name B-award.ceremony
+siddeley#NN I-person.name I-award.ceremony
 
 classic#JJ O B-movie.subject
-car#NNS O I-movie.subject
+cars#NNS O I-movie.subject
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 learn#VV O O
 about#IN O O
-flower#NNS O O
+flowers#NNS O O
 
 out#IN O O
-camping#NN O B-movie.name
+camping#NN O B-movie.release_region
 
-happy#JJ O B-movie.name
+happy#JJ O B-movie.subject
 
-interesting#JJ O O
+interesting#JJ O B-movie.subject
 
 sort#NN O O
 by#IN O O
-Spanish#NN B-movie.language B-movie.language
+spanish#NN B-movie.language B-movie.language
 
 where#WRB O O
-be#VBZ O O
-punjabi#NN B-movie.language O
+is#VBZ O O
+punjabi#NN B-movie.language B-movie.release_region
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 robert#NN B-person.name B-director.name
 wise#NN I-person.name I-director.name
 's#POS O O
-middle#JJ O O
+middle#JJ O B-rating.name
 name#NN O O
 
-ferret#NN O O
+ferret#NN O B-movie.subject
 
-forty#NN O I-movie.gross_revenue
-three#CD O B-movie.gross_revenue
+forty#NN O B-movie.release_date
+three#CD O I-movie.release_date
 million#CD O I-movie.gross_revenue
 what#WP O O
 
@@ -7112,53 +7112,53 @@ one#CD O I-movie.gross_revenue
 point#NN O I-movie.gross_revenue
 two#CD O I-movie.gross_revenue
 million#CD O I-movie.gross_revenue
-dollar#NNS O I-movie.gross_revenue
-be#VBD O O
-divide#VVN O O
+dollars#NNS O I-movie.gross_revenue
+was#VBD O O
+divided#VVN O B-movie.release_region
 between#IN O O
 who#WP O O
 
 do#VV O O
 movie#NN O O
-author#NNS O O
-use#VVP O O
-real#JJ O O
-country#NNS O O
+authors#NNS O B-movie.language
+use#VVP O I-movie.language
+real#JJ O I-movie.language
+countries#NNS O O
 
 on#IN O O
-lie#NNS O O
+lies#NNS O B-movie.release_region
 
 the#DT O O
 movie#NN O O
 a#DT B-movie.name O
-tanu#NN I-movie.name O
-be#VBZ O O
+tanu#NN I-movie.name B-movie.release_region
+is#VBZ O O
 from#IN O O
-hungary#NN B-country.name B-country.name
-;#: O O
+hungary#NN B-country.name B-movie.release_region
+;#: O I-movie.release_region
 where#WRB O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 country#NN O O
-hungary#NN B-country.name B-country.name
+hungary#NN B-country.name B-movie.release_region
 
 how#WRB O O
 fun#NN O O
-be#VBZ O O
+is#VBZ O O
 it#PP O O
 to#TO O O
 produce#VV O O
 a#DT O O
 movie#NN O O
 
-do#VVD O O
+did#VVD O O
 you#PP O O
 like#IN O O
-work#VVG O O
+working#VVG O B-movie.release_region
 with#IN O O
 who#WP O O
 you#PP O O
-do#VVD O O
+did#VVD O O
 
 can#MD O O
 i#NNS O O
@@ -7166,34 +7166,34 @@ see#VV O O
 a#DT O O
 map#NN O O
 of#IN O O
-Canada#NP B-country.name O
+canada#NP B-country.name B-movie.release_region
 
-be#VBD O O
+was#VBD O O
 your#PP$ O O
-journey#NN O O
-worth#NN O O
+journey#NN O B-movie.release_region
+worth#NN O I-movie.release_region
 it#PP O O
 
-south#JJ O B-country.name
-American#JJ O B-country.name
+south#JJ O O
+american#JJ O B-country.name
 country#NN O O
-flag#NNS O O
+flags#NNS O O
 
 need#VV O O
 more#JJR O O
 info#NN O O
 that#WDT O O
-relate#VVZ O O
+relates#VVZ O B-movie.release_region
 to#TO O O
 china#NN B-country.name B-country.name
 
-flag#NNS O O
+flags#NNS O O
 of#IN O O
-planet#NN O O
-earth#NN O O
+planet#NN O B-award.ceremony
+earth#NN O I-award.ceremony
 
-good#JJS O O
-writer#NNS O I-movie.name
+best#JJS O O
+writers#NNS O I-movie.name
 in#IN O O
 the#DT O O
 field#NN O B-movie.name
@@ -7203,11 +7203,11 @@ the#DT O O
 male#JJ O O
 actor#NN O O
 from#IN O O
-grand#JJ B-movie.name O
-torino#NN I-movie.name O
+grand#JJ B-movie.name B-award.ceremony
+torino#NN I-movie.name I-award.ceremony
 
 who#WP O O
-play#VVD O O
+played#VVD O O
 the#DT O O
 female#JJ O O
 lead#NN O O
@@ -7219,42 +7219,42 @@ the#DT O O
 female#JJ O O
 actress#NN O O
 from#IN O O
-shallow#JJ B-movie.name O
-hal#NNS I-movie.name O
+shallow#JJ B-movie.name B-award.ceremony
+hal#NNS I-movie.name I-award.ceremony
 
 who#WP O O
-be#VBZ O O
+is#VBZ O O
 in#IN O O
 picture#NN O O
 three#CD O B-movie.name
 
 who#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
 lead#JJ O O
-actor#NNS O O
+actors#NNS O O
 
 how#WRB O O
 old#NN O O
-be#VBZ O O
+is#VBZ O O
 jennifer#NN B-person.name B-actor.name
 aniston#NN I-person.name I-actor.name
 
 when#WRB O O
-be#VBD O O
-will#NN B-person.name B-person.name
-ferrell#NN I-person.name I-person.name
-bear#VVN O O
+was#VBD O O
+will#NN B-person.name B-actor.name
+ferrell#NN I-person.name I-actor.name
+born#VVN O O
 
 where#WRB O O
-be#VBD O O
+was#VBD O O
 black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
-direct#VVD O O
+directed#VVD O O
 
 where#WRB O O
-be#VBD O O
-Muriel#NP B-movie.name B-movie.name
+was#VBD O O
+muriel#NP B-movie.name B-movie.name
 's#POS I-movie.name I-movie.name
 wedding#NN I-movie.name I-movie.name
 shot#NN O I-movie.name
@@ -7269,33 +7269,33 @@ for#IN O O
 the#DT O O
 movie#NN O O
 little#JJ B-movie.name B-movie.name
-woman#NNS I-movie.name I-movie.name
+women#NNS I-movie.name I-movie.name
 
 show#NN O O
 movie#NN O O
-description#NN O O
+description#NN O B-movie.release_region
 
 i#NP O O
-will#MD O O
+'d#MD O O
 like#VV O O
 to#TO O O
 see#VV O O
 popular#JJ O O
 film#NN O O
-director#NNS O O
+directors#NNS O O
 from#IN O O
 the#DT O O
 nineteen#CD B-movie.release_date B-movie.release_date
-fifty#CD I-movie.release_date O
-be#VBZ I-movie.release_date O
-through#IN I-movie.release_date O
-today#NN I-movie.release_date O
+fifty#CD I-movie.release_date I-movie.release_date
+'s#VBZ I-movie.release_date O
+through#IN I-movie.release_date B-movie.release_region
+today#NN I-movie.release_date I-movie.release_region
 
-good#JJS O O
+best#JJS O O
 director#NN O O
 
-good#JJS O O
-director#NNS O O
+best#JJS O O
+directors#NNS O O
 of#IN O O
 all#DT O O
 time#NN O B-movie.subject
@@ -7305,35 +7305,35 @@ show#VV O O
 me#PP O O
 famous#JJ O O
 film#NN O O
-director#NNS O O
+directors#NNS O O
 
-great#JJS O O
-director#NNS O O
+greatest#JJS O B-movie.subject
+directors#NNS O O
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 some#DT O O
 of#IN O O
 the#DT O O
 most#RBS O O
 popular#JJ O O
-movie#NNS O O
+movies#NNS O O
 
 show#VV O O
 me#PP O O
-successful#JJ O O
+successful#JJ O B-movie.release_region
 movie#NN O O
-director#NNS O O
+directors#NNS O O
 
 who#WP O O
-produce#VVD O O
+produced#VVD O O
 hotel#NN B-movie.name B-movie.name
-rwanda#NNS I-movie.name I-movie.name
-cover#VVP O I-movie.name
-art#NN O I-movie.name
+rwanda#NNS I-movie.name B-movie.release_date
+cover#VVP O I-movie.release_date
+art#NN O I-movie.release_date
 
 who#WP O O
-be#VBZ O O
+'s#VBZ O O
 the#DT O O
 director#NN O O
 
@@ -7342,15 +7342,15 @@ director#NN O O
 name#NN O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 name#NN O O
 of#IN O O
 a#DT O O
-Turkish#JJ B-director.nationality B-movie.language
+turkish#JJ B-director.nationality B-movie.language
 director#NN O O
 that#WDT O O
-produce#VVD O O
+produced#VVD O O
 a#DT O O
 drama#NN B-movie.genre B-movie.genre
 film#NN O O
@@ -7364,39 +7364,39 @@ dredd#NN B-movie.name B-movie.name
 movie#NN O O
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 the#DT O O
 name#NN O O
 of#IN O O
 an#DT O O
 academy#NN B-award.ceremony B-award.ceremony
 award#NN O I-award.ceremony
-win#VVG O O
-Russian#JJ B-country.name B-movie.language
-documentary#NN B-movie.genre B-movie.genre
+winning#VVG O O
+russian#JJ B-country.name B-movie.language
+documentary#NN B-movie.genre I-movie.language
 
 what#WP O O
 movie#NN O O
-title#NNS O O
-star#VVG O O
-meryl#NN B-actor.name B-person.name
-streep#NNS I-actor.name I-person.name
-earn#VVD O O
+titles#NNS O O
+starring#VVG O O
+meryl#NN B-actor.name B-actor.name
+streep#NNS I-actor.name I-actor.name
+earned#VVD O B-country.name
 oscar#NN B-award.ceremony B-award.ceremony
-nomination#NNS O I-award.ceremony
+nominations#NNS O I-award.ceremony
 
 in#IN O O
 search#NN O O
 for#IN O O
-name#NNS O O
+names#NNS O O
 of#IN O O
 crew#NN O O
-member#NNS O O
+members#NNS O O
 please#VVP O O
 
 get#VV O O
 me#PP O O
-review#NNS O O
+reviews#NNS O O
 and#CC O O
 info#NN O O
 about#IN O O
@@ -7406,7 +7406,7 @@ movie#NN O O
 
 show#VV O O
 me#PP O O
-review#NNS O O
+reviews#NNS O O
 and#CC O O
 info#NN O O
 for#IN O O
@@ -7414,22 +7414,22 @@ the#DT B-movie.name B-movie.name
 campaign#NN I-movie.name I-movie.name
 
 what#WP O O
-movie#NNS O O
+movies#NNS O O
 that#DT O O
 clint#NN B-director.name B-director.name
 eastwood#NN I-director.name I-director.name
 direct#JJ O O
 that#IN/that O O
 he#PP O O
-win#VVD O O
+won#VVD O O
 the#DT O O
-good#JJS B-award.category O
+best#JJS B-award.category O
 director#NN I-award.category O
 oscar#NN B-award.ceremony B-award.ceremony
 for#IN O O
 
 what#WP O O
-be#VBZ O O
+'s#VBZ O O
 hitchcock#NN B-director.name B-director.name
 's#POS O O
 most#RBS O O
@@ -7440,25 +7440,25 @@ tell#VV O O
 me#PP O O
 some#DT O O
 of#IN O O
-Walter#NP B-director.name O
-f#SYM I-director.name O
-parkes#VVZ I-director.name O
-good#JJS O O
-movie#NNS O O
+walter#NP B-director.name B-character.name
+f#SYM I-director.name I-character.name
+parkes#VVZ I-director.name I-character.name
+best#JJS O I-character.name
+movies#NNS O O
 
-look#VVG O O
+looking#VVG O O
 for#IN O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 actor#NN O O
-number#NN O B-character.name
-one#CD O O
+number#NN O B-movie.release_date
+one#CD O I-movie.release_date
 
 list#NN O O
 of#IN O O
-movie#NNS O O
-direct#VVN O O
+movies#NNS O O
+directed#VVN O O
 by#IN O O
 director#NN O O
 three#CD O B-movie.name
@@ -7468,7 +7468,7 @@ me#PP O O
 the#DT O O
 film#NN O O
 that#WDT O O
-gross#VVD O O
+grossed#VVD O O
 seven#CD B-movie.gross_revenue B-movie.gross_revenue
 point#NN I-movie.gross_revenue I-movie.gross_revenue
 two#CD I-movie.gross_revenue I-movie.gross_revenue
@@ -7480,19 +7480,19 @@ office#NN O O
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-make#VVD O O
+made#VVD O O
 over#IN B-movie.gross_revenue B-movie.gross_revenue
 seven#CD I-movie.gross_revenue I-movie.gross_revenue
 million#CD I-movie.gross_revenue I-movie.gross_revenue
-dollar#NNS I-movie.gross_revenue I-movie.gross_revenue
+dollars#NNS I-movie.gross_revenue I-movie.gross_revenue
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 that#IN/that O O
-didn#NN O O
+didn#NN O B-movie.release_region
 't#NN O O
 gross#JJ O O
 much#RB O O
@@ -7501,36 +7501,36 @@ i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
-early#RB B-movie.release_date O
-two#CD I-movie.release_date B-movie.name
-thousand#NNS I-movie.release_date I-movie.name
+early#RB B-movie.release_date B-movie.gross_revenue
+two#CD I-movie.release_date I-movie.gross_revenue
+thousands#NNS I-movie.release_date I-movie.gross_revenue
 
 show#VV O O
 last#JJ B-movie.release_date B-movie.release_date
-year#NNS I-movie.release_date I-movie.release_date
-film#NNS O O
+years#NNS I-movie.release_date I-movie.release_date
+films#NNS O O
 by#IN O O
 7#CD B-producer.name B-producer.name
-art#NNS I-producer.name I-producer.name
+arts#NNS I-producer.name I-producer.name
 
 show#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
-come#VVD O O
+came#VVD O O
 out#RP O O
 nine#CD B-movie.release_date B-movie.release_date
 fourteen#NN I-movie.release_date I-movie.release_date
 twenty#CD I-movie.release_date I-movie.release_date
 twelve#NN I-movie.release_date I-movie.release_date
 
-be#VBD O O
+were#VBD O O
 there#RB O O
 any#DT O O
-movie#NNS O O
-release#VVD O O
+movies#NNS O O
+released#VVD O O
 nine#CD B-movie.release_date B-movie.release_date
 fourteen#NN I-movie.release_date I-movie.release_date
 twenty#CD I-movie.release_date I-movie.release_date
@@ -7538,17 +7538,17 @@ twelve#NN I-movie.release_date I-movie.release_date
 
 show#VV O O
 me#PP O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 the#DT O O
 nineteen#CD B-movie.release_date B-movie.release_date
-seventy#NNS I-movie.release_date B-movie.release_date
+seventies#NNS I-movie.release_date I-movie.release_date
 
 can#MD O O
 you#PP O O
 list#VV O O
 all#DT O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 twenty#CD B-movie.release_date B-movie.release_date
 twelve#NN I-movie.release_date I-movie.release_date
@@ -7557,63 +7557,63 @@ a#DT O O
 rating#NN O O
 of#IN O O
 three#CD B-movie.star_rating O
-star#NNS O O
+stars#NNS O O
 and#CC O I-movie.name
 up#RB O I-movie.name
 
 academy#NN B-award.ceremony B-award.ceremony
 award#NN O I-award.ceremony
 lionsgate#NN B-producer.name B-producer.name
-movie#NNS O O
+movies#NNS O O
 
 show#NN O O
 oscar#NN B-award.ceremony B-award.ceremony
-win#VVG O O
-movie#NNS O O
+winning#VVG O O
+movies#NNS O O
 by#IN O O
 warner#NN B-producer.name B-producer.name
-brother#NNS I-producer.name I-producer.name
+brothers#NNS I-producer.name I-producer.name
 
 what#WP O O
 movie#NN O O
-performance#NN O O
-do#VVD O O
-meryl#NN B-actor.name B-person.name
-streep#NNS I-actor.name I-person.name
+performance#NN O B-actor.nationality
+did#VVD O O
+meryl#NN B-actor.name B-actor.name
+streep#NNS I-actor.name I-actor.name
 win#VVP O O
-her#PP$ O O
-good#JJS B-award.category O
-supporting#JJ I-award.category O
+her#PP$ O B-character.name
+best#JJS B-award.category I-character.name
+supporting#JJ I-award.category I-character.name
 oscar#NN B-award.ceremony B-award.ceremony
 
 have#VHP O O
 any#DT O O
 us#PP B-country.name B-country.name
-release#VVN O O
-movie#NNS O O
-be#VBN O O
-film#VVN O O
+released#VVN O O
+movies#NNS O O
+been#VBN O O
+filmed#VVN O O
 on#IN O O
-location#NN O O
+location#NN O B-movie.release_region
 in#IN O O
 the#DT O O
-Czech#NN B-movie.location B-movie.location
-republic#NN I-movie.location I-movie.location
+czech#NN B-movie.location B-award.ceremony
+republic#NN I-movie.location I-award.ceremony
 
 what#WP O O
-us#PP B-country.name B-country.name
-release#VVP O O
-movie#NNS O O
+us#PP B-country.name B-movie.subject
+release#VVP O I-movie.subject
+movies#NNS O O
 have#VHP O O
-be#VBN O O
-film#VVN O O
+been#VBN O O
+filmed#VVN O O
 in#IN O O
 the#DT O O
-Czech#NN B-movie.location B-movie.location
-republic#NN I-movie.location I-movie.location
+czech#NN B-movie.location B-award.ceremony
+republic#NN I-movie.location I-award.ceremony
 
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 set#VVN O O
 in#IN O O
 ireland#NN B-movie.location B-movie.location
@@ -7621,18 +7621,18 @@ ireland#NN B-movie.location B-movie.location
 show#VV O O
 me#PP O O
 the#DT O O
-movie#NNS O O
-release#VVN O O
+movies#NNS O O
+released#VVN O O
 in#IN O O
 england#NN B-movie.release_region B-country.name
 
 what#WP O O
-movie#NNS O O
-be#VBP O O
-come#VVG O O
+movies#NNS O O
+are#VBP O O
+coming#VVG O O
 out#RP O O
-this#DT B-movie.release_date O
-week#NN I-movie.release_date O
+this#DT B-movie.release_date B-movie.release_date
+week#NN I-movie.release_date I-movie.release_date
 in#IN O O
 great#JJ B-movie.release_region B-country.name
 britain#NN I-movie.release_region I-country.name
@@ -7640,25 +7640,25 @@ britain#NN I-movie.release_region I-country.name
 show#VV O O
 me#PP O O
 the#DT O O
-movie#NNS O O
-release#VVN O O
+movies#NNS O O
+released#VVN O O
 in#IN O O
-nepal#NN B-movie.release_region O
+nepal#NN B-movie.release_region B-movie.release_region
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
 top#JJ O O
 five#CD O O
-French#NN B-country.name B-country.name
-movie#NNS O O
+french#NN B-country.name B-country.name
+movies#NNS O O
 of#IN O O
 all#DT O O
 time#NN O B-movie.subject
 
 what#WP O O
 top#JJ O O
-film#NNS O O
+films#NNS O O
 have#VHP O O
 come#VVN O O
 out#RP O O
@@ -7669,24 +7669,24 @@ show#VV O O
 me#PP O O
 the#DT O O
 top#JJ O O
-movie#NNS O O
+movies#NNS O O
 from#IN O O
 spain#NN B-country.name B-country.name
 
 what#WP O O
-be#VBZ O O
-the#DT O O
-high#JJS O O
-rate#VVN O O
+is#VBZ O O
+the#DT O B-movie.release_region
+highest#JJS O I-movie.release_region
+rated#VVN O O
 zombie#NN B-movie.subject B-movie.subject
 movie#NN O O
 
 what#WP O O
-be#VBP O O
-highly#RB O O
-rate#VVN O O
+are#VBP O O
+highly#RB O B-movie.release_region
+rated#VVN O O
 zombie#NN B-movie.subject B-movie.subject
-movie#NNS O O
+movies#NNS O O
 i#NP O O
 can#MD O O
 watch#VV O O
@@ -7694,52 +7694,52 @@ watch#VV O O
 look#NN O O
 for#IN O O
 popular#JJ O O
-movie#NNS O O
+movies#NNS O O
 
 search#NN O O
 for#IN O O
 foreign#JJ B-movie.language B-movie.language
 language#NN I-movie.language I-movie.language
-film#NNS O O
+films#NNS O O
 
 what#WP O O
-be#VBZ O O
-will#NN B-actor.name B-person.name
-ferrell#NN I-actor.name I-person.name
+is#VBZ O O
+will#NN B-actor.name B-actor.name
+ferrell#NN I-actor.name I-actor.name
 famous#JJ O O
 for#IN O O
 
-be#VBZ O O
+is#VBZ O O
 this#DT O O
 a#DT O O
-musical#NN B-movie.genre O
+musical#NN B-movie.genre B-movie.release_region
 
 hope#VVP O O
 that#IN/that O O
 the#DT O O
 movie#NN O O
-be#VBZ O O
+is#VBZ O O
 in#IN O O
-English#NN B-movie.language B-movie.language
+english#NN B-movie.language B-movie.language
 
-be#VBZ O O
+is#VBZ O O
 this#DT O O
 movie#NN O O
 in#IN O O
-English#NN B-movie.language B-movie.language
+english#NN B-movie.language B-movie.language
 
 do#VV O O
 they#PP O O
 speak#VV O O
-german#JJ B-movie.language B-country.name
+german#JJ B-movie.language B-director.nationality
 in#IN O O
 the#DT O O
 movie#NN O O
 
-be#VBZ O O
+is#VBZ O O
 this#DT O O
 movie#NN O O
-film#VVN O O
+filmed#VVN O O
 in#IN O O
 india#NN B-movie.location B-country.name
 
@@ -7749,22 +7749,22 @@ dawn#NN B-movie.name B-movie.name
 of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 dead#JJ I-movie.name I-movie.name
-movie#NNS O O
+movies#NNS O O
 
 all#DT O O
 of#IN O O
 kung#NP B-movie.name B-movie.name
 fu#NP I-movie.name I-movie.name
 panda#NN I-movie.name I-movie.name
-movie#NNS O O
+movies#NNS O O
 
 list#NN O O
-movie#NNS O O
+movies#NNS O O
 that#WDT O O
 have#VHP O O
 time#NN O B-movie.subject
 travel#NN O I-movie.subject
-in#IN O O
+in#IN O I-movie.subject
 their#PP$ O O
 title#NN O O
 
@@ -7777,7 +7777,7 @@ twenty#CD I-movie.release_date I-movie.release_date
 eight#CD I-movie.release_date I-movie.release_date
 release#NN O O
 date#NN O O
-film#NNS O O
+films#NNS O O
 from#IN O O
 twenty#CD I-movie.release_date B-movie.release_date
 twelve#NN I-movie.release_date I-movie.release_date
@@ -7785,8 +7785,8 @@ twelve#NN I-movie.release_date I-movie.release_date
 find#VV O O
 information#NN O O
 about#IN O O
-French#JJ B-movie.language B-movie.language
-movie#NNS O O
+french#JJ B-movie.language B-movie.language
+movies#NNS O O
 
 i#NNS O O
 need#VVP O O
@@ -7797,54 +7797,54 @@ about#IN O O
 the#DT O O
 life#NN O B-movie.name
 and#CC O I-movie.name
-movie#NNS O O
+movies#NNS O O
 of#IN O O
-Indian#JJ B-actor.nationality B-actor.nationality
+indian#JJ B-actor.nationality B-actor.nationality
 actor#NN O O
 dilip#NN B-actor.name B-actor.name
 kumar#NN I-actor.name I-actor.name
 
 what#WP O O
-do#VVZ O O
+does#VVZ O O
 the#DT O O
 miramax#NN B-producer.name B-producer.name
-logo#NN O O
+logo#NN O I-producer.name
 look#VVP O O
 like#IN O O
 
 show#VV O O
 me#PP O O
-picture#NNS O O
+pictures#NNS O O
 of#IN O O
 martin#NN B-person.name B-director.name
 scorsese#NN I-person.name I-director.name
 
-photo#NNS O O
+photos#NNS O O
 of#IN O O
-steven#JJ B-person.name B-director.name
-spielberg#NN I-person.name I-director.name
+steven#JJ B-person.name B-person.name
+spielberg#NN I-person.name I-person.name
 
 i#NNS O O
 want#VVP O O
 to#TO O O
 see#VV O O
-image#NNS O O
+images#NNS O O
 of#IN O O
 will#NN B-person.name B-person.name
 ferrell#NN I-person.name I-person.name
 
 show#VV O O
 me#PP O O
-picture#NNS O O
+pictures#NNS O O
 of#IN O O
 woody#JJ B-person.name B-director.name
 allen#NN I-person.name I-director.name
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 popular#JJ O O
 movie#NN O O
-producer#NNS O O
+producers#NNS O O
 
 can#MD O O
 you#PP O O
@@ -7867,16 +7867,16 @@ avatar#NN B-movie.name B-movie.name
 
 what#WP O O
 rating#NN O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 movie#NN O O
 barfi#NN B-movie.name B-movie.name
 
 what#WP O O
-be#VBZ O O
-find#VVG B-movie.name B-movie.name
+is#VBZ O O
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
-rate#VVN O O
+rated#VVN O O
 
 i#NNS O O
 need#VVP O O
@@ -7896,37 +7896,37 @@ rating#NN O O
 the#DT O O
 movie#NN O O
 grease#NN B-movie.name B-movie.name
-be#VBZ O I-movie.name
+is#VBZ O I-movie.name
 
 what#WP O O
-be#VBZ O O
-kid#NNS B-movie.name O
+is#VBZ O O
+kids#NNS B-movie.name O
 by#IN O O
-larry#NN B-director.name O
-clark#NN I-director.name B-person.name
-rate#VVN O O
+larry#NN B-director.name B-movie.release_region
+clark#NN I-director.name I-movie.release_region
+rated#VVN O O
 
 what#WP O O
 rating#NN O O
-do#VVD O O
+did#VVD O O
 marley#NN B-movie.name B-movie.name
 and#CC I-movie.name I-movie.name
 me#PP I-movie.name O
 receive#VVP O O
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 rating#NN O O
 for#IN O O
-Mr#NN B-movie.name B-movie.name
+mr#NN B-movie.name B-movie.name
 and#CC I-movie.name I-movie.name
-Mrs#NN I-movie.name I-movie.name
+mrs#NN I-movie.name I-movie.name
 smith#NN I-movie.name I-movie.name
 
 what#WP O O
 rating#NN O O
-do#VVD O O
+did#VVD O O
 resident#JJ B-movie.name B-movie.name
 evil#NN I-movie.name I-movie.name
 receive#VV O O
@@ -7941,7 +7941,7 @@ huntsman#NN I-movie.name I-movie.name
 
 what#WP O O
 rating#NN O O
-be#VBZ O O
+is#VBZ O O
 step#NN B-movie.name B-movie.name
 up#RB I-movie.name I-movie.name
 
@@ -7957,7 +7957,7 @@ up#RB I-movie.name I-movie.name
 
 what#WP O O
 rating#NN O O
-do#VVD O O
+did#VVD O O
 the#DT B-movie.name B-movie.name
 campaign#NN I-movie.name I-movie.name
 movie#NN O O
@@ -7971,10 +7971,10 @@ for#IN O O
 the#DT O O
 movie#NN O O
 the#DT B-movie.name B-movie.name
-expendable#NNS I-movie.name I-movie.name
+expendables#NNS I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 rating#NN O O
 for#IN O O
@@ -7982,7 +7982,7 @@ toy#JJ B-movie.name B-movie.name
 story#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 rating#NN O O
 for#IN O O
@@ -7994,23 +7994,23 @@ story#NN I-movie.name I-movie.name
 rating#NN O O
 for#IN O O
 twilight#NN B-movie.name B-movie.name
-break#VVG I-movie.name I-movie.name
+breaking#VVG I-movie.name I-movie.name
 dawn#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBD O O
+was#VBD O O
 gross#JJ O O
 revenue#NN O O
 for#IN O O
 batman#NN B-movie.name B-movie.name
-begin#VVZ I-movie.name I-movie.name
+begins#VVZ I-movie.name I-movie.name
 
 how#WRB O O
 much#RB O O
-have#VHZ O O
+has#VHZ O O
 black#JJ B-movie.name B-movie.name
 swan#NN I-movie.name I-movie.name
-bring#VVN O I-movie.name
+brought#VVN O I-movie.name
 in#IN O I-movie.name
 
 find#VV O O
@@ -8024,86 +8024,86 @@ find#VV O O
 the#DT O O
 revenue#NN O O
 of#IN O O
-edward#NN B-movie.name O
-scissor#VVP I-movie.name O
-hand#NNS I-movie.name O
+edward#NN B-movie.name B-movie.gross_revenue
+scissor#VVP I-movie.name I-movie.gross_revenue
+hands#NNS I-movie.name I-movie.gross_revenue
 
 what#WP O O
-be#VBZ O O
+is#VBZ O O
 the#DT O O
 most#JJS O O
 a#DT O O
 movie#NN O O
-make#VVD O O
+made#VVD O O
 
-review#NNS O O
+reviews#NNS O O
 for#IN O O
 dirty#JJ B-movie.name B-movie.name
 dancing#NN I-movie.name I-movie.name
 
 find#VV O O
-review#NNS O O
+reviews#NNS O O
 for#IN O O
 dirty#JJ B-movie.name B-movie.name
 dancing#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBP O O
-review#NNS O O
+are#VBP O O
+reviews#NNS O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
-rating#NNS O O
+ratings#NNS O O
 and#CC O O
 review#NN O O
 on#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-review#NNS O O
+reviews#NNS O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-review#NNS O O
+reviews#NNS O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-review#NNS O O
+reviews#NNS O O
 for#IN O O
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 
-review#NNS O O
+reviews#NNS O O
 for#IN O O
 movie#NN O O
 
-review#NNS O O
+reviews#NNS O O
 for#IN O O
 in#IN B-movie.name B-movie.name
-July#NN I-movie.name I-movie.name
+july#NN I-movie.name I-movie.name
 
 what#WP O O
-be#VBP O O
+are#VBP O O
 the#DT O O
-reviewer#NNS O O
-say#VVG O O
+reviewers#NNS O B-movie.release_region
+saying#VVG O I-movie.release_region
 about#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 episode#NN I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
 how#WRB O O
 long#RB O O
-be#VBZ O O
+is#VBZ O O
 life#NN B-movie.name B-movie.name
-be#VBZ I-movie.name I-movie.name
+is#VBZ I-movie.name I-movie.name
 beautiful#JJ I-movie.name I-movie.name
 
 synopsis#NN O O
@@ -8121,19 +8121,19 @@ street#NN I-movie.name I-movie.name
 synopsis#NN O O
 for#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
-summary#NN O O
-of#IN O O
+summary#NN O B-movie.release_date
+of#IN O I-movie.release_date
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 four#CD I-movie.name I-movie.name
 
-find#VVG B-movie.name B-movie.name
+finding#VVG B-movie.name B-movie.name
 nemo#NN I-movie.name I-movie.name
 movie#NN O O
-shortcut#NN O O
+shortcut#NN O B-movie.language
 
 show#VV O O
 me#PP O O
@@ -8148,15 +8148,15 @@ of#IN I-movie.name I-movie.name
 the#DT I-movie.name I-movie.name
 street#NN I-movie.name I-movie.name
 
-life#NN B-movie.name O
-be#VBZ I-movie.name O
-beatiful#JJ I-movie.name O
-shortcut#NN O O
+life#NN B-movie.name B-movie.name
+is#VBZ I-movie.name I-movie.name
+beatiful#JJ I-movie.name B-movie.release_date
+shortcut#NN O I-movie.release_date
 
 trailer#NN O O
 for#IN O O
 star#NN B-movie.name B-movie.name
-war#NNS I-movie.name I-movie.name
+wars#NNS I-movie.name I-movie.name
 a#DT I-movie.name I-movie.name
 new#JJ I-movie.name I-movie.name
 hope#NN I-movie.name I-movie.name
@@ -8164,38 +8164,38 @@ hope#NN I-movie.name I-movie.name
 show#VV O O
 resident#JJ B-movie.name B-movie.name
 evil#JJ I-movie.name I-movie.name
-movie#NNS O O
+movies#NNS O O
 with#IN O O
-trailer#NNS O O
+trailers#NNS O O
 
 can#MD O O
 i#NNS O O
 see#VV O O
-preview#NNS O O
+previews#NNS O B-movie.release_region
 for#IN O O
 upcoming#JJ O O
 warner#NN B-producer.name B-producer.name
-brother#NNS I-producer.name I-producer.name
-movie#NNS O O
+brothers#NNS I-producer.name I-producer.name
+movies#NNS O O
 
 how#WRB O O
 many#JJ O O
 woody#JJ B-director.name B-director.name
 allen#NN I-director.name I-director.name
-movie#NNS O O
-be#VBP O O
+movies#NNS O O
+are#VBP O O
 set#VVN O O
 in#IN O O
-new#JJ B-movie.location O
-york#VVP I-movie.location O
-city#NN I-movie.location O
+new#JJ B-movie.location B-movie.release_date
+york#VVP I-movie.location I-movie.release_date
+city#NN I-movie.location I-movie.release_date
 
 how#WRB O O
 many#JJ O O
-scorsese#JJ B-producer.name O
-film#NNS O O
-be#VBD O O
-film#VVN O O
+scorsese#JJ B-producer.name B-movie.release_region
+films#NNS O O
+were#VBD O O
+filmed#VVN O O
 in#IN O O
 france#NN B-movie.location B-country.name
 

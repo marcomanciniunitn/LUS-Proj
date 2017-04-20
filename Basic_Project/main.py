@@ -301,10 +301,10 @@ def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff):
 def printIncorrectSyntax():
 	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
 	for algo in smoothing: sys.stdout.write("| " + algo + " |")
-	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5=test set\n")
+	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n")
 
 
-if len(sys.argv) == :
+if len(sys.argv) == 5 :
 
 	order = sys.argv[1]
 	smoothing_algo = sys.argv[2]

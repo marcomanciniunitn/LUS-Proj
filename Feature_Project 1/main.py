@@ -292,8 +292,7 @@ def cleanDirectory():
 
 #Input validation
 def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff, feat):
-	if order != "1" and order != "2" and order != "3":
-		return False
+
 	if smoothing_algo not in smoothing:
 		return False
 	if threshold != "0" and threshold != "1" and threshold != "2" and threshold != "3" and threshold != "4":
@@ -306,7 +305,7 @@ def checkForInputErrors(order, smoothing_algo, threhsold, wordCutoff, feat):
 
 #Incorrect syntax function
 def printIncorrectSyntax():
-	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order [1-3] \n-arg2=smoothing [")
+	sys.stdout.write("Incorrect syntax, use the following one.\n-arg1=order\n-arg2=smoothing [")
 	for algo in smoothing: sys.stdout.write("| " + algo + " |")
 	sys.stdout.write("] \n-arg3=threshold for cut-off (0-No cutoff) [0-4]\n-arg4=Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff] \n-arg5= Add features (0: WORD-PoS , 1: LEMMA-PoS)\n")
 
