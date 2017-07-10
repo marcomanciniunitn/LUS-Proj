@@ -1,7 +1,10 @@
-LUS mid-term project, Spring 2017 <br />
-Student: Marco Mancini, 187403 <br />
+# Language Understanding System mid-term project, Spring 2017
 
------ DESCRIPTION ----- <br />
+This is the project for the Language Understanding System course of the Master Course in Computer Science of University of Trento [UNITN]. It consisted in the development of a Language Understanding Module fo the Movie domain.
+In the report you can find all the information and steps involved in the design of the module.
+
+## Getting Started
+
 - Basic Project <br />
   This is the basic part of the project, it performs sequence labeling. <br />
    The main operations it does are: <br />
@@ -42,9 +45,16 @@ with this implementation.
 This is the best and last version of the project, it is basically the Basic Project but works on an edited training set.
 The training set has been modified assigning as concept for each word the word itself instead of the O (obviously only when possible), this editing permitted me to reach the ~83% F1-Measure and ~95% of accuracy.
 Initially only the most discriminant words where mapped to concept (thanks to @Federico Giannoni for the script generating the concepts for the specified words), this gave me better results, then I tried to use the whole words, and this last trial worked well.
+.
 
+### Prerequisites
 
------ HOW-TO USE ----- <br />
+* openFST - http://www.openfst.org/twiki/bin/view/FST/WebHome
+* openGRM - http://www.opengrm.org/
+
+## Running
+
+Each version of the project is related to a subfolder present in this repo. Each subfolder has its own main.py file, it is the file to be executed using python shell, the syntax is expressed below.
 Do not touch any file in any folder, the results are showed in the results folder of each project. 
 - Basic Project <br />
    -Syntax- <br />
@@ -77,5 +87,8 @@ Do not touch any file in any folder, the results are showed in the results folde
    - arg3 = threshold for the cut-off frequency (0- No cut-off) <br />
    - arg4 = Word cut-off | Noise cut-off [1 = Word-cutoff, 0 = Noise-cutoff]  <br />
 
+## Authors
+
+* **Marco Mancini** - https://www.linkedin.com/in/marco-mancini-6b2969108/
 
 
